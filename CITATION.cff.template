@@ -1,0 +1,14 @@
+# Fill in actual authors and the repository URL, then rename to CITATION.cff.
+# Deliberately not activated while the manuscript author list is unresolved.
+cff-version: 1.2.0
+message: "Please cite the CREED manuscript and this source-code release."
+type: software
+title: "CREED: measured once, used as many"
+authors:
+  - family-names: "REPLACE_WITH_AUTHOR_FAMILY_NAME"
+    given-names: "REPLACE_WITH_AUTHOR_GIVEN_NAMES"
+version: "2026.10.14"
+date-released: "2026-10-14"
+# repository-code: "https://github.com/OWNER/REPOSITORY"
+# Add the selected SPDX software license and a published software DOI, if available.
+# The reserved Zenodo DOI in the README is a DATA DOI, not a published paper DOI.

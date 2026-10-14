@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "kind": "fresh fitting of all cross-layer arms in both scenarios; comparison against all original prediction arrays",
+  "results": {
+    "new_cell": {
+      "prediction_archive_arrays_compared": 320,
+      "maximum_absolute_difference": 5.4289905904170155e-14,
+      "folds": 5,
+      "gates": {
+        "kernel_block_max_abs_diff": 1.1102230246251565e-16,
+        "grid_M_vs_original__m_only": 4.0190073491430667e-14,
+        "grid_repro_vs_extra__m_only": 3.985700658404312e-14,
+        "pred_M_vs_original__m_only": 3.019806626980426e-14,
+        "pred_repro_vs_extra__m_only": 3.197442310920451e-14,
+        "passed": true
+      }
+    },
+    "tissue": {
+      "prediction_archive_arrays_compared": 270,
+      "maximum_absolute_difference": 3.8968828164342995e-14,
+      "folds": 5,
+      "gates": {
+        "kernel_block_max_abs_diff": 1.1102230246251565e-16,
+        "grid_M_vs_original__m_only": 4.0190073491430667e-14,
+        "grid_repro_vs_extra__m_only": 3.275157922644212e-14,
+        "pred_M_vs_original__m_only": 2.5979218776228663e-14,
+        "pred_repro_vs_extra__m_only": 2.0095036745715333e-14,
+        "passed": true
+      }
+    }
+  }
+}

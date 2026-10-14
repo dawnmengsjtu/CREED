@@ -1,0 +1,39 @@
+{
+  "kind": "historical plot-table data stages; final R rendering not run",
+  "passed": true,
+  "stages": {
+    "map": {
+      "passed": true,
+      "log": "map.log"
+    },
+    "generator": {
+      "passed": true,
+      "log": "generator.log"
+    },
+    "drug-detail": {
+      "passed": true,
+      "log": "drug-detail.log"
+    },
+    "graph-controls": {
+      "passed": true,
+      "log": "graph-controls.log"
+    },
+    "panels": {
+      "passed": true,
+      "log": "panels.log"
+    },
+    "panel-detail": {
+      "passed": true,
+      "log": "panel-detail.log"
+    },
+    "crispr": {
+      "passed": true,
+      "log": "crispr.log"
+    },
+    "sealed-summary": {
+      "passed": true,
+      "log": "sealed-summary.log"
+    }
+  },
+  "csv_files": 59
+}

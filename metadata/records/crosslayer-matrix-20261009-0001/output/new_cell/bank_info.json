@@ -1,0 +1,2242 @@
+{
+ "fold-0/inner-0": {
+  "M": {
+   "features": 225,
+   "width": 416.66926063593814,
+   "target": 225
+  },
+  "RNA": {
+   "features": 3000,
+   "width": 5988.0729272433455,
+   "target": 512,
+   "top_gene_index": 12387
+  },
+  "P": {
+   "candidates": 3342,
+   "value_width": 6343.883893939152,
+   "mask_width": 623.0,
+   "target": 512,
+   "fit_observed_frac": 0.8582818006516391,
+   "query_observed_frac": 0.8647970633495768
+  },
+  "n_fit": 225,
+  "n_query": 112,
+  "n_panel": 295,
+  "n_extra_saved": 19,
+  "kernel_block_max_abs_diff": 1.1102230246251565e-16,
+  "generators": {
+   "M->RNA": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.26130804564763876,
+    "oof_r2_median": 0.26155704714601685,
+    "virtual_width": 868.8325650490272,
+    "n_targets": 512
+   },
+   "M->RNA_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.012731840653835418,
+    "oof_r2_median": -0.009778923421229102,
+    "virtual_width": 1263.830457112645,
+    "n_targets": 512
+   },
+   "M->P": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.14956456989665268,
+    "oof_r2_median": 0.13756105537895147,
+    "virtual_width": 785.7506518250811,
+    "n_targets": 512
+   },
+   "M->P_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.013189773679302673,
+    "oof_r2_median": -0.01004474258320387,
+    "virtual_width": 1266.5618705029792,
+    "n_targets": 512
+   },
+   "RNA->P": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.30016252314425246,
+    "oof_r2_median": 0.29840297076312056,
+    "virtual_width": 930.817794627774,
+    "n_targets": 512
+   },
+   "RNA->P_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.012795325362710979,
+    "oof_r2_median": -0.009462928578894081,
+    "virtual_width": 1266.5305222390666,
+    "n_targets": 512
+   },
+   "RNA->M": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.12042315055187279,
+    "oof_r2_median": 0.10599694962416928,
+    "virtual_width": 341.455842797654,
+    "n_targets": 225
+   },
+   "RNA->M_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.008913478090563908,
+    "oof_r2_median": -0.006956966534396258,
+    "virtual_width": 612.1353446518452,
+    "n_targets": 225
+   },
+   "P->M": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.11293760800038279,
+    "oof_r2_median": 0.10386898699114766,
+    "virtual_width": 354.61324884629613,
+    "n_targets": 225
+   },
+   "P->M_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.009020390442618879,
+    "oof_r2_median": -0.006904673354044766,
+    "virtual_width": 631.7782973178306,
+    "n_targets": 225
+   },
+   "P->RNA": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.4600711741655076,
+    "oof_r2_median": 0.4652965158633615,
+    "virtual_width": 897.9886388247403,
+    "n_targets": 512
+   },
+   "P->RNA_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.012156973713241377,
+    "oof_r2_median": -0.009083652266617448,
+    "virtual_width": 1296.2169240732437,
+    "n_targets": 512
+   }
+  }
+ },
+ "fold-0/inner-1": {
+  "M": {
+   "features": 225,
+   "width": 423.3942671254824,
+   "target": 225
+  },
+  "RNA": {
+   "features": 3000,
+   "width": 5869.269020971529,
+   "target": 512,
+   "top_gene_index": 12387
+  },
+  "P": {
+   "candidates": 3371,
+   "value_width": 6431.924682218218,
+   "mask_width": 624.0,
+   "target": 512,
+   "fit_observed_frac": 0.8615076304426645,
+   "query_observed_frac": 0.84877050048735
+  },
+  "n_fit": 225,
+  "n_query": 112,
+  "n_panel": 295,
+  "n_extra_saved": 19,
+  "kernel_block_max_abs_diff": 1.1102230246251565e-16,
+  "generators": {
+   "M->RNA": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.23934216973016398,
+    "oof_r2_median": 0.2414617485827481,
+    "virtual_width": 835.511430768179,
+    "n_targets": 512
+   },
+   "M->RNA_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.010464098736971596,
+    "oof_r2_median": -0.008441662131542071,
+    "virtual_width": 1168.6959929640418,
+    "n_targets": 512
+   },
+   "M->P": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.12793688345986517,
+    "oof_r2_median": 0.11868865604663609,
+    "virtual_width": 753.9413221105665,
+    "n_targets": 512
+   },
+   "M->P_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.012470733418919933,
+    "oof_r2_median": -0.009648685318163541,
+    "virtual_width": 964.8031323976456,
+    "n_targets": 512
+   },
+   "RNA->P": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.2698003145991186,
+    "oof_r2_median": 0.2638894046329054,
+    "virtual_width": 926.5797651472685,
+    "n_targets": 512
+   },
+   "RNA->P_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.012609331810506247,
+    "oof_r2_median": -0.010101685142371863,
+    "virtual_width": 982.556790823676,
+    "n_targets": 512
+   },
+   "RNA->M": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.11170648649068027,
+    "oof_r2_median": 0.0998986683835289,
+    "virtual_width": 321.6760501481525,
+    "n_targets": 225
+   },
+   "RNA->M_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.01378371268976541,
+    "oof_r2_median": -0.01132071191342443,
+    "virtual_width": 588.7109085179022,
+    "n_targets": 225
+   },
+   "P->M": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.1010006433538778,
+    "oof_r2_median": 0.08406589592113578,
+    "virtual_width": 312.2583509046113,
+    "n_targets": 225
+   },
+   "P->M_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.013771804089641064,
+    "oof_r2_median": -0.01118721749216478,
+    "virtual_width": 578.0339719241208,
+    "n_targets": 225
+   },
+   "P->RNA": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.45076306061508464,
+    "oof_r2_median": 0.455714203878757,
+    "virtual_width": 879.5758281352214,
+    "n_targets": 512
+   },
+   "P->RNA_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.01083070066648881,
+    "oof_r2_median": -0.00873285569831539,
+    "virtual_width": 1171.0992196918241,
+    "n_targets": 512
+   }
+  }
+ },
+ "fold-0/inner-2": {
+  "M": {
+   "features": 225,
+   "width": 416.139870703527,
+   "target": 225
+  },
+  "RNA": {
+   "features": 3000,
+   "width": 5895.778182934994,
+   "target": 512,
+   "top_gene_index": 29810
+  },
+  "P": {
+   "candidates": 3330,
+   "value_width": 6360.147193462462,
+   "mask_width": 613.0,
+   "target": 512,
+   "fit_observed_frac": 0.8604354354354354,
+   "query_observed_frac": 0.864123415450849
+  },
+  "n_fit": 224,
+  "n_query": 113,
+  "n_panel": 295,
+  "n_extra_saved": 19,
+  "kernel_block_max_abs_diff": 1.1102230246251565e-16,
+  "generators": {
+   "M->RNA": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.2339665042402454,
+    "oof_r2_median": 0.23444308881431297,
+    "virtual_width": 841.8416701740302,
+    "n_targets": 512
+   },
+   "M->RNA_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.011308763772033933,
+    "oof_r2_median": -0.008583067850062132,
+    "virtual_width": 1236.0515759085542,
+    "n_targets": 512
+   },
+   "M->P": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.11860367030407637,
+    "oof_r2_median": 0.10744602213219495,
+    "virtual_width": 778.814032548111,
+    "n_targets": 512
+   },
+   "M->P_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.01030099532433536,
+    "oof_r2_median": -0.007684689294477076,
+    "virtual_width": 1273.5282547772435,
+    "n_targets": 512
+   },
+   "RNA->P": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.28826696402685714,
+    "oof_r2_median": 0.2961766753998754,
+    "virtual_width": 938.9801369454577,
+    "n_targets": 512
+   },
+   "RNA->P_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.009967210855474752,
+    "oof_r2_median": -0.007513527833054812,
+    "virtual_width": 1307.111278476034,
+    "n_targets": 512
+   },
+   "RNA->M": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.12927270605937183,
+    "oof_r2_median": 0.12548265688065952,
+    "virtual_width": 305.93544112853925,
+    "n_targets": 225
+   },
+   "RNA->M_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.010292663413120916,
+    "oof_r2_median": -0.0060507799392137684,
+    "virtual_width": 563.6308178306542,
+    "n_targets": 225
+   },
+   "P->M": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.10608219296414584,
+    "oof_r2_median": 0.09210776238908613,
+    "virtual_width": 305.5168764002426,
+    "n_targets": 225
+   },
+   "P->M_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.01020840299296112,
+    "oof_r2_median": -0.005783632586545462,
+    "virtual_width": 577.4257404424259,
+    "n_targets": 225
+   },
+   "P->RNA": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.44971143991949947,
+    "oof_r2_median": 0.45236774387625034,
+    "virtual_width": 877.5745227911814,
+    "n_targets": 512
+   },
+   "P->RNA_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.011717359016506928,
+    "oof_r2_median": -0.009017710077749097,
+    "virtual_width": 1237.3070435811862,
+    "n_targets": 512
+   }
+  }
+ },
+ "fold-0/outer": {
+  "M": {
+   "features": 225,
+   "width": 417.2655522626227,
+   "target": 225
+  },
+  "RNA": {
+   "features": 3000,
+   "width": 5914.142934646572,
+   "target": 512,
+   "top_gene_index": 12387
+  },
+  "P": {
+   "candidates": 3350,
+   "value_width": 6368.777088834648,
+   "mask_width": 621.0,
+   "target": 512,
+   "fit_observed_frac": 0.8596820054032508,
+   "query_observed_frac": 0.8624058280028429
+  },
+  "n_fit": 337,
+  "n_query": 84,
+  "n_panel": 295,
+  "n_extra_saved": 19,
+  "kernel_block_max_abs_diff": 1.1102230246251565e-16,
+  "generators": {
+   "M->RNA": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.2774021987419575,
+    "oof_r2_median": 0.28356356687347506,
+    "virtual_width": 855.7746757333906,
+    "n_targets": 512
+   },
+   "M->RNA_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.00691657399795276,
+    "oof_r2_median": -0.0051134575967589635,
+    "virtual_width": 1169.1142177073812,
+    "n_targets": 512
+   },
+   "M->P": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.15998522181351588,
+    "oof_r2_median": 0.1556117184931503,
+    "virtual_width": 779.0093959378465,
+    "n_targets": 512
+   },
+   "M->P_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.005269175631004344,
+    "oof_r2_median": -0.003588453121709634,
+    "virtual_width": 1282.8527277394978,
+    "n_targets": 512
+   },
+   "RNA->P": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.3208859447848049,
+    "oof_r2_median": 0.32792250509285703,
+    "virtual_width": 938.5253894889952,
+    "n_targets": 512
+   },
+   "RNA->P_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.005974174603592699,
+    "oof_r2_median": -0.0042601955891788945,
+    "virtual_width": 1358.8128950432802,
+    "n_targets": 512
+   },
+   "RNA->M": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.1318674406084467,
+    "oof_r2_median": 0.12620461249293824,
+    "virtual_width": 323.4869921672464,
+    "n_targets": 225
+   },
+   "RNA->M_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.007096743197411741,
+    "oof_r2_median": -0.0047898184752734885,
+    "virtual_width": 532.2687400559296,
+    "n_targets": 225
+   },
+   "P->M": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.1180392564625806,
+    "oof_r2_median": 0.11283004419987619,
+    "virtual_width": 310.7259902001747,
+    "n_targets": 225
+   },
+   "P->M_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.007307744634257213,
+    "oof_r2_median": -0.004661554848723215,
+    "virtual_width": 529.1257257182081,
+    "n_targets": 225
+   },
+   "P->RNA": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.494860203666714,
+    "oof_r2_median": 0.5011563481329239,
+    "virtual_width": 899.2604497413138,
+    "n_targets": 512
+   },
+   "P->RNA_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.007770744815540104,
+    "oof_r2_median": -0.0056153093816968536,
+    "virtual_width": 1281.2146617299386,
+    "n_targets": 512
+   }
+  }
+ },
+ "fold-1/inner-0": {
+  "M": {
+   "features": 225,
+   "width": 422.71283533082385,
+   "target": 225
+  },
+  "RNA": {
+   "features": 3000,
+   "width": 5877.355874667634,
+   "target": 512,
+   "top_gene_index": 12387
+  },
+  "P": {
+   "candidates": 3346,
+   "value_width": 6378.566159239941,
+   "mask_width": 622.0,
+   "target": 512,
+   "fit_observed_frac": 0.8585224361711211,
+   "query_observed_frac": 0.865052087780719
+  },
+  "n_fit": 224,
+  "n_query": 112,
+  "n_panel": 295,
+  "n_extra_saved": 19,
+  "kernel_block_max_abs_diff": 1.1102230246251565e-16,
+  "generators": {
+   "M->RNA": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.26729669248104543,
+    "oof_r2_median": 0.2761001655911437,
+    "virtual_width": 850.0738842829612,
+    "n_targets": 512
+   },
+   "M->RNA_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.0136508523133557,
+    "oof_r2_median": -0.011893162265806834,
+    "virtual_width": 1375.8812584397297,
+    "n_targets": 512
+   },
+   "M->P": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.15093221387416406,
+    "oof_r2_median": 0.13698586138851454,
+    "virtual_width": 787.4706862286564,
+    "n_targets": 512
+   },
+   "M->P_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.020742518049849536,
+    "oof_r2_median": -0.016480960569541736,
+    "virtual_width": 999.5811025220207,
+    "n_targets": 512
+   },
+   "RNA->P": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.3091922169072771,
+    "oof_r2_median": 0.31009586368719794,
+    "virtual_width": 948.4198744082728,
+    "n_targets": 512
+   },
+   "RNA->P_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.019745053992520606,
+    "oof_r2_median": -0.015339500556285524,
+    "virtual_width": 984.991173028187,
+    "n_targets": 512
+   },
+   "RNA->M": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.119513691830539,
+    "oof_r2_median": 0.1108163239086758,
+    "virtual_width": 349.3073854171303,
+    "n_targets": 225
+   },
+   "RNA->M_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.011880050653398132,
+    "oof_r2_median": -0.009863669719399448,
+    "virtual_width": 611.7276947455036,
+    "n_targets": 225
+   },
+   "P->M": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.09946640618333857,
+    "oof_r2_median": 0.08641223706944623,
+    "virtual_width": 362.5018907580841,
+    "n_targets": 225
+   },
+   "P->M_shuf": {
+    "lam": 10.0,
+    "oof_r2_mean": -0.01086298829393184,
+    "oof_r2_median": -0.010004686235369764,
+    "virtual_width": 456.8000358420929,
+    "n_targets": 225
+   },
+   "P->RNA": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.4707988888877749,
+    "oof_r2_median": 0.4775123638688146,
+    "virtual_width": 890.542760291861,
+    "n_targets": 512
+   },
+   "P->RNA_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.012986501301532545,
+    "oof_r2_median": -0.011279893527686657,
+    "virtual_width": 1404.8644467488834,
+    "n_targets": 512
+   }
+  }
+ },
+ "fold-1/inner-1": {
+  "M": {
+   "features": 225,
+   "width": 425.14486867041785,
+   "target": 225
+  },
+  "RNA": {
+   "features": 3000,
+   "width": 5838.130409772744,
+   "target": 512,
+   "top_gene_index": 12387
+  },
+  "P": {
+   "candidates": 3404,
+   "value_width": 6458.55123791426,
+   "mask_width": 629.0,
+   "target": 512,
+   "fit_observed_frac": 0.8603835298808125,
+   "query_observed_frac": 0.8427716342118516
+  },
+  "n_fit": 224,
+  "n_query": 112,
+  "n_panel": 295,
+  "n_extra_saved": 19,
+  "kernel_block_max_abs_diff": 1.1102230246251565e-16,
+  "generators": {
+   "M->RNA": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.2426296563101012,
+    "oof_r2_median": 0.2458380532005917,
+    "virtual_width": 855.2819594672458,
+    "n_targets": 512
+   },
+   "M->RNA_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.007975644994100247,
+    "oof_r2_median": -0.005764022339743602,
+    "virtual_width": 1354.5535772477424,
+    "n_targets": 512
+   },
+   "M->P": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.13881538549047157,
+    "oof_r2_median": 0.13109614922201357,
+    "virtual_width": 765.0621637814912,
+    "n_targets": 512
+   },
+   "M->P_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.00891328175181716,
+    "oof_r2_median": -0.007305194035499785,
+    "virtual_width": 1347.6177562243083,
+    "n_targets": 512
+   },
+   "RNA->P": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.28616882278672173,
+    "oof_r2_median": 0.28120452928029915,
+    "virtual_width": 938.5049274607463,
+    "n_targets": 512
+   },
+   "RNA->P_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.00896477590161017,
+    "oof_r2_median": -0.007166993308911351,
+    "virtual_width": 1363.8165008452388,
+    "n_targets": 512
+   },
+   "RNA->M": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.1274278822174315,
+    "oof_r2_median": 0.11388640256873694,
+    "virtual_width": 313.58688984615264,
+    "n_targets": 225
+   },
+   "RNA->M_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.010420724381339713,
+    "oof_r2_median": -0.00851686018304787,
+    "virtual_width": 603.9381583653338,
+    "n_targets": 225
+   },
+   "P->M": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.10754469268380162,
+    "oof_r2_median": 0.09432290018412537,
+    "virtual_width": 301.0313586589874,
+    "n_targets": 225
+   },
+   "P->M_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.010396652062874781,
+    "oof_r2_median": -0.008799067571068964,
+    "virtual_width": 620.4168322659236,
+    "n_targets": 225
+   },
+   "P->RNA": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.4493941641818894,
+    "oof_r2_median": 0.4537518572494362,
+    "virtual_width": 874.9474404191302,
+    "n_targets": 512
+   },
+   "P->RNA_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.0076261261413379045,
+    "oof_r2_median": -0.00528913686195287,
+    "virtual_width": 1368.1821630835434,
+    "n_targets": 512
+   }
+  }
+ },
+ "fold-1/inner-2": {
+  "M": {
+   "features": 225,
+   "width": 421.65452091156976,
+   "target": 225
+  },
+  "RNA": {
+   "features": 3000,
+   "width": 5788.8465610217845,
+   "target": 512,
+   "top_gene_index": 12387
+  },
+  "P": {
+   "candidates": 3363,
+   "value_width": 6374.367885097308,
+   "mask_width": 634.0,
+   "target": 512,
+   "fit_observed_frac": 0.8560636230406525,
+   "query_observed_frac": 0.864544836667941
+  },
+  "n_fit": 224,
+  "n_query": 112,
+  "n_panel": 295,
+  "n_extra_saved": 19,
+  "kernel_block_max_abs_diff": 1.1102230246251565e-16,
+  "generators": {
+   "M->RNA": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.2609179098044493,
+    "oof_r2_median": 0.2687421807758717,
+    "virtual_width": 832.4279457195678,
+    "n_targets": 512
+   },
+   "M->RNA_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.011373367329411126,
+    "oof_r2_median": -0.00824008111236052,
+    "virtual_width": 1401.8349115427554,
+    "n_targets": 512
+   },
+   "M->P": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.14281467721543373,
+    "oof_r2_median": 0.13531347211566253,
+    "virtual_width": 799.2768474914875,
+    "n_targets": 512
+   },
+   "M->P_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.010171816918185935,
+    "oof_r2_median": -0.008027787826478616,
+    "virtual_width": 1259.9077552064477,
+    "n_targets": 512
+   },
+   "RNA->P": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.3101507549338219,
+    "oof_r2_median": 0.31937332755389286,
+    "virtual_width": 920.5534427108987,
+    "n_targets": 512
+   },
+   "RNA->P_shuf": {
+    "lam": 10.0,
+    "oof_r2_mean": -0.009905514096559338,
+    "oof_r2_median": -0.008857031515653202,
+    "virtual_width": 946.2953803179012,
+    "n_targets": 512
+   },
+   "RNA->M": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.11702363028980238,
+    "oof_r2_median": 0.09417929963907867,
+    "virtual_width": 332.3841726626831,
+    "n_targets": 225
+   },
+   "RNA->M_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.009632486721355131,
+    "oof_r2_median": -0.007145116208540303,
+    "virtual_width": 589.1308507105757,
+    "n_targets": 225
+   },
+   "P->M": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.10001250263262143,
+    "oof_r2_median": 0.07712221288784149,
+    "virtual_width": 359.70116856389643,
+    "n_targets": 225
+   },
+   "P->M_shuf": {
+    "lam": 10.0,
+    "oof_r2_mean": -0.009268393963341458,
+    "oof_r2_median": -0.008668308912518574,
+    "virtual_width": 436.22479971595294,
+    "n_targets": 225
+   },
+   "P->RNA": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.4574677370225981,
+    "oof_r2_median": 0.4623808385515358,
+    "virtual_width": 849.7465060362892,
+    "n_targets": 512
+   },
+   "P->RNA_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.010963798658423079,
+    "oof_r2_median": -0.007624296085238846,
+    "virtual_width": 1356.2966980597548,
+    "n_targets": 512
+   }
+  }
+ },
+ "fold-1/outer": {
+  "M": {
+   "features": 225,
+   "width": 421.8400351443803,
+   "target": 225
+  },
+  "RNA": {
+   "features": 3000,
+   "width": 5826.582105436687,
+   "target": 512,
+   "top_gene_index": 12387
+  },
+  "P": {
+   "candidates": 3364,
+   "value_width": 6378.087457271773,
+   "mask_width": 625.0,
+   "target": 512,
+   "fit_observed_frac": 0.8589273328237359,
+   "query_observed_frac": 0.8577498775966986
+  },
+  "n_fit": 336,
+  "n_query": 85,
+  "n_panel": 295,
+  "n_extra_saved": 19,
+  "kernel_block_max_abs_diff": 1.1102230246251565e-16,
+  "generators": {
+   "M->RNA": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.2844450512536168,
+    "oof_r2_median": 0.2960847757463223,
+    "virtual_width": 857.2601208326248,
+    "n_targets": 512
+   },
+   "M->RNA_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.009392156308001498,
+    "oof_r2_median": -0.006909772237420286,
+    "virtual_width": 1195.665244954047,
+    "n_targets": 512
+   },
+   "M->P": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.16282711295317825,
+    "oof_r2_median": 0.15519174978903694,
+    "virtual_width": 798.9654596700168,
+    "n_targets": 512
+   },
+   "M->P_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.008591201107529409,
+    "oof_r2_median": -0.007082751869416981,
+    "virtual_width": 1210.7984721899302,
+    "n_targets": 512
+   },
+   "RNA->P": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.33399961444508297,
+    "oof_r2_median": 0.3366079217588005,
+    "virtual_width": 933.2354741103738,
+    "n_targets": 512
+   },
+   "RNA->P_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.007277571577573412,
+    "oof_r2_median": -0.0057262947359162375,
+    "virtual_width": 1242.8163538011686,
+    "n_targets": 512
+   },
+   "RNA->M": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.13894437835565576,
+    "oof_r2_median": 0.12355780656719884,
+    "virtual_width": 327.19698297069067,
+    "n_targets": 225
+   },
+   "RNA->M_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.010374643115913828,
+    "oof_r2_median": -0.007496556563855394,
+    "virtual_width": 491.6781670891868,
+    "n_targets": 225
+   },
+   "P->M": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.12409226355714974,
+    "oof_r2_median": 0.10847046297287455,
+    "virtual_width": 348.28525548689333,
+    "n_targets": 225
+   },
+   "P->M_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.009566746211331802,
+    "oof_r2_median": -0.007016193847797059,
+    "virtual_width": 495.6294970249894,
+    "n_targets": 225
+   },
+   "P->RNA": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.4985198354469189,
+    "oof_r2_median": 0.5104553093063735,
+    "virtual_width": 887.4471035101803,
+    "n_targets": 512
+   },
+   "P->RNA_shuf": {
+    "lam": 10.0,
+    "oof_r2_mean": -0.00792481638109593,
+    "oof_r2_median": -0.006721270590119177,
+    "virtual_width": 927.6608826141471,
+    "n_targets": 512
+   }
+  }
+ },
+ "fold-2/inner-0": {
+  "M": {
+   "features": 225,
+   "width": 414.47755237922894,
+   "target": 225
+  },
+  "RNA": {
+   "features": 3000,
+   "width": 5903.618992400805,
+   "target": 512,
+   "top_gene_index": 12387
+  },
+  "P": {
+   "candidates": 3359,
+   "value_width": 6340.924328545934,
+   "mask_width": 617.0,
+   "target": 512,
+   "fit_observed_frac": 0.860421421719427,
+   "query_observed_frac": 0.862456407093948
+  },
+  "n_fit": 225,
+  "n_query": 112,
+  "n_panel": 295,
+  "n_extra_saved": 19,
+  "kernel_block_max_abs_diff": 1.1102230246251565e-16,
+  "generators": {
+   "M->RNA": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.21555108933920547,
+    "oof_r2_median": 0.2246782252756313,
+    "virtual_width": 846.417231873417,
+    "n_targets": 512
+   },
+   "M->RNA_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.006269818114959854,
+    "oof_r2_median": -0.004354554773073338,
+    "virtual_width": 1387.036308266233,
+    "n_targets": 512
+   },
+   "M->P": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.15129233596655597,
+    "oof_r2_median": 0.14305779367077148,
+    "virtual_width": 769.5343136850008,
+    "n_targets": 512
+   },
+   "M->P_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.007422759329389133,
+    "oof_r2_median": -0.005649071743434764,
+    "virtual_width": 1366.5572436240882,
+    "n_targets": 512
+   },
+   "RNA->P": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.30232589394505777,
+    "oof_r2_median": 0.31212561331516725,
+    "virtual_width": 922.895773574102,
+    "n_targets": 512
+   },
+   "RNA->P_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.007058627622660828,
+    "oof_r2_median": -0.004954874433772405,
+    "virtual_width": 1352.3349703720792,
+    "n_targets": 512
+   },
+   "RNA->M": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.12651468658893275,
+    "oof_r2_median": 0.11199565885769025,
+    "virtual_width": 310.19669450544137,
+    "n_targets": 225
+   },
+   "RNA->M_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.009003537878981645,
+    "oof_r2_median": -0.006315817228068399,
+    "virtual_width": 628.550996855952,
+    "n_targets": 225
+   },
+   "P->M": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.12366938908415363,
+    "oof_r2_median": 0.11041020840216031,
+    "virtual_width": 331.854182209407,
+    "n_targets": 225
+   },
+   "P->M_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.009126124598873917,
+    "oof_r2_median": -0.006101959580690375,
+    "virtual_width": 642.4452638691192,
+    "n_targets": 225
+   },
+   "P->RNA": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.43954669172827954,
+    "oof_r2_median": 0.45133241138120295,
+    "virtual_width": 855.9966376053651,
+    "n_targets": 512
+   },
+   "P->RNA_shuf": {
+    "lam": 10.0,
+    "oof_r2_mean": -0.005076933257402778,
+    "oof_r2_median": -0.004102150945321181,
+    "virtual_width": 1024.6995657353882,
+    "n_targets": 512
+   }
+  }
+ },
+ "fold-2/inner-1": {
+  "M": {
+   "features": 225,
+   "width": 416.20786727990986,
+   "target": 225
+  },
+  "RNA": {
+   "features": 3000,
+   "width": 5840.643840764109,
+   "target": 512,
+   "top_gene_index": 12387
+  },
+  "P": {
+   "candidates": 3374,
+   "value_width": 6377.645213862165,
+   "mask_width": 626.0,
+   "target": 512,
+   "fit_observed_frac": 0.8597971415398802,
+   "query_observed_frac": 0.858759738335168
+  },
+  "n_fit": 225,
+  "n_query": 112,
+  "n_panel": 295,
+  "n_extra_saved": 19,
+  "kernel_block_max_abs_diff": 1.1102230246251565e-16,
+  "generators": {
+   "M->RNA": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.24790374711581006,
+    "oof_r2_median": 0.24494406882534586,
+    "virtual_width": 824.9093377498341,
+    "n_targets": 512
+   },
+   "M->RNA_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.009606090171055855,
+    "oof_r2_median": -0.006666224964465561,
+    "virtual_width": 1361.1306438945107,
+    "n_targets": 512
+   },
+   "M->P": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.1399565945800898,
+    "oof_r2_median": 0.13130530135255036,
+    "virtual_width": 767.3019027528327,
+    "n_targets": 512
+   },
+   "M->P_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.009814082184780876,
+    "oof_r2_median": -0.006546935803189546,
+    "virtual_width": 1291.7817444349666,
+    "n_targets": 512
+   },
+   "RNA->P": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.3139120508548615,
+    "oof_r2_median": 0.32482249404804275,
+    "virtual_width": 923.204348384264,
+    "n_targets": 512
+   },
+   "RNA->P_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.009975842244632774,
+    "oof_r2_median": -0.007052941988054728,
+    "virtual_width": 1283.45374433581,
+    "n_targets": 512
+   },
+   "RNA->M": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.11766367912893623,
+    "oof_r2_median": 0.09808821773377407,
+    "virtual_width": 299.0478965406586,
+    "n_targets": 225
+   },
+   "RNA->M_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.007901181379774448,
+    "oof_r2_median": -0.005796578844604161,
+    "virtual_width": 593.5415488373046,
+    "n_targets": 225
+   },
+   "P->M": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.10773571271053817,
+    "oof_r2_median": 0.09402836916790602,
+    "virtual_width": 300.0596087706948,
+    "n_targets": 225
+   },
+   "P->M_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.007679612289389176,
+    "oof_r2_median": -0.005531088080589441,
+    "virtual_width": 601.7132891431202,
+    "n_targets": 225
+   },
+   "P->RNA": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.4573378198587726,
+    "oof_r2_median": 0.4659775085272409,
+    "virtual_width": 832.964466643378,
+    "n_targets": 512
+   },
+   "P->RNA_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.009370767942660767,
+    "oof_r2_median": -0.006310526623943047,
+    "virtual_width": 1381.3361163916252,
+    "n_targets": 512
+   }
+  }
+ },
+ "fold-2/inner-2": {
+  "M": {
+   "features": 225,
+   "width": 417.448785375608,
+   "target": 225
+  },
+  "RNA": {
+   "features": 3000,
+   "width": 5861.545368955856,
+   "target": 512,
+   "top_gene_index": 12387
+  },
+  "P": {
+   "candidates": 3366,
+   "value_width": 6405.757435202293,
+   "mask_width": 614.0,
+   "target": 512,
+   "fit_observed_frac": 0.8614930820813174,
+   "query_observed_frac": 0.8580810709910137
+  },
+  "n_fit": 224,
+  "n_query": 113,
+  "n_panel": 295,
+  "n_extra_saved": 19,
+  "kernel_block_max_abs_diff": 1.1102230246251565e-16,
+  "generators": {
+   "M->RNA": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.2284453915790367,
+    "oof_r2_median": 0.24164753170975944,
+    "virtual_width": 850.8636066692575,
+    "n_targets": 512
+   },
+   "M->RNA_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.014504686335026952,
+    "oof_r2_median": -0.010890953840097084,
+    "virtual_width": 1225.4528272534894,
+    "n_targets": 512
+   },
+   "M->P": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.12517427311930546,
+    "oof_r2_median": 0.10901719990043923,
+    "virtual_width": 773.4861079437215,
+    "n_targets": 512
+   },
+   "M->P_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.015572852002050074,
+    "oof_r2_median": -0.012525369544949982,
+    "virtual_width": 993.2623251494933,
+    "n_targets": 512
+   },
+   "RNA->P": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.30353651146178273,
+    "oof_r2_median": 0.30654245919657913,
+    "virtual_width": 955.8154919228213,
+    "n_targets": 512
+   },
+   "RNA->P_shuf": {
+    "lam": 10.0,
+    "oof_r2_mean": -0.014401523672661034,
+    "oof_r2_median": -0.013136095332496156,
+    "virtual_width": 971.0789984849014,
+    "n_targets": 512
+   },
+   "RNA->M": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.11759720955986683,
+    "oof_r2_median": 0.11056568233852049,
+    "virtual_width": 329.41163369085723,
+    "n_targets": 225
+   },
+   "RNA->M_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.010533343812501065,
+    "oof_r2_median": -0.007235234232577659,
+    "virtual_width": 567.7675501427916,
+    "n_targets": 225
+   },
+   "P->M": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.11350087823151439,
+    "oof_r2_median": 0.10310266659104139,
+    "virtual_width": 348.2422152685146,
+    "n_targets": 225
+   },
+   "P->M_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.010093356612126939,
+    "oof_r2_median": -0.006959938725213943,
+    "virtual_width": 588.7496756320629,
+    "n_targets": 225
+   },
+   "P->RNA": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.4597612360092088,
+    "oof_r2_median": 0.46677683795167796,
+    "virtual_width": 865.3517139157134,
+    "n_targets": 512
+   },
+   "P->RNA_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.013707827943989163,
+    "oof_r2_median": -0.009853560201436351,
+    "virtual_width": 1256.0802943174458,
+    "n_targets": 512
+   }
+  }
+ },
+ "fold-2/outer": {
+  "M": {
+   "features": 225,
+   "width": 415.0153584313433,
+   "target": 225
+  },
+  "RNA": {
+   "features": 3000,
+   "width": 5855.753808443314,
+   "target": 512,
+   "top_gene_index": 12387
+  },
+  "P": {
+   "candidates": 3365,
+   "value_width": 6353.942236271988,
+   "mask_width": 618.0,
+   "target": 512,
+   "fit_observed_frac": 0.8605782161454315,
+   "query_observed_frac": 0.8505412863510932
+  },
+  "n_fit": 337,
+  "n_query": 84,
+  "n_panel": 295,
+  "n_extra_saved": 19,
+  "kernel_block_max_abs_diff": 1.1102230246251565e-16,
+  "generators": {
+   "M->RNA": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.2730726165346653,
+    "oof_r2_median": 0.27959183982819846,
+    "virtual_width": 861.6062978877972,
+    "n_targets": 512
+   },
+   "M->RNA_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.004946492692676212,
+    "oof_r2_median": -0.0035633591099741846,
+    "virtual_width": 1262.4944586610527,
+    "n_targets": 512
+   },
+   "M->P": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.16014679768397222,
+    "oof_r2_median": 0.15312149151748977,
+    "virtual_width": 789.1300203045821,
+    "n_targets": 512
+   },
+   "M->P_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.005470139803671974,
+    "oof_r2_median": -0.003918431212580842,
+    "virtual_width": 1248.10324342984,
+    "n_targets": 512
+   },
+   "RNA->P": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.3326800414063879,
+    "oof_r2_median": 0.3428124930401198,
+    "virtual_width": 936.2868872815463,
+    "n_targets": 512
+   },
+   "RNA->P_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.005243125726817452,
+    "oof_r2_median": -0.003535178739971223,
+    "virtual_width": 1265.8517520802955,
+    "n_targets": 512
+   },
+   "RNA->M": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.13737057367582273,
+    "oof_r2_median": 0.12200650460573481,
+    "virtual_width": 319.42419586582287,
+    "n_targets": 225
+   },
+   "RNA->M_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.007045556663798307,
+    "oof_r2_median": -0.005551236272531845,
+    "virtual_width": 597.0712028034471,
+    "n_targets": 225
+   },
+   "P->M": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.12659913809026946,
+    "oof_r2_median": 0.11202639976384354,
+    "virtual_width": 296.5121159090444,
+    "n_targets": 225
+   },
+   "P->M_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.00692926913787659,
+    "oof_r2_median": -0.004776321398304972,
+    "virtual_width": 604.6339207990843,
+    "n_targets": 225
+   },
+   "P->RNA": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.4911758887122686,
+    "oof_r2_median": 0.4998332353483074,
+    "virtual_width": 875.6081133098119,
+    "n_targets": 512
+   },
+   "P->RNA_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.004811311214742262,
+    "oof_r2_median": -0.003227537470063435,
+    "virtual_width": 1334.6748865872382,
+    "n_targets": 512
+   }
+  }
+ },
+ "fold-3/inner-0": {
+  "M": {
+   "features": 225,
+   "width": 415.9458792437912,
+   "target": 225
+  },
+  "RNA": {
+   "features": 3000,
+   "width": 5912.621487039077,
+   "target": 512,
+   "top_gene_index": 12387
+  },
+  "P": {
+   "candidates": 3345,
+   "value_width": 6330.125072815041,
+   "mask_width": 610.0,
+   "target": 512,
+   "fit_observed_frac": 0.8605959142999502,
+   "query_observed_frac": 0.8592435404655135
+  },
+  "n_fit": 225,
+  "n_query": 112,
+  "n_panel": 295,
+  "n_extra_saved": 19,
+  "kernel_block_max_abs_diff": 1.1102230246251565e-16,
+  "generators": {
+   "M->RNA": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.24162903340301228,
+    "oof_r2_median": 0.2546396076137561,
+    "virtual_width": 852.579885310008,
+    "n_targets": 512
+   },
+   "M->RNA_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.013604005635915278,
+    "oof_r2_median": -0.00949511948725179,
+    "virtual_width": 1153.1998290961706,
+    "n_targets": 512
+   },
+   "M->P": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.1277757629081559,
+    "oof_r2_median": 0.11323454809605044,
+    "virtual_width": 790.4673987310068,
+    "n_targets": 512
+   },
+   "M->P_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.009864070926964397,
+    "oof_r2_median": -0.007189029787344037,
+    "virtual_width": 1300.6954680588406,
+    "n_targets": 512
+   },
+   "RNA->P": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.2708818651900773,
+    "oof_r2_median": 0.2599733855031514,
+    "virtual_width": 943.0850610067832,
+    "n_targets": 512
+   },
+   "RNA->P_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.00977101315167523,
+    "oof_r2_median": -0.007049015285302218,
+    "virtual_width": 1325.7538403395824,
+    "n_targets": 512
+   },
+   "RNA->M": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.1174990263447219,
+    "oof_r2_median": 0.09502722775129646,
+    "virtual_width": 327.9476151308651,
+    "n_targets": 225
+   },
+   "RNA->M_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.015778329369286744,
+    "oof_r2_median": -0.01140631374203016,
+    "virtual_width": 540.8296476382199,
+    "n_targets": 225
+   },
+   "P->M": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.11037442367038067,
+    "oof_r2_median": 0.08974026713780792,
+    "virtual_width": 319.46517161709085,
+    "n_targets": 225
+   },
+   "P->M_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.016145350266263608,
+    "oof_r2_median": -0.011417512878314495,
+    "virtual_width": 566.732524359345,
+    "n_targets": 225
+   },
+   "P->RNA": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.46117845959640724,
+    "oof_r2_median": 0.4712386922270441,
+    "virtual_width": 873.9793368733427,
+    "n_targets": 512
+   },
+   "P->RNA_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.013522377979040517,
+    "oof_r2_median": -0.009054372703726554,
+    "virtual_width": 1260.8627273012025,
+    "n_targets": 512
+   }
+  }
+ },
+ "fold-3/inner-1": {
+  "M": {
+   "features": 225,
+   "width": 424.27404133100083,
+   "target": 225
+  },
+  "RNA": {
+   "features": 3000,
+   "width": 5897.255641454975,
+   "target": 512,
+   "top_gene_index": 12387
+  },
+  "P": {
+   "candidates": 3365,
+   "value_width": 6429.97516567787,
+   "mask_width": 623.0,
+   "target": 512,
+   "fit_observed_frac": 0.8586851576688129,
+   "query_observed_frac": 0.856511356399915
+  },
+  "n_fit": 225,
+  "n_query": 112,
+  "n_panel": 295,
+  "n_extra_saved": 19,
+  "kernel_block_max_abs_diff": 1.1102230246251565e-16,
+  "generators": {
+   "M->RNA": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.2624730789689656,
+    "oof_r2_median": 0.26794928556717273,
+    "virtual_width": 855.7786181787737,
+    "n_targets": 512
+   },
+   "M->RNA_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.01319447941170011,
+    "oof_r2_median": -0.009922130703358012,
+    "virtual_width": 1118.023617590116,
+    "n_targets": 512
+   },
+   "M->P": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.1396293590353601,
+    "oof_r2_median": 0.12665858963299564,
+    "virtual_width": 777.5243497174622,
+    "n_targets": 512
+   },
+   "M->P_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.015508739065584514,
+    "oof_r2_median": -0.012122715019665664,
+    "virtual_width": 1274.303352327097,
+    "n_targets": 512
+   },
+   "RNA->P": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.26869223702925793,
+    "oof_r2_median": 0.26783190641652266,
+    "virtual_width": 916.479740344857,
+    "n_targets": 512
+   },
+   "RNA->P_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.015126208690382809,
+    "oof_r2_median": -0.012358422124193358,
+    "virtual_width": 1291.2740378440953,
+    "n_targets": 512
+   },
+   "RNA->M": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.1238736195618221,
+    "oof_r2_median": 0.10899679862662925,
+    "virtual_width": 315.3215946537543,
+    "n_targets": 225
+   },
+   "RNA->M_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.013856983642755812,
+    "oof_r2_median": -0.010610156347913291,
+    "virtual_width": 469.1136496066357,
+    "n_targets": 225
+   },
+   "P->M": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.12201052113113367,
+    "oof_r2_median": 0.10515227111700676,
+    "virtual_width": 337.31582037817196,
+    "n_targets": 225
+   },
+   "P->M_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.013686306864944918,
+    "oof_r2_median": -0.010300617999431383,
+    "virtual_width": 473.342510904582,
+    "n_targets": 225
+   },
+   "P->RNA": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.4472691496743093,
+    "oof_r2_median": 0.4454014207518117,
+    "virtual_width": 850.3933327902407,
+    "n_targets": 512
+   },
+   "P->RNA_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.012859411819301423,
+    "oof_r2_median": -0.009552209578559845,
+    "virtual_width": 1152.6578384721524,
+    "n_targets": 512
+   }
+  }
+ },
+ "fold-3/inner-2": {
+  "M": {
+   "features": 225,
+   "width": 412.7242882343531,
+   "target": 225
+  },
+  "RNA": {
+   "features": 3000,
+   "width": 5871.003811757024,
+   "target": 512,
+   "top_gene_index": 12387
+  },
+  "P": {
+   "candidates": 3353,
+   "value_width": 6347.87641119899,
+   "mask_width": 620.0,
+   "target": 512,
+   "fit_observed_frac": 0.8588231221507392,
+   "query_observed_frac": 0.8601279002557477
+  },
+  "n_fit": 224,
+  "n_query": 113,
+  "n_panel": 295,
+  "n_extra_saved": 19,
+  "kernel_block_max_abs_diff": 1.1102230246251565e-16,
+  "generators": {
+   "M->RNA": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.22623086800531547,
+    "oof_r2_median": 0.22991894854176081,
+    "virtual_width": 859.465332441006,
+    "n_targets": 512
+   },
+   "M->RNA_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.009114102734423056,
+    "oof_r2_median": -0.006328542470270815,
+    "virtual_width": 1316.690256889197,
+    "n_targets": 512
+   },
+   "M->P": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.12451811623357956,
+    "oof_r2_median": 0.11918643315851479,
+    "virtual_width": 794.3491654473308,
+    "n_targets": 512
+   },
+   "M->P_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.010885139509167276,
+    "oof_r2_median": -0.00855260447845596,
+    "virtual_width": 1245.4493272145232,
+    "n_targets": 512
+   },
+   "RNA->P": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.2790171836798433,
+    "oof_r2_median": 0.28017626724761424,
+    "virtual_width": 912.7263882553493,
+    "n_targets": 512
+   },
+   "RNA->P_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.010767910604675126,
+    "oof_r2_median": -0.008332432726448236,
+    "virtual_width": 1267.8650094765692,
+    "n_targets": 512
+   },
+   "RNA->M": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.10758529262644585,
+    "oof_r2_median": 0.09082503321817359,
+    "virtual_width": 314.02354232753885,
+    "n_targets": 225
+   },
+   "RNA->M_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.011805861800130992,
+    "oof_r2_median": -0.008276836534665488,
+    "virtual_width": 583.8413706787233,
+    "n_targets": 225
+   },
+   "P->M": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.09103774637267711,
+    "oof_r2_median": 0.07265793000355025,
+    "virtual_width": 314.50390815903484,
+    "n_targets": 225
+   },
+   "P->M_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.011608328586373434,
+    "oof_r2_median": -0.008216939832056402,
+    "virtual_width": 582.7763333909784,
+    "n_targets": 225
+   },
+   "P->RNA": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.44526814745674287,
+    "oof_r2_median": 0.44417942700381235,
+    "virtual_width": 851.2611192223503,
+    "n_targets": 512
+   },
+   "P->RNA_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.008870376260934416,
+    "oof_r2_median": -0.006119584138766787,
+    "virtual_width": 1309.080580070401,
+    "n_targets": 512
+   }
+  }
+ },
+ "fold-3/outer": {
+  "M": {
+   "features": 225,
+   "width": 416.7918404350222,
+   "target": 225
+  },
+  "RNA": {
+   "features": 3000,
+   "width": 5877.662434446168,
+   "target": 512,
+   "top_gene_index": 12387
+  },
+  "P": {
+   "candidates": 3348,
+   "value_width": 6343.66051811981,
+   "mask_width": 614.0,
+   "target": 512,
+   "fit_observed_frac": 0.8599323215241661,
+   "query_observed_frac": 0.8623129658075894
+  },
+  "n_fit": 337,
+  "n_query": 84,
+  "n_panel": 295,
+  "n_extra_saved": 19,
+  "kernel_block_max_abs_diff": 1.1102230246251565e-16,
+  "generators": {
+   "M->RNA": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.2788818145576337,
+    "oof_r2_median": 0.28522114534240284,
+    "virtual_width": 853.9548802310621,
+    "n_targets": 512
+   },
+   "M->RNA_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.005607646672140972,
+    "oof_r2_median": -0.004392916080135922,
+    "virtual_width": 1252.1113755918136,
+    "n_targets": 512
+   },
+   "M->P": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.15556329194711804,
+    "oof_r2_median": 0.14818790565645806,
+    "virtual_width": 786.5369729335416,
+    "n_targets": 512
+   },
+   "M->P_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.007117952161176746,
+    "oof_r2_median": -0.00563660609319927,
+    "virtual_width": 1221.6274520342508,
+    "n_targets": 512
+   },
+   "RNA->P": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.3091953834190437,
+    "oof_r2_median": 0.3103529397303492,
+    "virtual_width": 928.920228542933,
+    "n_targets": 512
+   },
+   "RNA->P_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.007071088568139412,
+    "oof_r2_median": -0.005776066981506678,
+    "virtual_width": 1225.2940710856305,
+    "n_targets": 512
+   },
+   "RNA->M": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.13871785682188256,
+    "oof_r2_median": 0.1195296670675623,
+    "virtual_width": 329.18523264708057,
+    "n_targets": 225
+   },
+   "RNA->M_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.00450778646203736,
+    "oof_r2_median": -0.0029021993616458186,
+    "virtual_width": 602.055767239516,
+    "n_targets": 225
+   },
+   "P->M": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.12561965947262388,
+    "oof_r2_median": 0.11247345955138999,
+    "virtual_width": 346.3344451550991,
+    "n_targets": 225
+   },
+   "P->M_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.004672293820096979,
+    "oof_r2_median": -0.003083245265137924,
+    "virtual_width": 625.8492844317182,
+    "n_targets": 225
+   },
+   "P->RNA": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.493353503627319,
+    "oof_r2_median": 0.5009055260628323,
+    "virtual_width": 882.7564886974665,
+    "n_targets": 512
+   },
+   "P->RNA_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.005779476032944462,
+    "oof_r2_median": -0.004602824498856739,
+    "virtual_width": 1323.1905545039995,
+    "n_targets": 512
+   }
+  }
+ },
+ "fold-4/inner-0": {
+  "M": {
+   "features": 225,
+   "width": 418.803573711539,
+   "target": 225
+  },
+  "RNA": {
+   "features": 3000,
+   "width": 5854.215972492384,
+   "target": 512,
+   "top_gene_index": 12387
+  },
+  "P": {
+   "candidates": 3367,
+   "value_width": 6379.659398047828,
+   "mask_width": 628.0,
+   "target": 512,
+   "fit_observed_frac": 0.8585169785169785,
+   "query_observed_frac": 0.8554244982816411
+  },
+  "n_fit": 225,
+  "n_query": 112,
+  "n_panel": 295,
+  "n_extra_saved": 19,
+  "kernel_block_max_abs_diff": 1.1102230246251565e-16,
+  "generators": {
+   "M->RNA": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.25285404435833225,
+    "oof_r2_median": 0.2551433548454608,
+    "virtual_width": 860.8324810703496,
+    "n_targets": 512
+   },
+   "M->RNA_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.010621970636814764,
+    "oof_r2_median": -0.008167494025922206,
+    "virtual_width": 1330.8078447734297,
+    "n_targets": 512
+   },
+   "M->P": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.14527224130089503,
+    "oof_r2_median": 0.13737267297696815,
+    "virtual_width": 773.1018932812901,
+    "n_targets": 512
+   },
+   "M->P_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.0161763655688529,
+    "oof_r2_median": -0.01347174608478674,
+    "virtual_width": 1175.839706190975,
+    "n_targets": 512
+   },
+   "RNA->P": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.3127495942485021,
+    "oof_r2_median": 0.31778138318192717,
+    "virtual_width": 926.8052210207118,
+    "n_targets": 512
+   },
+   "RNA->P_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.015670189100612048,
+    "oof_r2_median": -0.012586372143650215,
+    "virtual_width": 1139.6470012657214,
+    "n_targets": 512
+   },
+   "RNA->M": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.12563318723306643,
+    "oof_r2_median": 0.10397305923496958,
+    "virtual_width": 328.2744003049032,
+    "n_targets": 225
+   },
+   "RNA->M_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.00916481906084156,
+    "oof_r2_median": -0.00679814823365521,
+    "virtual_width": 564.3084450327399,
+    "n_targets": 225
+   },
+   "P->M": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.10376206256840678,
+    "oof_r2_median": 0.08177215405399463,
+    "virtual_width": 350.96774615147353,
+    "n_targets": 225
+   },
+   "P->M_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.009277269574676523,
+    "oof_r2_median": -0.00693944274661118,
+    "virtual_width": 564.1888835071811,
+    "n_targets": 225
+   },
+   "P->RNA": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.46769051757684266,
+    "oof_r2_median": 0.4761879679875106,
+    "virtual_width": 881.242802807763,
+    "n_targets": 512
+   },
+   "P->RNA_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.010572173295496893,
+    "oof_r2_median": -0.007719522482752428,
+    "virtual_width": 1374.472316375076,
+    "n_targets": 512
+   }
+  }
+ },
+ "fold-4/inner-1": {
+  "M": {
+   "features": 225,
+   "width": 422.0242354452255,
+   "target": 225
+  },
+  "RNA": {
+   "features": 3000,
+   "width": 5909.571590571821,
+   "target": 512,
+   "top_gene_index": 12387
+  },
+  "P": {
+   "candidates": 3343,
+   "value_width": 6391.170513891426,
+   "mask_width": 615.0,
+   "target": 512,
+   "fit_observed_frac": 0.8604673114634227,
+   "query_observed_frac": 0.8593462886201444
+  },
+  "n_fit": 225,
+  "n_query": 112,
+  "n_panel": 295,
+  "n_extra_saved": 19,
+  "kernel_block_max_abs_diff": 1.1102230246251565e-16,
+  "generators": {
+   "M->RNA": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.23327744221706315,
+    "oof_r2_median": 0.2334715119579307,
+    "virtual_width": 870.1179901074222,
+    "n_targets": 512
+   },
+   "M->RNA_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.008729784836070589,
+    "oof_r2_median": -0.005831839498372404,
+    "virtual_width": 1350.6783272871971,
+    "n_targets": 512
+   },
+   "M->P": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.12997953201599516,
+    "oof_r2_median": 0.1179433143219929,
+    "virtual_width": 734.1761285888183,
+    "n_targets": 512
+   },
+   "M->P_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.008177382272775702,
+    "oof_r2_median": -0.005574133298817063,
+    "virtual_width": 1375.184721847564,
+    "n_targets": 512
+   },
+   "RNA->P": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.29324462596728124,
+    "oof_r2_median": 0.3027047179259152,
+    "virtual_width": 927.0412945608841,
+    "n_targets": 512
+   },
+   "RNA->P_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.008532170395001593,
+    "oof_r2_median": -0.006255657231214351,
+    "virtual_width": 1401.826548073154,
+    "n_targets": 512
+   },
+   "RNA->M": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.13909970268666488,
+    "oof_r2_median": 0.11769360208249069,
+    "virtual_width": 307.0753011992118,
+    "n_targets": 225
+   },
+   "RNA->M_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.00777577101705243,
+    "oof_r2_median": -0.005164145702690748,
+    "virtual_width": 514.5227124172769,
+    "n_targets": 225
+   },
+   "P->M": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.11746665099613886,
+    "oof_r2_median": 0.10176044455305555,
+    "virtual_width": 298.5980627366948,
+    "n_targets": 225
+   },
+   "P->M_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.007585412888312803,
+    "oof_r2_median": -0.005258344145672611,
+    "virtual_width": 527.8145078221473,
+    "n_targets": 225
+   },
+   "P->RNA": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.4248725243756708,
+    "oof_r2_median": 0.4296676908935722,
+    "virtual_width": 886.449346439543,
+    "n_targets": 512
+   },
+   "P->RNA_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.00909152758246989,
+    "oof_r2_median": -0.0066063003580209,
+    "virtual_width": 1371.8278968453478,
+    "n_targets": 512
+   }
+  }
+ },
+ "fold-4/inner-2": {
+  "M": {
+   "features": 225,
+   "width": 421.3358990334939,
+   "target": 225
+  },
+  "RNA": {
+   "features": 3000,
+   "width": 5930.126267831074,
+   "target": 512,
+   "top_gene_index": 12387
+  },
+  "P": {
+   "candidates": 3351,
+   "value_width": 6334.558786066224,
+   "mask_width": 618.0,
+   "target": 512,
+   "fit_observed_frac": 0.8586695869036961,
+   "query_observed_frac": 0.8603560421799858
+  },
+  "n_fit": 224,
+  "n_query": 113,
+  "n_panel": 295,
+  "n_extra_saved": 19,
+  "kernel_block_max_abs_diff": 1.1102230246251565e-16,
+  "generators": {
+   "M->RNA": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.24786966661624876,
+    "oof_r2_median": 0.2491242734041333,
+    "virtual_width": 857.9159213669482,
+    "n_targets": 512
+   },
+   "M->RNA_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.00591003343030591,
+    "oof_r2_median": -0.004286603072148898,
+    "virtual_width": 1318.2913514256202,
+    "n_targets": 512
+   },
+   "M->P": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.1176262144546661,
+    "oof_r2_median": 0.107735618298965,
+    "virtual_width": 760.3128424412033,
+    "n_targets": 512
+   },
+   "M->P_shuf": {
+    "lam": 10.0,
+    "oof_r2_mean": -0.008054171704223331,
+    "oof_r2_median": -0.00783870153064925,
+    "virtual_width": 902.193598208153,
+    "n_targets": 512
+   },
+   "RNA->P": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.27469619056217054,
+    "oof_r2_median": 0.26398848976309264,
+    "virtual_width": 927.5996798094246,
+    "n_targets": 512
+   },
+   "RNA->P_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.008308866784826056,
+    "oof_r2_median": -0.006660032447213027,
+    "virtual_width": 1215.804124708787,
+    "n_targets": 512
+   },
+   "RNA->M": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.12020482349058845,
+    "oof_r2_median": 0.10050553102266357,
+    "virtual_width": 329.32264877642393,
+    "n_targets": 225
+   },
+   "RNA->M_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.012973130533962205,
+    "oof_r2_median": -0.008589302140736832,
+    "virtual_width": 510.9176953315591,
+    "n_targets": 225
+   },
+   "P->M": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.08886855959718312,
+    "oof_r2_median": 0.06948253265968707,
+    "virtual_width": 325.5929159312656,
+    "n_targets": 225
+   },
+   "P->M_shuf": {
+    "lam": 10.0,
+    "oof_r2_mean": -0.012745156952493022,
+    "oof_r2_median": -0.00970752838194544,
+    "virtual_width": 449.00321314064627,
+    "n_targets": 225
+   },
+   "P->RNA": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.4569058057896449,
+    "oof_r2_median": 0.4606160818636402,
+    "virtual_width": 886.3150003851767,
+    "n_targets": 512
+   },
+   "P->RNA_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.00615599211129324,
+    "oof_r2_median": -0.004440124421603575,
+    "virtual_width": 1394.097395810069,
+    "n_targets": 512
+   }
+  }
+ },
+ "fold-4/outer": {
+  "M": {
+   "features": 225,
+   "width": 419.33890226824633,
+   "target": 225
+  },
+  "RNA": {
+   "features": 3000,
+   "width": 5885.878194260113,
+   "target": 512,
+   "top_gene_index": 12387
+  },
+  "P": {
+   "candidates": 3355,
+   "value_width": 6357.357979754788,
+   "mask_width": 621.0,
+   "target": 512,
+   "fit_observed_frac": 0.8589279475692863,
+   "query_observed_frac": 0.8626463700234192
+  },
+  "n_fit": 337,
+  "n_query": 84,
+  "n_panel": 295,
+  "n_extra_saved": 19,
+  "kernel_block_max_abs_diff": 1.1102230246251565e-16,
+  "generators": {
+   "M->RNA": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.266980048208594,
+    "oof_r2_median": 0.2751537610958283,
+    "virtual_width": 854.1304592537447,
+    "n_targets": 512
+   },
+   "M->RNA_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.007298511114187242,
+    "oof_r2_median": -0.0059082197592574826,
+    "virtual_width": 1325.3783517575898,
+    "n_targets": 512
+   },
+   "M->P": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.16070726079293152,
+    "oof_r2_median": 0.15409079209443427,
+    "virtual_width": 766.2870406071274,
+    "n_targets": 512
+   },
+   "M->P_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.010406498073244997,
+    "oof_r2_median": -0.008242030238971187,
+    "virtual_width": 1239.680878772353,
+    "n_targets": 512
+   },
+   "RNA->P": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.327142547339235,
+    "oof_r2_median": 0.3319243361202294,
+    "virtual_width": 932.6974144249739,
+    "n_targets": 512
+   },
+   "RNA->P_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.009941945156491955,
+    "oof_r2_median": -0.0075573059379494545,
+    "virtual_width": 1255.9090769989984,
+    "n_targets": 512
+   },
+   "RNA->M": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.13403619421903884,
+    "oof_r2_median": 0.11366695208813538,
+    "virtual_width": 317.2525704744413,
+    "n_targets": 225
+   },
+   "RNA->M_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.007481879057880348,
+    "oof_r2_median": -0.0052618253999112685,
+    "virtual_width": 575.6152680286813,
+    "n_targets": 225
+   },
+   "P->M": {
+    "lam": 1.0,
+    "oof_r2_mean": 0.11674280297313101,
+    "oof_r2_median": 0.09605422979319678,
+    "virtual_width": 305.6591356921349,
+    "n_targets": 225
+   },
+   "P->M_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.0075515604576365455,
+    "oof_r2_median": -0.005662722640033424,
+    "virtual_width": 595.1372433205679,
+    "n_targets": 225
+   },
+   "P->RNA": {
+    "lam": 0.1,
+    "oof_r2_mean": 0.4929911496229146,
+    "oof_r2_median": 0.5035176162144364,
+    "virtual_width": 903.96745476757,
+    "n_targets": 512
+   },
+   "P->RNA_shuf": {
+    "lam": 100.0,
+    "oof_r2_mean": -0.007201750927699601,
+    "oof_r2_median": -0.005647882762714107,
+    "virtual_width": 1334.5917342984203,
+    "n_targets": 512
+   }
+  }
+ }
+}

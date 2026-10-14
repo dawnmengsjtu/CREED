@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-14",
+  "source_archive": "08_Methods_S1_code.zip",
+  "source_archive_sha256": "338d3e4959e5d2b379685f62ce800ae6adc9067a47daf389433d6bdc857b38db",
+  "source_files": 327,
+  "data_record_id": "23299706",
+  "data_doi": "10.5281/zenodo.23299706",
+  "data_public_access": "Not available in the unauthenticated check on 2026-10-14 (HTTP 404); reserved DOI, publication pending.",
+  "changes_to_original_code": false,
+  "portable_validation": "cross-layer matrix, both scenarios, all 5 folds",
+  "license_status": "owner explicitly deferred software licensing on 2026-10-14; package preparation only; no added license grant",
+  "citation_status": "actual author list pending; template only",
+  "run_records": 174,
+  "figure_data_stages_verified": 8,
+  "final_figure_rendering_verified": false
+}

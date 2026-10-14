@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "kind": "real deposited predictions; no retraining",
+  "verified_input_files": 12,
+  "results": {
+    "new_cell": {
+      "fold_arm_scores": 145,
+      "max_absolute_score_error": 0.0
+    },
+    "tissue": {
+      "fold_arm_scores": 120,
+      "max_absolute_score_error": 0.0
+    }
+  }
+}

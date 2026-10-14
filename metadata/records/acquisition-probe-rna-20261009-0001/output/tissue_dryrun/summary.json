@@ -1,0 +1,17 @@
+{
+ "scenario": "tissue",
+ "stage": "dryrun",
+ "reproduction": {
+  "grid_max_abs_diff": {},
+  "pred_max_abs_diff": {},
+  "matrix_pred_max_abs_diff": {},
+  "matrix_alpha_selection_mismatches": {},
+  "inner_loss_max_abs_diff_vs_matrix": {
+   "M+vRNA": 7.460698725481052e-14,
+   "M+RNA": 6.039613253960852e-14
+  },
+  "kernel_block_max_abs_diff": 1.1102230246251565e-16,
+  "passed_inner": true
+ },
+ "seconds": 6.533356306143105
+}

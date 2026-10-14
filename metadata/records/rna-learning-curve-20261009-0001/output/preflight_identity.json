@@ -1,0 +1,526 @@
+{
+ "n421": 421,
+ "rna421_sources": {
+  "Sanger RNASeq": 54,
+  "Broad (CCLE) RNASeq": 367
+ },
+ "model_metadata_unique_for_421": 420,
+ "model_metadata_missing_or_ambiguous_421": 1,
+ "rna_gdsc_extra354": {
+  "n": 354,
+  "unique_sample_ids": 354,
+  "sample_overlap_421": 0,
+  "own_patient_ids_unique": 354,
+  "own_patient_overlap_421_modelcsv": 0,
+  "modelcsv_patient_overlap_421": 0,
+  "modelcsv_ach_overlap_421": 0,
+  "own_model_ids_overlap_421": 0,
+  "stripped_name_overlap_421": 0,
+  "modelcsv_missing_or_ambiguous": 0,
+  "tissues_known": 266,
+  "tissues_not_in_421_vocab": [],
+  "rna_sources": {
+   "Sanger RNASeq": 332,
+   "Broad (CCLE) RNASeq": 22
+  },
+  "auc_observed": 85841,
+  "rows_with_any_auc": 354
+ },
+ "m_rna_extra66": {
+  "n": 66,
+  "unique_sample_ids": 66,
+  "sample_overlap_421": 0,
+  "own_patient_ids_unique": 66,
+  "own_patient_overlap_421_modelcsv": 0,
+  "modelcsv_patient_overlap_421": 0,
+  "modelcsv_ach_overlap_421": 0,
+  "own_model_ids_overlap_421": 0,
+  "stripped_name_overlap_421": 0,
+  "modelcsv_missing_or_ambiguous": 0,
+  "tissues_known": 62,
+  "tissues_not_in_421_vocab": [],
+  "rna_sources": {
+   "Broad (CCLE) RNASeq": 58,
+   "Sanger RNASeq": 8
+  }
+ },
+ "m_gdsc_extra19": {
+  "n": 19,
+  "unique_sample_ids": 19,
+  "sample_overlap_421": 0,
+  "own_patient_ids_unique": 19,
+  "own_patient_overlap_421_modelcsv": 0,
+  "modelcsv_patient_overlap_421": 0,
+  "modelcsv_ach_overlap_421": 0,
+  "own_model_ids_overlap_421": 0,
+  "stripped_name_overlap_421": 0,
+  "modelcsv_missing_or_ambiguous": 0,
+  "tissues_known": 18,
+  "tissues_not_in_421_vocab": [],
+  "auc_observed": 4485,
+  "rows_with_any_auc": 19
+ },
+ "cross": {
+  "s66_and_s19": 18,
+  "s66_and_s354": 18,
+  "s19_and_s354": 18,
+  "pt66_and_pt19": 18,
+  "pt66_and_pt354": 38,
+  "pt19_and_pt354": 18
+ },
+ "pseudo_candidates": {
+  "n": 48,
+  "patient_overlap_with_19": 0,
+  "patient_overlap_with_354": 20,
+  "sources": {
+   "Broad (CCLE) RNASeq": 44,
+   "Sanger RNASeq": 4
+  },
+  "tissues_known": 45
+ },
+ "tissue_counts_354": {
+  "": 88,
+  "Haematopoietic and Lymphoid": 66,
+  "Lung": 53,
+  "Bone": 28,
+  "Skin": 21,
+  "Central Nervous System": 20,
+  "Peripheral Nervous System": 19,
+  "Ovary": 12,
+  "Large Intestine": 10,
+  "Breast": 10,
+  "Soft Tissue": 8,
+  "Thyroid": 6,
+  "Pancreas": 4,
+  "Biliary Tract": 3,
+  "Liver": 2,
+  "Bladder": 2,
+  "Prostate": 2
+ },
+ "tissue_counts_421": {
+  "Lung": 93,
+  "Haematopoietic and Lymphoid": 70,
+  "Breast": 29,
+  "Large Intestine": 27,
+  "Skin": 23,
+  "Central Nervous System": 23,
+  "Ovary": 20,
+  "Pancreas": 19,
+  "Esophagus": 17,
+  "Stomach": 15,
+  "Kidney": 11,
+  "Bladder": 11,
+  "Head and Neck": 10,
+  "Liver": 10,
+  "Peripheral Nervous System": 8,
+  "Bone": 8,
+  "Soft Tissue": 8,
+  "Thyroid": 7,
+  "Endometrium": 6,
+  "Prostate": 4,
+  "Biliary Tract": 1,
+  "Other tissue": 1
+ },
+ "banks": {
+  "new_cell/fold-0/inner-0": {
+   "fit": 225,
+   "query": 112,
+   "panel": 295,
+   "extra19": 19,
+   "extra354": 354,
+   "pseudo48": 48,
+   "fit_sanger": 30,
+   "fit_query_overlap": 0
+  },
+  "new_cell/fold-0/inner-1": {
+   "fit": 225,
+   "query": 112,
+   "panel": 295,
+   "extra19": 19,
+   "extra354": 354,
+   "pseudo48": 48,
+   "fit_sanger": 31,
+   "fit_query_overlap": 0
+  },
+  "new_cell/fold-0/inner-2": {
+   "fit": 224,
+   "query": 113,
+   "panel": 295,
+   "extra19": 19,
+   "extra354": 354,
+   "pseudo48": 48,
+   "fit_sanger": 27,
+   "fit_query_overlap": 0
+  },
+  "new_cell/fold-0/outer": {
+   "fit": 337,
+   "query": 84,
+   "panel": 295,
+   "extra19": 19,
+   "extra354": 354,
+   "pseudo48": 48,
+   "fit_sanger": 44,
+   "fit_query_overlap": 0
+  },
+  "new_cell/fold-1/inner-0": {
+   "fit": 224,
+   "query": 112,
+   "panel": 295,
+   "extra19": 19,
+   "extra354": 354,
+   "pseudo48": 48,
+   "fit_sanger": 25,
+   "fit_query_overlap": 0
+  },
+  "new_cell/fold-1/inner-1": {
+   "fit": 224,
+   "query": 112,
+   "panel": 295,
+   "extra19": 19,
+   "extra354": 354,
+   "pseudo48": 48,
+   "fit_sanger": 27,
+   "fit_query_overlap": 0
+  },
+  "new_cell/fold-1/inner-2": {
+   "fit": 224,
+   "query": 112,
+   "panel": 295,
+   "extra19": 19,
+   "extra354": 354,
+   "pseudo48": 48,
+   "fit_sanger": 26,
+   "fit_query_overlap": 0
+  },
+  "new_cell/fold-1/outer": {
+   "fit": 336,
+   "query": 85,
+   "panel": 295,
+   "extra19": 19,
+   "extra354": 354,
+   "pseudo48": 48,
+   "fit_sanger": 39,
+   "fit_query_overlap": 0
+  },
+  "new_cell/fold-2/inner-0": {
+   "fit": 225,
+   "query": 112,
+   "panel": 295,
+   "extra19": 19,
+   "extra354": 354,
+   "pseudo48": 48,
+   "fit_sanger": 30,
+   "fit_query_overlap": 0
+  },
+  "new_cell/fold-2/inner-1": {
+   "fit": 225,
+   "query": 112,
+   "panel": 295,
+   "extra19": 19,
+   "extra354": 354,
+   "pseudo48": 48,
+   "fit_sanger": 33,
+   "fit_query_overlap": 0
+  },
+  "new_cell/fold-2/inner-2": {
+   "fit": 224,
+   "query": 113,
+   "panel": 295,
+   "extra19": 19,
+   "extra354": 354,
+   "pseudo48": 48,
+   "fit_sanger": 27,
+   "fit_query_overlap": 0
+  },
+  "new_cell/fold-2/outer": {
+   "fit": 337,
+   "query": 84,
+   "panel": 295,
+   "extra19": 19,
+   "extra354": 354,
+   "pseudo48": 48,
+   "fit_sanger": 45,
+   "fit_query_overlap": 0
+  },
+  "new_cell/fold-3/inner-0": {
+   "fit": 225,
+   "query": 112,
+   "panel": 295,
+   "extra19": 19,
+   "extra354": 354,
+   "pseudo48": 48,
+   "fit_sanger": 27,
+   "fit_query_overlap": 0
+  },
+  "new_cell/fold-3/inner-1": {
+   "fit": 225,
+   "query": 112,
+   "panel": 295,
+   "extra19": 19,
+   "extra354": 354,
+   "pseudo48": 48,
+   "fit_sanger": 33,
+   "fit_query_overlap": 0
+  },
+  "new_cell/fold-3/inner-2": {
+   "fit": 224,
+   "query": 113,
+   "panel": 295,
+   "extra19": 19,
+   "extra354": 354,
+   "pseudo48": 48,
+   "fit_sanger": 28,
+   "fit_query_overlap": 0
+  },
+  "new_cell/fold-3/outer": {
+   "fit": 337,
+   "query": 84,
+   "panel": 295,
+   "extra19": 19,
+   "extra354": 354,
+   "pseudo48": 48,
+   "fit_sanger": 44,
+   "fit_query_overlap": 0
+  },
+  "new_cell/fold-4/inner-0": {
+   "fit": 225,
+   "query": 112,
+   "panel": 295,
+   "extra19": 19,
+   "extra354": 354,
+   "pseudo48": 48,
+   "fit_sanger": 28,
+   "fit_query_overlap": 0
+  },
+  "new_cell/fold-4/inner-1": {
+   "fit": 225,
+   "query": 112,
+   "panel": 295,
+   "extra19": 19,
+   "extra354": 354,
+   "pseudo48": 48,
+   "fit_sanger": 33,
+   "fit_query_overlap": 0
+  },
+  "new_cell/fold-4/inner-2": {
+   "fit": 224,
+   "query": 113,
+   "panel": 295,
+   "extra19": 19,
+   "extra354": 354,
+   "pseudo48": 48,
+   "fit_sanger": 27,
+   "fit_query_overlap": 0
+  },
+  "new_cell/fold-4/outer": {
+   "fit": 337,
+   "query": 84,
+   "panel": 295,
+   "extra19": 19,
+   "extra354": 354,
+   "pseudo48": 48,
+   "fit_sanger": 44,
+   "fit_query_overlap": 0
+  },
+  "tissue/fold-0/inner-0": {
+   "fit": 218,
+   "query": 110,
+   "panel": 281,
+   "extra19": 8,
+   "extra354": 135,
+   "pseudo48": 23,
+   "fit_sanger": 36,
+   "fit_query_overlap": 0
+  },
+  "tissue/fold-0/inner-1": {
+   "fit": 219,
+   "query": 109,
+   "panel": 281,
+   "extra19": 8,
+   "extra354": 139,
+   "pseudo48": 30,
+   "fit_sanger": 37,
+   "fit_query_overlap": 0
+  },
+  "tissue/fold-0/inner-2": {
+   "fit": 219,
+   "query": 109,
+   "panel": 281,
+   "extra19": 10,
+   "extra354": 152,
+   "pseudo48": 23,
+   "fit_sanger": 27,
+   "fit_query_overlap": 0
+  },
+  "tissue/fold-0/outer": {
+   "fit": 328,
+   "query": 93,
+   "panel": 281,
+   "extra19": 13,
+   "extra354": 213,
+   "pseudo48": 38,
+   "fit_sanger": 50,
+   "fit_query_overlap": 0
+  },
+  "tissue/fold-1/inner-0": {
+   "fit": 225,
+   "query": 112,
+   "panel": 285,
+   "extra19": 8,
+   "extra354": 108,
+   "pseudo48": 25,
+   "fit_sanger": 37,
+   "fit_query_overlap": 0
+  },
+  "tissue/fold-1/inner-1": {
+   "fit": 225,
+   "query": 112,
+   "panel": 285,
+   "extra19": 8,
+   "extra354": 131,
+   "pseudo48": 22,
+   "fit_sanger": 30,
+   "fit_query_overlap": 0
+  },
+  "tissue/fold-1/inner-2": {
+   "fit": 224,
+   "query": 113,
+   "panel": 285,
+   "extra19": 10,
+   "extra354": 105,
+   "pseudo48": 17,
+   "fit_sanger": 15,
+   "fit_query_overlap": 0
+  },
+  "tissue/fold-1/outer": {
+   "fit": 337,
+   "query": 84,
+   "panel": 285,
+   "extra19": 13,
+   "extra354": 172,
+   "pseudo48": 32,
+   "fit_sanger": 41,
+   "fit_query_overlap": 0
+  },
+  "tissue/fold-2/inner-0": {
+   "fit": 226,
+   "query": 113,
+   "panel": 282,
+   "extra19": 10,
+   "extra354": 163,
+   "pseudo48": 28,
+   "fit_sanger": 43,
+   "fit_query_overlap": 0
+  },
+  "tissue/fold-2/inner-1": {
+   "fit": 227,
+   "query": 112,
+   "panel": 282,
+   "extra19": 9,
+   "extra354": 145,
+   "pseudo48": 24,
+   "fit_sanger": 29,
+   "fit_query_overlap": 0
+  },
+  "tissue/fold-2/inner-2": {
+   "fit": 225,
+   "query": 114,
+   "panel": 282,
+   "extra19": 11,
+   "extra354": 150,
+   "pseudo48": 24,
+   "fit_sanger": 22,
+   "fit_query_overlap": 0
+  },
+  "tissue/fold-2/outer": {
+   "fit": 339,
+   "query": 82,
+   "panel": 282,
+   "extra19": 15,
+   "extra354": 229,
+   "pseudo48": 38,
+   "fit_sanger": 47,
+   "fit_query_overlap": 0
+  },
+  "tissue/fold-3/inner-0": {
+   "fit": 228,
+   "query": 112,
+   "panel": 285,
+   "extra19": 11,
+   "extra354": 159,
+   "pseudo48": 24,
+   "fit_sanger": 31,
+   "fit_query_overlap": 0
+  },
+  "tissue/fold-3/inner-1": {
+   "fit": 226,
+   "query": 114,
+   "panel": 285,
+   "extra19": 10,
+   "extra354": 133,
+   "pseudo48": 20,
+   "fit_sanger": 19,
+   "fit_query_overlap": 0
+  },
+  "tissue/fold-3/inner-2": {
+   "fit": 226,
+   "query": 114,
+   "panel": 285,
+   "extra19": 11,
+   "extra354": 174,
+   "pseudo48": 28,
+   "fit_sanger": 20,
+   "fit_query_overlap": 0
+  },
+  "tissue/fold-3/outer": {
+   "fit": 340,
+   "query": 81,
+   "panel": 285,
+   "extra19": 16,
+   "extra354": 233,
+   "pseudo48": 36,
+   "fit_sanger": 35,
+   "fit_query_overlap": 0
+  },
+  "tissue/fold-4/inner-0": {
+   "fit": 228,
+   "query": 112,
+   "panel": 285,
+   "extra19": 10,
+   "extra354": 153,
+   "pseudo48": 29,
+   "fit_sanger": 39,
+   "fit_query_overlap": 0
+  },
+  "tissue/fold-4/inner-1": {
+   "fit": 226,
+   "query": 114,
+   "panel": 285,
+   "extra19": 9,
+   "extra354": 117,
+   "pseudo48": 20,
+   "fit_sanger": 27,
+   "fit_query_overlap": 0
+  },
+  "tissue/fold-4/inner-2": {
+   "fit": 226,
+   "query": 114,
+   "panel": 285,
+   "extra19": 11,
+   "extra354": 164,
+   "pseudo48": 23,
+   "fit_sanger": 20,
+   "fit_query_overlap": 0
+  },
+  "tissue/fold-4/outer": {
+   "fit": 340,
+   "query": 81,
+   "panel": 285,
+   "extra19": 15,
+   "extra354": 217,
+   "pseudo48": 36,
+   "fit_sanger": 43,
+   "fit_query_overlap": 0
+  }
+ }
+}

@@ -1,0 +1,65 @@
+{
+ "scenario": "new_cell",
+ "stage": "main",
+ "script_sha256": "678449a5579f12c0093b4083cce2b968bfb734beeece8fefb5f2f0b82ba8727e",
+ "source_sha256": "52d71517a8952e83a1603cd831f09449544102d0ca5ff829ff01be9bf79cd637",
+ "extra_sha256": "d4e7dc603f491217805a1d06b673f8c2662a8c0f2ad77ec875f7d7868526384c",
+ "rna_sha256": "5eb953ea12089eea6cdc5a7892646d3b75532429cfbeeefa8832d9b4a5f718cf",
+ "alphas": [
+  0.1,
+  1.0,
+  10.0,
+  100.0
+ ],
+ "lambdas": [
+  0.1,
+  1.0,
+  10.0,
+  100.0
+ ],
+ "ks": [
+  8,
+  16,
+  32,
+  64,
+  128,
+  256
+ ],
+ "seeds": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "top_genes": 3000,
+ "top_target": 512,
+ "n_sub": 3,
+ "heads": [
+  "H_meas",
+  "H_virt"
+ ],
+ "policies": [
+  "static",
+  "variance",
+  "mean_expr",
+  "oracle_static",
+  "random_s0",
+  "random_s1",
+  "random_s2",
+  "random_s3",
+  "random_s4",
+  "adaptive",
+  "adaptive_surprise"
+ ],
+ "matrix_targets": {
+  "new_cell": {
+   "headroom": 3.078810120332858,
+   "recovered": 1.0555808085535539
+  },
+  "tissue": {
+   "headroom": 2.1947192412669287,
+   "recovered": 0.716058946743318
+  }
+ }
+}

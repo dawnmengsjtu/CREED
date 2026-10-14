@@ -1,0 +1,1758 @@
+{
+ "status": "extracted",
+ "run": "generator-fullpool-20261009-0001",
+ "script_sha256": "6073a957506d08e095625fd38f24323050c5d666e8a5e1c22841f22810e33f27",
+ "raw_sha256": {
+  "CCLE_metabolomics_20190502.csv": "7c1d24aa575f4c58a29019026b5df8e6d1142a56925aba32ff3f1d1d5a7fd0ac",
+  "CCLE_RNAseq_RSEM_Expected_Counts.csv.gz": "f59221c04e15a2ba807181d23ba53fa4acd778f02ecb05321c473857e824191f",
+  "mmc2.xlsx": "9327f665d259ef4d148d3a64e7c76cdeb51dce8dee06768efd6b7d044130e203",
+  "mmc3.xlsx": "f6c414bc07fdf6e33680cd61c4b3d22d26e531a27eff2cdef3648bfb46e72f34",
+  "Model.csv": "a4cac376131b41aa10b60a075b11c80264bfa860a5509d22cde259c5e85867f8"
+ },
+ "source_inputs_sha256": "52d71517a8952e83a1603cd831f09449544102d0ca5ff829ff01be9bf79cd637",
+ "extra66_sha256": "bd8d13f57b691f579dfcd6210a44f4ab1e05a8691ced62ff2baeb7a6a67883af",
+ "rna_config_sha256": "995a42ab7cbf4d9d9c5db3eb9ecf79d1fe8887bc43841846b9202b4e48ed5a6d",
+ "sealed": {
+  "train": 421,
+  "validation": 64,
+  "internal_final": 123,
+  "union": 608,
+  "train_subset_of_608": true,
+  "sealed_values_decoded": 0
+ },
+ "identity": {
+  "mmc2_identities": 949,
+  "mmc2_ach_ambiguous": {},
+  "mmc2_ccle_ambiguous": {},
+  "model_csv_rows": 1959,
+  "model_sidm_ambiguous": {
+   "SIDM00117": [
+    "ACH-000837",
+    "ACH-002172"
+   ]
+  },
+  "bridge_pairs": 1217,
+  "bridge_from_mmc2": 942,
+  "bridge_from_model_csv": 275,
+  "bridge_conflicts": [
+   {
+    "sidm": "SIDM01095",
+    "mmc2_ach": "ACH-000833",
+    "model_csv_ach": "ACH-001189",
+    "resolution": "mmc2 wins"
+   },
+   {
+    "sidm": "SIDM00399",
+    "mmc2_ach": "ACH-002315",
+    "model_csv_ach": "ACH-001227",
+    "resolution": "mmc2 wins"
+   },
+   {
+    "sidm": "SIDM00603",
+    "mmc2_ach": "ACH-002260",
+    "model_csv_ach": "ACH-001543",
+    "resolution": "mmc2 wins"
+   },
+   {
+    "sidm": "SIDM00114",
+    "mmc2_ach": "ACH-002335",
+    "model_csv_ach": "ACH-002138",
+    "resolution": "mmc2 wins"
+   }
+  ],
+  "lineage_to_tissue_map": {
+   "Lymphoid": "Haematopoietic and Lymphoid",
+   "Myeloid": "Haematopoietic and Lymphoid",
+   "Lung": "Lung",
+   "Breast": "Breast",
+   "Bone": "Bone",
+   "Ovary/Fallopian Tube": "Ovary",
+   "Skin": "Skin",
+   "Head and Neck": "Head and Neck",
+   "CNS/Brain": "Central Nervous System",
+   "Pancreas": "Pancreas",
+   "Pleura": "Lung",
+   "Prostate": "Prostate",
+   "Peripheral Nervous System": "Peripheral Nervous System",
+   "Bowel": "Large Intestine",
+   "Cervix": "Cervix",
+   "Kidney": "Kidney",
+   "Liver": "Liver",
+   "Soft Tissue": "Soft Tissue",
+   "Biliary Tract": "Biliary Tract",
+   "Bladder/Urinary Tract": "Bladder",
+   "Testis": "Testis",
+   "Thyroid": "Thyroid"
+  },
+  "lineage_map_detail": {
+   "Lymphoid": {
+    "majority": "Haematopoietic and Lymphoid",
+    "n": 122,
+    "total": 122,
+    "frac": 1.0,
+    "counts": {
+     "Haematopoietic and Lymphoid": 122
+    }
+   },
+   "Myeloid": {
+    "majority": "Haematopoietic and Lymphoid",
+    "n": 41,
+    "total": 41,
+    "frac": 1.0,
+    "counts": {
+     "Haematopoietic and Lymphoid": 41
+    }
+   },
+   "Lung": {
+    "majority": "Lung",
+    "n": 164,
+    "total": 164,
+    "frac": 1.0,
+    "counts": {
+     "Lung": 164
+    }
+   },
+   "Esophagus/Stomach": {
+    "majority": "Esophagus",
+    "n": 35,
+    "total": 61,
+    "frac": 0.574,
+    "counts": {
+     "Stomach": 26,
+     "Esophagus": 35
+    }
+   },
+   "Breast": {
+    "majority": "Breast",
+    "n": 50,
+    "total": 50,
+    "frac": 1.0,
+    "counts": {
+     "Breast": 50
+    }
+   },
+   "Bone": {
+    "majority": "Bone",
+    "n": 39,
+    "total": 41,
+    "frac": 0.951,
+    "counts": {
+     "Bone": 39,
+     "Other tissue": 2
+    }
+   },
+   "Ovary/Fallopian Tube": {
+    "majority": "Ovary",
+    "n": 41,
+    "total": 41,
+    "frac": 1.0,
+    "counts": {
+     "Ovary": 41
+    }
+   },
+   "Skin": {
+    "majority": "Skin",
+    "n": 51,
+    "total": 51,
+    "frac": 1.0,
+    "counts": {
+     "Skin": 51
+    }
+   },
+   "Head and Neck": {
+    "majority": "Head and Neck",
+    "n": 37,
+    "total": 38,
+    "frac": 0.974,
+    "counts": {
+     "Head and Neck": 37,
+     "Thyroid": 1
+    }
+   },
+   "Uterus": {
+    "majority": "Endometrium",
+    "n": 10,
+    "total": 16,
+    "frac": 0.625,
+    "counts": {
+     "Endometrium": 10,
+     "Soft Tissue": 4,
+     "Placenta": 2
+    }
+   },
+   "Adrenal Gland": {
+    "majority": "Adrenal Gland",
+    "n": 1,
+    "total": 1,
+    "frac": 1.0,
+    "counts": {
+     "Adrenal Gland": 1
+    }
+   },
+   "CNS/Brain": {
+    "majority": "Central Nervous System",
+    "n": 53,
+    "total": 54,
+    "frac": 0.981,
+    "counts": {
+     "Central Nervous System": 53,
+     "Other tissue": 1
+    }
+   },
+   "Pancreas": {
+    "majority": "Pancreas",
+    "n": 30,
+    "total": 30,
+    "frac": 1.0,
+    "counts": {
+     "Pancreas": 30
+    }
+   },
+   "Pleura": {
+    "majority": "Lung",
+    "n": 21,
+    "total": 21,
+    "frac": 1.0,
+    "counts": {
+     "Lung": 21
+    }
+   },
+   "Prostate": {
+    "majority": "Prostate",
+    "n": 8,
+    "total": 8,
+    "frac": 1.0,
+    "counts": {
+     "Prostate": 8
+    }
+   },
+   "Peripheral Nervous System": {
+    "majority": "Peripheral Nervous System",
+    "n": 30,
+    "total": 30,
+    "frac": 1.0,
+    "counts": {
+     "Peripheral Nervous System": 30
+    }
+   },
+   "Bowel": {
+    "majority": "Large Intestine",
+    "n": 47,
+    "total": 48,
+    "frac": 0.979,
+    "counts": {
+     "Large Intestine": 47,
+     "Small Intestine": 1
+    }
+   },
+   "Cervix": {
+    "majority": "Cervix",
+    "n": 13,
+    "total": 13,
+    "frac": 1.0,
+    "counts": {
+     "Cervix": 13
+    }
+   },
+   "Kidney": {
+    "majority": "Kidney",
+    "n": 32,
+    "total": 35,
+    "frac": 0.914,
+    "counts": {
+     "Kidney": 32,
+     "Soft Tissue": 2,
+     "Other tissue": 1
+    }
+   },
+   "Liver": {
+    "majority": "Liver",
+    "n": 16,
+    "total": 16,
+    "frac": 1.0,
+    "counts": {
+     "Liver": 16
+    }
+   },
+   "Soft Tissue": {
+    "majority": "Soft Tissue",
+    "n": 16,
+    "total": 16,
+    "frac": 1.0,
+    "counts": {
+     "Soft Tissue": 16
+    }
+   },
+   "Biliary Tract": {
+    "majority": "Biliary Tract",
+    "n": 4,
+    "total": 4,
+    "frac": 1.0,
+    "counts": {
+     "Biliary Tract": 4
+    }
+   },
+   "Bladder/Urinary Tract": {
+    "majority": "Bladder",
+    "n": 18,
+    "total": 18,
+    "frac": 1.0,
+    "counts": {
+     "Bladder": 18
+    }
+   },
+   "Testis": {
+    "majority": "Testis",
+    "n": 3,
+    "total": 3,
+    "frac": 1.0,
+    "counts": {
+     "Testis": 3
+    }
+   },
+   "Thyroid": {
+    "majority": "Thyroid",
+    "n": 15,
+    "total": 15,
+    "frac": 1.0,
+    "counts": {
+     "Thyroid": 15
+    }
+   },
+   "Vulva/Vagina": {
+    "majority": "Vulva",
+    "n": 3,
+    "total": 5,
+    "frac": 0.6,
+    "counts": {
+     "Vulva": 3,
+     "Skin": 2
+    }
+   },
+   "Other": {
+    "majority": "Stomach",
+    "n": 1,
+    "total": 1,
+    "frac": 1.0,
+    "counts": {
+     "Stomach": 1
+    }
+   },
+   "Fibroblast": {
+    "majority": "Skin",
+    "n": 1,
+    "total": 1,
+    "frac": 1.0,
+    "counts": {
+     "Skin": 1
+    }
+   }
+  }
+ },
+ "metabolomics": {
+  "rows": 928,
+  "bridge_resolution": {
+   "both": 732,
+   "unmapped": 195,
+   "depmap_only": 1
+  },
+  "mmc2_resolution": {
+   "mmc2": 611,
+   "mmc2_unmapped": 317
+  },
+  "unique_sidm_bridge": 733,
+  "unique_sidm_mmc2": 611,
+  "duplicate_source_rows": []
+ },
+ "m_mmc2_only": {
+  "split_convention": 611,
+  "split_outside_608": [
+   "SIDM00046",
+   "SIDM00096",
+   "SIDM01095"
+  ],
+  "whole_string_convention": 609,
+  "whole_outside_608": [
+   "SIDM00046"
+  ],
+  "protocol_figure": 609
+ },
+ "rna_header": 1047,
+ "protein_header": 949,
+ "pool": {
+  "candidates_with_rna": 683,
+  "excluded": {
+   "sealed_608": 608,
+   "shares_patient_with_608": 8
+  },
+  "excluded_ids": {
+   "SIDM00452": "shares_patient_with_608",
+   "SIDM00147": "shares_patient_with_608",
+   "SIDM00593": "shares_patient_with_608",
+   "SIDM00897": "shares_patient_with_608",
+   "SIDM00228": "shares_patient_with_608",
+   "SIDM00979": "shares_patient_with_608",
+   "SIDM01022": "shares_patient_with_608",
+   "SIDM00093": "shares_patient_with_608"
+  },
+  "excluded_608_count": 608,
+  "duplicates_in_pool": [],
+  "n": 67,
+  "blank_tissue": 4,
+  "blank_tissue_ids": [
+   "SIDM00015",
+   "SIDM00037",
+   "SIDM00248",
+   "SIDM00271"
+  ],
+  "tissues": {
+   "Haematopoietic and Lymphoid": 17,
+   "Breast": 4,
+   "Ovary": 3,
+   "Skin": 4,
+   "": 4,
+   "Lung": 11,
+   "Bladder": 2,
+   "Large Intestine": 8,
+   "Liver": 3,
+   "Central Nervous System": 5,
+   "Peripheral Nervous System": 2,
+   "Pancreas": 2,
+   "Bone": 1,
+   "Soft Tissue": 1
+  },
+  "rna_batches": {
+   "Broad (CCLE) RNASeq": 58,
+   "Sanger RNASeq": 9
+  },
+  "bridge_src": {
+   "model_csv": 65,
+   "mmc2": 2
+  },
+  "resolution": {
+   "both": 67
+  },
+  "tissue_src": {
+   "model_csv_lineage": 60,
+   "unresolved": 4,
+   "mmc2": 3
+  },
+  "in_mmc2": 3,
+  "has_p_header": 3,
+  "m_missing": 0,
+  "rna_common_missing": 0,
+  "rna_full_source_missing": [
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   2275,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   2275,
+   2275,
+   2275,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   2275,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   2275,
+   2275,
+   19,
+   19,
+   19,
+   19,
+   19,
+   2275,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   2275,
+   19,
+   19
+  ],
+  "rna_valid_original_transform": 67
+ },
+ "audited66": {
+  "subset_of_pool": true,
+  "missing": {},
+  "pool_not_in_66": [
+   "SIDM01095"
+  ],
+  "tissue_diff": [],
+  "id_diff": [],
+  "m_max_abs_diff": 0.0,
+  "rna_max_abs_diff": 0.0
+ },
+ "gates": {
+  "parity_ids": [
+   "SIDM00018",
+   "SIDM00080",
+   "SIDM00082",
+   "SIDM00396",
+   "SIDM00685"
+  ],
+  "m_max_abs_diff": 0.0,
+  "m_nan_pattern_equal": true,
+  "rna_max_abs_diff": 1.7763568394002505e-15,
+  "threshold": 1e-09,
+  "gene_panel_equal_rna421": true,
+  "metabolite_order_equal_source_inputs": true,
+  "passed": true
+ },
+ "folds": {
+  "fold-0": {
+   "held_out_tissues": [
+    "Lung"
+   ],
+   "new_cell_usable": 67,
+   "tissue_outer_usable": 52,
+   "tissue_inner_usable": {
+    "inner-0": 42,
+    "inner-1": 50,
+    "inner-2": 45
+   },
+   "excluded_held_tissue": 11,
+   "excluded_blank": 4
+  },
+  "fold-1": {
+   "held_out_tissues": [
+    "Bone",
+    "Endometrium",
+    "Haematopoietic and Lymphoid"
+   ],
+   "new_cell_usable": 67,
+   "tissue_outer_usable": 45,
+   "tissue_inner_usable": {
+    "inner-0": 51,
+    "inner-1": 48,
+    "inner-2": 45
+   },
+   "excluded_held_tissue": 18,
+   "excluded_blank": 4
+  },
+  "fold-2": {
+   "held_out_tissues": [
+    "Bladder",
+    "Breast",
+    "Kidney",
+    "Pancreas",
+    "Peripheral Nervous System",
+    "Prostate"
+   ],
+   "new_cell_usable": 67,
+   "tissue_outer_usable": 53,
+   "tissue_inner_usable": {
+    "inner-0": 48,
+    "inner-1": 43,
+    "inner-2": 45
+   },
+   "excluded_held_tissue": 10,
+   "excluded_blank": 4
+  },
+  "fold-3": {
+   "held_out_tissues": [
+    "Biliary Tract",
+    "Head and Neck",
+    "Large Intestine",
+    "Ovary",
+    "Soft Tissue",
+    "Stomach"
+   ],
+   "new_cell_usable": 67,
+   "tissue_outer_usable": 51,
+   "tissue_inner_usable": {
+    "inner-0": 47,
+    "inner-1": 41,
+    "inner-2": 50
+   },
+   "excluded_held_tissue": 12,
+   "excluded_blank": 4
+  },
+  "fold-4": {
+   "held_out_tissues": [
+    "Central Nervous System",
+    "Esophagus",
+    "Liver",
+    "Other tissue",
+    "Skin",
+    "Thyroid"
+   ],
+   "new_cell_usable": 67,
+   "tissue_outer_usable": 51,
+   "tissue_inner_usable": {
+    "inner-0": 51,
+    "inner-1": 41,
+    "inner-2": 46
+   },
+   "excluded_held_tissue": 12,
+   "excluded_blank": 4
+  }
+ },
+ "universe": {
+  "mmc2_only": {
+   "M": 611,
+   "M_and_P": {
+    "n": 611,
+    "outside_608": 3,
+    "outside_ids": [
+     "SIDM00046",
+     "SIDM00096",
+     "SIDM01095"
+    ],
+    "outside_excluded_reasons": {
+     "SIDM00096": "in_pool",
+     "SIDM00046": "not_rna_candidate",
+     "SIDM01095": "in_pool"
+    }
+   },
+   "M_and_RNA": {
+    "n": 610,
+    "outside_608": 2,
+    "outside_ids": [
+     "SIDM00096",
+     "SIDM01095"
+    ]
+   },
+   "M_RNA_P": {
+    "n": 610,
+    "outside_608": 2,
+    "outside_ids": [
+     "SIDM00096",
+     "SIDM01095"
+    ],
+    "outside_excluded_reasons": {
+     "SIDM00096": "in_pool",
+     "SIDM01095": "in_pool"
+    }
+   }
+  },
+  "bridge": {
+   "M": 733,
+   "M_and_P": {
+    "n": 612,
+    "outside_608": 4,
+    "outside_ids": [
+     "SIDM00046",
+     "SIDM00096",
+     "SIDM00969",
+     "SIDM01095"
+    ],
+    "outside_excluded_reasons": {
+     "SIDM01095": "in_pool",
+     "SIDM00096": "in_pool",
+     "SIDM00046": "not_rna_candidate",
+     "SIDM00969": "in_pool"
+    }
+   },
+   "M_and_RNA": {
+    "n": 683,
+    "outside_608": 75,
+    "outside_ids": [
+     "SIDM00001",
+     "SIDM00005",
+     "SIDM00008",
+     "SIDM00011",
+     "SIDM00015",
+     "SIDM00017",
+     "SIDM00029",
+     "SIDM00032",
+     "SIDM00036",
+     "SIDM00037",
+     "SIDM00063",
+     "SIDM00065",
+     "SIDM00071",
+     "SIDM00074",
+     "SIDM00093",
+     "SIDM00096",
+     "SIDM00131",
+     "SIDM00147",
+     "SIDM00153",
+     "SIDM00217",
+     "..."
+    ]
+   },
+   "M_RNA_P": {
+    "n": 611,
+    "outside_608": 3,
+    "outside_ids": [
+     "SIDM00096",
+     "SIDM00969",
+     "SIDM01095"
+    ],
+    "outside_excluded_reasons": {
+     "SIDM01095": "in_pool",
+     "SIDM00096": "in_pool",
+     "SIDM00969": "in_pool"
+    }
+   }
+  },
+  "P_header": 949,
+  "RNA_header": 1047,
+  "note": "identity sets before patient/name exclusions; P from mmc3 sample-ID column only"
+ },
+ "usable_new_cell": 67,
+ "usable_tissue_per_fold": {
+  "fold-0": 52,
+  "fold-1": 45,
+  "fold-2": 53,
+  "fold-3": 51,
+  "fold-4": 51
+ },
+ "feasibility": {
+  "threshold": 150,
+  "usable_new_cell": 67,
+  "proceed": false
+ },
+ "transformation": {
+  "m": "identity: source values preserved (float64); no log, no normalisation, no imputation",
+  "rna": "ln(1 + counts / sample_total_of_frozen_34985_common_assayed_genes * 1e6); sample-local; stored float32"
+ },
+ "sample_table": [
+  {
+   "sample_id": "SIDM00001",
+   "ach_id": "ACH-000405",
+   "patient_id": "PT-2VMIkL",
+   "ccle_id": "MEC1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE",
+   "tissue": "Haematopoietic and Lymphoid",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Lymphoid",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00005",
+   "ach_id": "ACH-000044",
+   "patient_id": "PT-HMBfbj",
+   "ccle_id": "MDAMB134VI_BREAST",
+   "tissue": "Breast",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Breast",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00008",
+   "ach_id": "ACH-000796",
+   "patient_id": "PT-Tlf0ul",
+   "ccle_id": "MCAS_OVARY",
+   "tissue": "Ovary",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Ovary/Fallopian Tube",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00011",
+   "ach_id": "ACH-000477",
+   "patient_id": "PT-A0Pe6P",
+   "ccle_id": "MALME3M_SKIN",
+   "tissue": "Skin",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Skin",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00015",
+   "ach_id": "ACH-000777",
+   "patient_id": "PT-kporZQ",
+   "ccle_id": "KYSE30_OESOPHAGUS",
+   "tissue": "",
+   "tissue_src": "unresolved",
+   "lineage": "Esophagus/Stomach",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00017",
+   "ach_id": "ACH-000912",
+   "patient_id": "PT-wNpw5y",
+   "ccle_id": "NCIH2286_LUNG",
+   "tissue": "Lung",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Lung",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00029",
+   "ach_id": "ACH-000659",
+   "patient_id": "PT-hfsFIb",
+   "ccle_id": "SCLC21H_LUNG",
+   "tissue": "Lung",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Lung",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00032",
+   "ach_id": "ACH-000839",
+   "patient_id": "PT-l3KlxJ",
+   "ccle_id": "SCABER_URINARY_TRACT",
+   "tissue": "Bladder",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Bladder/Urinary Tract",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00036",
+   "ach_id": "ACH-000296",
+   "patient_id": "PT-GezIUF",
+   "ccle_id": "OUMS23_LARGE_INTESTINE",
+   "tissue": "Large Intestine",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Bowel",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00037",
+   "ach_id": "ACH-000961",
+   "patient_id": "PT-P06fLR",
+   "ccle_id": "ISHIKAWAHERAKLIO02ER_ENDOMETRIUM",
+   "tissue": "",
+   "tissue_src": "unresolved",
+   "lineage": "Uterus",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00063",
+   "ach_id": "ACH-000632",
+   "patient_id": "PT-CeiJLF",
+   "ccle_id": "HS944T_SKIN",
+   "tissue": "Skin",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Skin",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00065",
+   "ach_id": "ACH-000393",
+   "patient_id": "PT-saZI6H",
+   "ccle_id": "HLF_LIVER",
+   "tissue": "Liver",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Liver",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00071",
+   "ach_id": "ACH-000202",
+   "patient_id": "PT-UB7otW",
+   "ccle_id": "COLO320_LARGE_INTESTINE",
+   "tissue": "Large Intestine",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Bowel",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00074",
+   "ach_id": "ACH-000402",
+   "patient_id": "PT-ieu86J",
+   "ccle_id": "BL70_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE",
+   "tissue": "Haematopoietic and Lymphoid",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Lymphoid",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00096",
+   "ach_id": "ACH-000338",
+   "patient_id": "PT-khOMVk",
+   "ccle_id": "SR786_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE",
+   "tissue": "Haematopoietic and Lymphoid",
+   "tissue_src": "mmc2",
+   "lineage": "Lymphoid",
+   "bridge": "mmc2",
+   "resolution": "both",
+   "rna_batch": "Sanger RNASeq",
+   "in_mmc2": true,
+   "has_p_header": true,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00131",
+   "ach_id": "ACH-000329",
+   "patient_id": "PT-GKdkIC",
+   "ccle_id": "CCFSTTG1_CENTRAL_NERVOUS_SYSTEM",
+   "tissue": "Central Nervous System",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "CNS/Brain",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00153",
+   "ach_id": "ACH-000964",
+   "patient_id": "PT-1559gB",
+   "ccle_id": "MOLT3_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE",
+   "tissue": "Haematopoietic and Lymphoid",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Lymphoid",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00217",
+   "ach_id": "ACH-000999",
+   "patient_id": "PT-hR5WVg",
+   "ccle_id": "SNU1040_LARGE_INTESTINE",
+   "tissue": "Large Intestine",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Bowel",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00226",
+   "ach_id": "ACH-000310",
+   "patient_id": "PT-2Urqss",
+   "ccle_id": "IMR32_AUTONOMIC_GANGLIA",
+   "tissue": "Peripheral Nervous System",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Peripheral Nervous System",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00248",
+   "ach_id": "ACH-000758",
+   "patient_id": "PT-T2KFTw",
+   "ccle_id": "MKN74_STOMACH",
+   "tissue": "",
+   "tissue_src": "unresolved",
+   "lineage": "Esophagus/Stomach",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00271",
+   "ach_id": "ACH-000351",
+   "patient_id": "PT-jfdGU1",
+   "ccle_id": "MKN1_STOMACH",
+   "tissue": "",
+   "tissue_src": "unresolved",
+   "lineage": "Esophagus/Stomach",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00298",
+   "ach_id": "ACH-000705",
+   "patient_id": "PT-ZglKg6",
+   "ccle_id": "LC1F_LUNG",
+   "tissue": "Lung",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Lung",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00314",
+   "ach_id": "ACH-000097",
+   "patient_id": "PT-k1TO7o",
+   "ccle_id": "ZR751_BREAST",
+   "tissue": "Breast",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Breast",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00331",
+   "ach_id": "ACH-000020",
+   "patient_id": "PT-GMWtlF",
+   "ccle_id": "MHHCALL2_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE",
+   "tissue": "Haematopoietic and Lymphoid",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Lymphoid",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00397",
+   "ach_id": "ACH-000195",
+   "patient_id": "PT-ZJgxZb",
+   "ccle_id": "SET2_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE",
+   "tissue": "Haematopoietic and Lymphoid",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Myeloid",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Sanger RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00406",
+   "ach_id": "ACH-000660",
+   "patient_id": "PT-PDsx7s",
+   "ccle_id": "SUDHL5_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE",
+   "tissue": "Haematopoietic and Lymphoid",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Lymphoid",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Sanger RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00414",
+   "ach_id": "ACH-000545",
+   "patient_id": "PT-LSFu4z",
+   "ccle_id": "VMCUB1_URINARY_TRACT",
+   "tissue": "Bladder",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Bladder/Urinary Tract",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Sanger RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00462",
+   "ach_id": "ACH-000336",
+   "patient_id": "PT-0F4qCF",
+   "ccle_id": "OCIAML3_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE",
+   "tissue": "Haematopoietic and Lymphoid",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Myeloid",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00536",
+   "ach_id": "ACH-000982",
+   "patient_id": "PT-sGJOXH",
+   "ccle_id": "GP2D_LARGE_INTESTINE",
+   "tissue": "Large Intestine",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Bowel",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00610",
+   "ach_id": "ACH-000164",
+   "patient_id": "PT-cHU83i",
+   "ccle_id": "PANC1_PANCREAS",
+   "tissue": "Pancreas",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Pancreas",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00634",
+   "ach_id": "ACH-000039",
+   "patient_id": "PT-wGDMGe",
+   "ccle_id": "SKNMC_BONE",
+   "tissue": "Bone",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Bone",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00639",
+   "ach_id": "ACH-000152",
+   "patient_id": "PT-DK2CQc",
+   "ccle_id": "M059K_CENTRAL_NERVOUS_SYSTEM",
+   "tissue": "Central Nervous System",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "CNS/Brain",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00644",
+   "ach_id": "ACH-000327",
+   "patient_id": "PT-oKf5lW",
+   "ccle_id": "NCIH1395_LUNG",
+   "tissue": "Lung",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Lung",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00669",
+   "ach_id": "ACH-000094",
+   "patient_id": "PT-bW9aaR",
+   "ccle_id": "HPAFII_PANCREAS",
+   "tissue": "Pancreas",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Pancreas",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00731",
+   "ach_id": "ACH-000399",
+   "patient_id": "PT-FplxWn",
+   "ccle_id": "NCIH2196_LUNG",
+   "tissue": "Lung",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Lung",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00757",
+   "ach_id": "ACH-000590",
+   "patient_id": "PT-v8h3uk",
+   "ccle_id": "NCIH2073_LUNG",
+   "tissue": "Lung",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Lung",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00768",
+   "ach_id": "ACH-000894",
+   "patient_id": "PT-RPtiPJ",
+   "ccle_id": "NCIH1869_LUNG",
+   "tissue": "Lung",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Lung",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00775",
+   "ach_id": "ACH-000785",
+   "patient_id": "PT-AOPcW9",
+   "ccle_id": "NCIH2126_LUNG",
+   "tissue": "Lung",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Lung",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00784",
+   "ach_id": "ACH-000126",
+   "patient_id": "PT-Y9w387",
+   "ccle_id": "KG1C_CENTRAL_NERVOUS_SYSTEM",
+   "tissue": "Central Nervous System",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "CNS/Brain",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00801",
+   "ach_id": "ACH-000008",
+   "patient_id": "PT-fp8PeY",
+   "ccle_id": "A101D_SKIN",
+   "tissue": "Skin",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Skin",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00823",
+   "ach_id": "ACH-000253",
+   "patient_id": "PT-BLAWlD",
+   "ccle_id": "COLO201_LARGE_INTESTINE",
+   "tissue": "Large Intestine",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Bowel",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00836",
+   "ach_id": "ACH-000820",
+   "patient_id": "PT-EteVig",
+   "ccle_id": "SW403_LARGE_INTESTINE",
+   "tissue": "Large Intestine",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Bowel",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Sanger RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00851",
+   "ach_id": "ACH-000509",
+   "patient_id": "PT-PrSlzw",
+   "ccle_id": "HUT78_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE",
+   "tissue": "Haematopoietic and Lymphoid",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Lymphoid",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00862",
+   "ach_id": "ACH-000877",
+   "patient_id": "PT-Lz3i3Q",
+   "ccle_id": "EB1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE",
+   "tissue": "Haematopoietic and Lymphoid",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Lymphoid",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00870",
+   "ach_id": "ACH-000725",
+   "patient_id": "PT-gUhFHU",
+   "ccle_id": "HCC202_BREAST",
+   "tissue": "Breast",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Breast",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00894",
+   "ach_id": "ACH-000312",
+   "patient_id": "PT-k4Daz3",
+   "ccle_id": "SKNBE2_AUTONOMIC_GANGLIA",
+   "tissue": "Peripheral Nervous System",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Peripheral Nervous System",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00904",
+   "ach_id": "ACH-000739",
+   "patient_id": "PT-qL6HtY",
+   "ccle_id": "HEPG2_LIVER",
+   "tissue": "Liver",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Liver",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00928",
+   "ach_id": "ACH-000857",
+   "patient_id": "PT-IcfZvW",
+   "ccle_id": "CAL851_BREAST",
+   "tissue": "Breast",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Breast",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00945",
+   "ach_id": "ACH-000895",
+   "patient_id": "PT-LoHukX",
+   "ccle_id": "CL34_LARGE_INTESTINE",
+   "tissue": "Large Intestine",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Bowel",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00959",
+   "ach_id": "ACH-000641",
+   "patient_id": "PT-XYdNvp",
+   "ccle_id": "CMK_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE",
+   "tissue": "Haematopoietic and Lymphoid",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Myeloid",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00960",
+   "ach_id": "ACH-000798",
+   "patient_id": "PT-maJywx",
+   "ccle_id": "CL40_LARGE_INTESTINE",
+   "tissue": "Large Intestine",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Bowel",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Sanger RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00969",
+   "ach_id": "ACH-001063",
+   "patient_id": "PT-zAzHh6",
+   "ccle_id": "DOV13_OVARY",
+   "tissue": "Ovary",
+   "tissue_src": "mmc2",
+   "lineage": "Ovary/Fallopian Tube",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Sanger RNASeq",
+   "in_mmc2": true,
+   "has_p_header": true,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM00991",
+   "ach_id": "ACH-000519",
+   "patient_id": "PT-qXF8IT",
+   "ccle_id": "PEER_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE",
+   "tissue": "Haematopoietic and Lymphoid",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Lymphoid",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM01049",
+   "ach_id": "ACH-000038",
+   "patient_id": "PT-LoXnDo",
+   "ccle_id": "EHEB_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE",
+   "tissue": "Haematopoietic and Lymphoid",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Lymphoid",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM01063",
+   "ach_id": "ACH-000190",
+   "patient_id": "PT-YCDBvf",
+   "ccle_id": "HDMYZ_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE",
+   "tissue": "Haematopoietic and Lymphoid",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Myeloid",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM01069",
+   "ach_id": "ACH-000667",
+   "patient_id": "PT-uY17tx",
+   "ccle_id": "HCC44_LUNG",
+   "tissue": "Lung",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Lung",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM01074",
+   "ach_id": "ACH-000102",
+   "patient_id": "PT-CuQsSC",
+   "ccle_id": "GMS10_CENTRAL_NERVOUS_SYSTEM",
+   "tissue": "Central Nervous System",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "CNS/Brain",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM01095",
+   "ach_id": "ACH-000833",
+   "patient_id": "PT-lbYOig",
+   "ccle_id": "RH30_SOFT_TISSUE",
+   "tissue": "Soft Tissue",
+   "tissue_src": "mmc2",
+   "lineage": "Soft Tissue",
+   "bridge": "mmc2",
+   "resolution": "both",
+   "rna_batch": "Sanger RNASeq",
+   "in_mmc2": true,
+   "has_p_header": true,
+   "in_audited66": false
+  },
+  {
+   "sample_id": "SIDM01104",
+   "ach_id": "ACH-000640",
+   "patient_id": "PT-Zpoh5W",
+   "ccle_id": "SKMEL31_SKIN",
+   "tissue": "Skin",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Skin",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM01134",
+   "ach_id": "ACH-000292",
+   "patient_id": "PT-x8fAhk",
+   "ccle_id": "NCIH841_LUNG",
+   "tissue": "Lung",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Lung",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM01151",
+   "ach_id": "ACH-000483",
+   "patient_id": "PT-YTIYsu",
+   "ccle_id": "SNU182_LIVER",
+   "tissue": "Liver",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Liver",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM01158",
+   "ach_id": "ACH-000669",
+   "patient_id": "PT-sj3DbQ",
+   "ccle_id": "SW900_LUNG",
+   "tissue": "Lung",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Lung",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM01189",
+   "ach_id": "ACH-000075",
+   "patient_id": "PT-59c3mE",
+   "ccle_id": "U87MG_CENTRAL_NERVOUS_SYSTEM",
+   "tissue": "Central Nervous System",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "CNS/Brain",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM01195",
+   "ach_id": "ACH-000406",
+   "patient_id": "PT-ZwaNYv",
+   "ccle_id": "U937_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE",
+   "tissue": "Haematopoietic and Lymphoid",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Myeloid",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM01198",
+   "ach_id": "ACH-000567",
+   "patient_id": "PT-PA3Bay",
+   "ccle_id": "ST486_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE",
+   "tissue": "Haematopoietic and Lymphoid",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Lymphoid",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Sanger RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM01215",
+   "ach_id": "ACH-000542",
+   "patient_id": "PT-0hMOxQ",
+   "ccle_id": "HEYA8_OVARY",
+   "tissue": "Ovary",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Ovary/Fallopian Tube",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  },
+  {
+   "sample_id": "SIDM01254",
+   "ach_id": "ACH-000707",
+   "patient_id": "PT-kbk41J",
+   "ccle_id": "P3HR1_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE",
+   "tissue": "Haematopoietic and Lymphoid",
+   "tissue_src": "model_csv_lineage",
+   "lineage": "Lymphoid",
+   "bridge": "model_csv",
+   "resolution": "both",
+   "rna_batch": "Broad (CCLE) RNASeq",
+   "in_mmc2": false,
+   "has_p_header": false,
+   "in_audited66": true
+  }
+ ],
+ "seconds": 32.4
+}

@@ -1,0 +1,41 @@
+id,tag,scenario,deploy,cand,base,condition,status,detail
+P1,(a),new_cell,M,extra__m_only__protein,extra__m_only,R1,fail,0.4332%
+P1,(a),new_cell,M,extra__m_only__protein,extra__m_only,R2,pass,5/5
+P1,(a),new_cell,M,extra__m_only__protein,extra__m_only,R3,pass,"1.006284 vs mask 1.008052 (0.1755%, 5/5)"
+P1,(a),new_cell,M,extra__m_only__protein,extra__m_only,R4b,pass,min LOFO 0.1606%
+P1,(a),new_cell,M,extra__m_only__protein,extra__m_only,R4a,pass,min LOFO 0.4011%
+P1,(a),new_cell,M,extra__m_only__protein,extra__m_only,R5,pass,"[0.2249, 0.6593]%"
+P1,(a),new_cell,M,extra__m_only__protein,extra__m_only,R6,not_applicable,new_cell: common panel = full 295 panel
+P1,(a),new_cell,M,extra__m_only__protein,extra__m_only,R7,pass,shuffle 0.1833% 5/5; metabolite 0.3805% 5/5
+P1,(a),new_cell,M,extra__m_only__protein,extra__m_only,R8,not_evaluated,"no matched (same input, same data, same budget) distillation arm"
+P1,(a),new_cell,M,extra__m_only__protein,extra__m_only,GRADE,small_but_reliable,push line = pass only if all evaluable R1-R7 pass with none not_evaluable
+P2,(b),new_cell,M+tissue label,m_tissue__protein,m_tissue,R1,fail,0.2166%
+P2,(b),new_cell,M+tissue label,m_tissue__protein,m_tissue,R2,pass,4/5
+P2,(b),new_cell,M+tissue label,m_tissue__protein,m_tissue,R3,not_evaluable,no saved mask arm
+P2,(b),new_cell,M+tissue label,m_tissue__protein,m_tissue,R4b,not_evaluable,no saved mask arm
+P2,(b),new_cell,M+tissue label,m_tissue__protein,m_tissue,R4a,pass,min LOFO 0.1811%
+P2,(b),new_cell,M+tissue label,m_tissue__protein,m_tissue,R5,pass,"[0.0727, 0.3904]%"
+P2,(b),new_cell,M+tissue label,m_tissue__protein,m_tissue,R6,not_applicable,new_cell: common panel = full 295 panel
+P2,(b),new_cell,M+tissue label,m_tissue__protein,m_tissue,R7,not_evaluable,no saved structure-control arm
+P2,(b),new_cell,M+tissue label,m_tissue__protein,m_tissue,R8,not_evaluated,"no matched (same input, same data, same budget) distillation arm"
+P2,(b),new_cell,M+tissue label,m_tissue__protein,m_tissue,GRADE,small_but_reliable_no_mask_control,push line = pass only if all evaluable R1-R7 pass with none not_evaluable
+P3,(c1),tissue,M (virtual FM),original__virtual_fm__protein,original__virtual_fm,R1,fail,0.2515%
+P3,(c1),tissue,M (virtual FM),original__virtual_fm__protein,original__virtual_fm,R2,pass,4/5
+P3,(c1),tissue,M (virtual FM),original__virtual_fm__protein,original__virtual_fm,R3,pass,"1.110667 vs mask 1.111670 (0.0902%, 5/5)"
+P3,(c1),tissue,M (virtual FM),original__virtual_fm__protein,original__virtual_fm,R4b,pass,min LOFO 0.0584%
+P3,(c1),tissue,M (virtual FM),original__virtual_fm__protein,original__virtual_fm,R4a,pass,min LOFO 0.1842%
+P3,(c1),tissue,M (virtual FM),original__virtual_fm__protein,original__virtual_fm,R5,pass,"[0.1172, 0.3981]%"
+P3,(c1),tissue,M (virtual FM),original__virtual_fm__protein,original__virtual_fm,R6,fail,"281 drugs: 0.2400%, 4/5"
+P3,(c1),tissue,M (virtual FM),original__virtual_fm__protein,original__virtual_fm,R7,pass,shuffle 0.2013% 4/5; metabolite 0.2304% 4/5
+P3,(c1),tissue,M (virtual FM),original__virtual_fm__protein,original__virtual_fm,R8,not_evaluated,"no matched (same input, same data, same budget) distillation arm"
+P3,(c1),tissue,M (virtual FM),original__virtual_fm__protein,original__virtual_fm,GRADE,small_but_reliable,push line = pass only if all evaluable R1-R7 pass with none not_evaluable
+P4,(c2),tissue,M (virtual FM),extra__virtual_fm__protein,extra__virtual_fm,R1,fail,0.2273%
+P4,(c2),tissue,M (virtual FM),extra__virtual_fm__protein,extra__virtual_fm,R2,pass,4/5
+P4,(c2),tissue,M (virtual FM),extra__virtual_fm__protein,extra__virtual_fm,R3,pass,"1.112609 vs mask 1.113264 (0.0588%, 4/5)"
+P4,(c2),tissue,M (virtual FM),extra__virtual_fm__protein,extra__virtual_fm,R4b,pass,min LOFO 0.0239%
+P4,(c2),tissue,M (virtual FM),extra__virtual_fm__protein,extra__virtual_fm,R4a,pass,min LOFO 0.1677%
+P4,(c2),tissue,M (virtual FM),extra__virtual_fm__protein,extra__virtual_fm,R5,pass,"[0.0752, 0.3596]%"
+P4,(c2),tissue,M (virtual FM),extra__virtual_fm__protein,extra__virtual_fm,R6,fail,"281 drugs: 0.2165%, 3/5"
+P4,(c2),tissue,M (virtual FM),extra__virtual_fm__protein,extra__virtual_fm,R7,pass,shuffle 0.1728% 4/5; metabolite 0.2396% 4/5
+P4,(c2),tissue,M (virtual FM),extra__virtual_fm__protein,extra__virtual_fm,R8,not_evaluated,"no matched (same input, same data, same budget) distillation arm"
+P4,(c2),tissue,M (virtual FM),extra__virtual_fm__protein,extra__virtual_fm,GRADE,small_but_reliable,push line = pass only if all evaluable R1-R7 pass with none not_evaluable
