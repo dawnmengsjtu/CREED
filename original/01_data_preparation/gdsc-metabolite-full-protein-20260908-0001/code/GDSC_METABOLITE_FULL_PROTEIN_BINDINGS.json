@@ -1,0 +1,26 @@
+{
+  "schema": "creed.gdsc-metabolite-full-protein.bound-sources.v1",
+  "scientific_claim": false,
+  "parent_summary_sha256": "3d40f048dca593dfccde73c8414148a6e23ed6f700357cb62ee0988d400c973a",
+  "parent_verification_sha256": "69d4c3e51ce09ce74c80f5cd39525246a06b605f61d9f2396e1cbe3f3c89f58e",
+  "protein_files": {
+    "manifest.json": "cc1aac7bac3dd7cf3f3947ea6fffb57c9ae08c9f935d7e95dc9ec65bb9bd4ee6",
+    "proteins.npy": "756abf99e43e1025e317e38077fc412a87c49d2895c205c2842e2dc034df04cc",
+    "protein_ids.npy": "812f60d317d42ad20453b413acd7762290d39977d5f1822319b95eef6f6fd6af",
+    "sample_ids.npy": "91624523bae5840eec817d3663f36d6dd77605a327d9a6351fa7ebea61ee8f28"
+  },
+  "parent_files": {
+    "source-inputs.npz": "daae287c9c5780222f00c9bc4d2a67336a3366d0aaa06ae069dde4ce3d4c6c63",
+    "splits.json": "270e11c149541abe90147cf37ebaef4533f3b16e564d656bbf7ed38b30c96b9d",
+    "fold-0/selection.json": "1223f241d01835d424128d1be6af2a169d2fc59886e369417f05e08ad39b8a04",
+    "fold-0/predictions.npz": "d829ef2ce206e97b62186de9221dffbcb433fdd9870d81d1218f615d873d4f50",
+    "fold-1/selection.json": "32b32aa96631e5f20ca8b558a2d31f618d48906cd2972e27e6d993cb54afd480",
+    "fold-1/predictions.npz": "be9026f895bde449a4a803a6dbfd297f36e6d5a889186722e09765c003a2d033",
+    "fold-2/selection.json": "c7062795c0ca4fe429728648f2732dfc3d6189aacda21fa15e3afc590712fa1d",
+    "fold-2/predictions.npz": "c3a3bb9b7ee54b0cf90708e8b7653d85af0a32c47006f0d08ed8e49b683b9c1b",
+    "fold-3/selection.json": "b36efab2d5416fd918d4ac09a0d986c9260339b7b37f8100254acf748adb77ab",
+    "fold-3/predictions.npz": "82165b505e3868cf950bbc6477c1772a8006d6bc478d21ba101ad16d655c0715",
+    "fold-4/selection.json": "7a0c638e1465c95f943d2665cc4ac2c4f75455c60349f4defcd042c1cc76ca93",
+    "fold-4/predictions.npz": "f988d9fb074f4614ba537444de1551f5c4e261a0525db687fdcbaee6e2e7f96c"
+  }
+}

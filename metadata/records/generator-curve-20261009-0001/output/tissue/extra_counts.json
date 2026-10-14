@@ -1,0 +1,232 @@
+{
+ "fold-0/inner-0": {
+  "n": 42,
+  "expected": 42,
+  "held_tissues": [
+   "Esophagus",
+   "Haematopoietic and Lymphoid",
+   "Liver",
+   "Other tissue",
+   "Prostate",
+   "Soft Tissue"
+  ]
+ },
+ "fold-0/inner-1": {
+  "n": 49,
+  "expected": 49,
+  "held_tissues": [
+   "Biliary Tract",
+   "Bladder",
+   "Bone",
+   "Breast",
+   "Kidney",
+   "Pancreas",
+   "Skin",
+   "Thyroid"
+  ]
+ },
+ "fold-0/inner-2": {
+  "n": 44,
+  "expected": 44,
+  "held_tissues": [
+   "Central Nervous System",
+   "Endometrium",
+   "Head and Neck",
+   "Large Intestine",
+   "Ovary",
+   "Peripheral Nervous System",
+   "Stomach"
+  ]
+ },
+ "fold-0/outer": {
+  "n": 51,
+  "expected": 51,
+  "held_tissues": [
+   "Lung"
+  ]
+ },
+ "fold-1/inner-0": {
+  "n": 51,
+  "expected": 51,
+  "held_tissues": [
+   "Biliary Tract",
+   "Head and Neck",
+   "Lung",
+   "Soft Tissue"
+  ]
+ },
+ "fold-1/inner-1": {
+  "n": 47,
+  "expected": 47,
+  "held_tissues": [
+   "Bladder",
+   "Breast",
+   "Liver",
+   "Other tissue",
+   "Pancreas",
+   "Prostate",
+   "Skin",
+   "Stomach"
+  ]
+ },
+ "fold-1/inner-2": {
+  "n": 44,
+  "expected": 44,
+  "held_tissues": [
+   "Central Nervous System",
+   "Esophagus",
+   "Kidney",
+   "Large Intestine",
+   "Ovary",
+   "Peripheral Nervous System",
+   "Thyroid"
+  ]
+ },
+ "fold-1/outer": {
+  "n": 44,
+  "expected": 44,
+  "held_tissues": [
+   "Bone",
+   "Endometrium",
+   "Haematopoietic and Lymphoid"
+  ]
+ },
+ "fold-2/inner-0": {
+  "n": 48,
+  "expected": 48,
+  "held_tissues": [
+   "Biliary Tract",
+   "Liver",
+   "Lung",
+   "Other tissue",
+   "Soft Tissue"
+  ]
+ },
+ "fold-2/inner-1": {
+  "n": 42,
+  "expected": 42,
+  "held_tissues": [
+   "Haematopoietic and Lymphoid",
+   "Ovary",
+   "Stomach",
+   "Thyroid"
+  ]
+ },
+ "fold-2/inner-2": {
+  "n": 44,
+  "expected": 44,
+  "held_tissues": [
+   "Bone",
+   "Central Nervous System",
+   "Endometrium",
+   "Esophagus",
+   "Head and Neck",
+   "Large Intestine",
+   "Skin"
+  ]
+ },
+ "fold-2/outer": {
+  "n": 52,
+  "expected": 52,
+  "held_tissues": [
+   "Bladder",
+   "Breast",
+   "Kidney",
+   "Pancreas",
+   "Peripheral Nervous System",
+   "Prostate"
+  ]
+ },
+ "fold-3/inner-0": {
+  "n": 46,
+  "expected": 46,
+  "held_tissues": [
+   "Liver",
+   "Lung",
+   "Other tissue",
+   "Peripheral Nervous System"
+  ]
+ },
+ "fold-3/inner-1": {
+  "n": 40,
+  "expected": 40,
+  "held_tissues": [
+   "Bladder",
+   "Bone",
+   "Endometrium",
+   "Haematopoietic and Lymphoid",
+   "Pancreas"
+  ]
+ },
+ "fold-3/inner-2": {
+  "n": 49,
+  "expected": 49,
+  "held_tissues": [
+   "Breast",
+   "Central Nervous System",
+   "Esophagus",
+   "Kidney",
+   "Prostate",
+   "Skin",
+   "Thyroid"
+  ]
+ },
+ "fold-3/outer": {
+  "n": 51,
+  "expected": 51,
+  "held_tissues": [
+   "Biliary Tract",
+   "Head and Neck",
+   "Large Intestine",
+   "Ovary",
+   "Soft Tissue",
+   "Stomach"
+  ]
+ },
+ "fold-4/inner-0": {
+  "n": 51,
+  "expected": 51,
+  "held_tissues": [
+   "Biliary Tract",
+   "Head and Neck",
+   "Lung",
+   "Soft Tissue"
+  ]
+ },
+ "fold-4/inner-1": {
+  "n": 40,
+  "expected": 40,
+  "held_tissues": [
+   "Bladder",
+   "Bone",
+   "Endometrium",
+   "Haematopoietic and Lymphoid",
+   "Pancreas"
+  ]
+ },
+ "fold-4/inner-2": {
+  "n": 45,
+  "expected": 45,
+  "held_tissues": [
+   "Breast",
+   "Kidney",
+   "Large Intestine",
+   "Ovary",
+   "Peripheral Nervous System",
+   "Prostate",
+   "Stomach"
+  ]
+ },
+ "fold-4/outer": {
+  "n": 50,
+  "expected": 50,
+  "held_tissues": [
+   "Central Nervous System",
+   "Esophagus",
+   "Liver",
+   "Other tissue",
+   "Skin",
+   "Thyroid"
+  ]
+ }
+}

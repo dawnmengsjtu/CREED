@@ -1,0 +1,91 @@
+{
+ "scenario": "new_cell",
+ "stage": "main",
+ "script_sha256": "bac60ffc984993c0a2c8b7f1c806dabb66bf66da16b93a573c34bd4f45cf9c6c",
+ "source_sha256": "52d71517a8952e83a1603cd831f09449544102d0ca5ff829ff01be9bf79cd637",
+ "extra66_sha256": "bd8d13f57b691f579dfcd6210a44f4ab1e05a8691ced62ff2baeb7a6a67883af",
+ "rna_config_sha256": "995a42ab7cbf4d9d9c5db3eb9ecf79d1fe8887bc43841846b9202b4e48ed5a6d",
+ "alphas": [
+  0.1,
+  1.0,
+  10.0,
+  100.0
+ ],
+ "lambdas": [
+  0.1,
+  1.0,
+  10.0,
+  100.0
+ ],
+ "top_genes": 3000,
+ "top_target": 512,
+ "p_cover": 0.5,
+ "oof_folds": 3,
+ "sizes": [
+  [
+   "f50",
+   0.5
+  ],
+  [
+   "f75",
+   0.75
+  ],
+  [
+   "f100",
+   1.0
+  ]
+ ],
+ "arms": [
+  "M",
+  "M+RNA",
+  "M+P",
+  "M+vRNA_f50",
+  "M+vRNA_f75",
+  "M+vRNA_f100",
+  "M+vRNA_extra",
+  "M+vRNA_extra_shuf",
+  "M+vRNA_extra_shufall",
+  "M+vP_f50",
+  "M+vP_f75",
+  "M+vP_f100",
+  "null_drug"
+ ],
+ "gate": 1e-08,
+ "rna_shape": [
+  421,
+  34985
+ ],
+ "subset_seed": "np.random.default_rng([20261009, scenario_id, fold, bank_id, 7])",
+ "expected_extra": {
+  "0": {
+   "inner-0": 66,
+   "inner-1": 66,
+   "inner-2": 66,
+   "outer": 66
+  },
+  "1": {
+   "inner-0": 66,
+   "inner-1": 66,
+   "inner-2": 66,
+   "outer": 66
+  },
+  "2": {
+   "inner-0": 66,
+   "inner-1": 66,
+   "inner-2": 66,
+   "outer": 66
+  },
+  "3": {
+   "inner-0": 66,
+   "inner-1": 66,
+   "inner-2": 66,
+   "outer": 66
+  },
+  "4": {
+   "inner-0": 66,
+   "inner-1": 66,
+   "inner-2": 66,
+   "outer": 66
+  }
+ }
+}

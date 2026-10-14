@@ -1,0 +1,78 @@
+{
+ "scenario": "tissue",
+ "stage": "main",
+ "script_sha256": "c1095b941bdb92b335175291fc5a039f99d7c62b0fdb339e80db2817d11f0da3",
+ "source_sha256": "52d71517a8952e83a1603cd831f09449544102d0ca5ff829ff01be9bf79cd637",
+ "extra_sha256": "d4e7dc603f491217805a1d06b673f8c2662a8c0f2ad77ec875f7d7868526384c",
+ "alphas": [
+  0.1,
+  1.0,
+  10.0,
+  100.0
+ ],
+ "lambdas": [
+  0.1,
+  1.0,
+  10.0,
+  100.0
+ ],
+ "top_genes": 3000,
+ "top_target": 512,
+ "p_cover": 0.5,
+ "oof_folds": 3,
+ "pairs": [
+  [
+   "M",
+   "RNA"
+  ],
+  [
+   "M",
+   "P"
+  ],
+  [
+   "RNA",
+   "P"
+  ],
+  [
+   "RNA",
+   "M"
+  ],
+  [
+   "P",
+   "M"
+  ],
+  [
+   "P",
+   "RNA"
+  ]
+ ],
+ "arms": [
+  "M",
+  "RNA",
+  "P",
+  "M+RNA",
+  "M+P",
+  "RNA+P",
+  "M+RNA+P",
+  "Pval",
+  "M+Pval",
+  "RNA+Pval",
+  "M+vRNA",
+  "M+vP",
+  "RNA+vP",
+  "RNA+vM",
+  "P+vM",
+  "P+vRNA",
+  "M+vRNA_shuf",
+  "M+vP_shuf",
+  "RNA+vP_shuf",
+  "RNA+vM_shuf",
+  "P+vM_shuf",
+  "P+vRNA_shuf",
+  "repro_M_extra19"
+ ],
+ "rna_shape": [
+  421,
+  34985
+ ]
+}

@@ -1,0 +1,212 @@
+{
+ "scenario": "new_cell",
+ "stage": "main",
+ "script_sha256": "dea8e99d553382ab693cf03249696761aaa43f6fbcc956d4af215d8b4c8ffa39",
+ "source_sha256": "52d71517a8952e83a1603cd831f09449544102d0ca5ff829ff01be9bf79cd637",
+ "alphas": [
+  0.1,
+  1.0,
+  10.0,
+  100.0
+ ],
+ "ws": [
+  0.0,
+  0.25,
+  1.0
+ ],
+ "ks": [
+  8,
+  16,
+  32,
+  64,
+  128
+ ],
+ "ksel": [
+  8,
+  16,
+  32,
+  64
+ ],
+ "rks": [
+  16,
+  32
+ ],
+ "seeds": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "top_genes": 3000,
+ "p_cover": 0.9,
+ "min_pair": 10,
+ "arms": {
+  "m_only": [
+   "M|w0.0"
+  ],
+  "m_panel_k8": [
+   "G8|w0.0"
+  ],
+  "m_panel_k16": [
+   "G16|w0.0"
+  ],
+  "m_panel_k32": [
+   "G32|w0.0"
+  ],
+  "m_panel_k64": [
+   "G64|w0.0"
+  ],
+  "m_panel_k128": [
+   "G128|w0.0"
+  ],
+  "m_panel_sel": [
+   "G8|w0.0",
+   "G16|w0.0",
+   "G32|w0.0",
+   "G64|w0.0"
+  ],
+  "random_k16_s0": [
+   "R16s0|w0.0"
+  ],
+  "random_k16_s1": [
+   "R16s1|w0.0"
+  ],
+  "random_k16_s2": [
+   "R16s2|w0.0"
+  ],
+  "random_k16_s3": [
+   "R16s3|w0.0"
+  ],
+  "random_k16_s4": [
+   "R16s4|w0.0"
+  ],
+  "random_k32_s0": [
+   "R32s0|w0.0"
+  ],
+  "random_k32_s1": [
+   "R32s1|w0.0"
+  ],
+  "random_k32_s2": [
+   "R32s2|w0.0"
+  ],
+  "random_k32_s3": [
+   "R32s3|w0.0"
+  ],
+  "random_k32_s4": [
+   "R32s4|w0.0"
+  ],
+  "m_allcand": [
+   "A|w0.0"
+  ],
+  "m_panel_pg_k32": [
+   "PG32|w0.0"
+  ],
+  "tissue_only": [
+   "T"
+  ],
+  "m_tissue": [
+   "M|w0.0",
+   "M|w0.25",
+   "M|w1.0"
+  ],
+  "m_panel_tissue_k8": [
+   "G8|w0.0",
+   "G8|w0.25",
+   "G8|w1.0"
+  ],
+  "m_panel_tissue_k16": [
+   "G16|w0.0",
+   "G16|w0.25",
+   "G16|w1.0"
+  ],
+  "m_panel_tissue_k32": [
+   "G32|w0.0",
+   "G32|w0.25",
+   "G32|w1.0"
+  ],
+  "m_panel_tissue_k64": [
+   "G64|w0.0",
+   "G64|w0.25",
+   "G64|w1.0"
+  ],
+  "m_panel_tissue_k128": [
+   "G128|w0.0",
+   "G128|w0.25",
+   "G128|w1.0"
+  ],
+  "m_panel_tissue_sel": [
+   "G8|w0.0",
+   "G8|w0.25",
+   "G8|w1.0",
+   "G16|w0.0",
+   "G16|w0.25",
+   "G16|w1.0",
+   "G32|w0.0",
+   "G32|w0.25",
+   "G32|w1.0",
+   "G64|w0.0",
+   "G64|w0.25",
+   "G64|w1.0"
+  ],
+  "random_tissue_k16_s0": [
+   "R16s0|w0.0",
+   "R16s0|w0.25",
+   "R16s0|w1.0"
+  ],
+  "random_tissue_k16_s1": [
+   "R16s1|w0.0",
+   "R16s1|w0.25",
+   "R16s1|w1.0"
+  ],
+  "random_tissue_k16_s2": [
+   "R16s2|w0.0",
+   "R16s2|w0.25",
+   "R16s2|w1.0"
+  ],
+  "random_tissue_k16_s3": [
+   "R16s3|w0.0",
+   "R16s3|w0.25",
+   "R16s3|w1.0"
+  ],
+  "random_tissue_k16_s4": [
+   "R16s4|w0.0",
+   "R16s4|w0.25",
+   "R16s4|w1.0"
+  ],
+  "random_tissue_k32_s0": [
+   "R32s0|w0.0",
+   "R32s0|w0.25",
+   "R32s0|w1.0"
+  ],
+  "random_tissue_k32_s1": [
+   "R32s1|w0.0",
+   "R32s1|w0.25",
+   "R32s1|w1.0"
+  ],
+  "random_tissue_k32_s2": [
+   "R32s2|w0.0",
+   "R32s2|w0.25",
+   "R32s2|w1.0"
+  ],
+  "random_tissue_k32_s3": [
+   "R32s3|w0.0",
+   "R32s3|w0.25",
+   "R32s3|w1.0"
+  ],
+  "random_tissue_k32_s4": [
+   "R32s4|w0.0",
+   "R32s4|w0.25",
+   "R32s4|w1.0"
+  ],
+  "m_allcand_tissue": [
+   "A|w0.0",
+   "A|w0.25",
+   "A|w1.0"
+  ]
+ },
+ "rna_shape": [
+  421,
+  34985
+ ]
+}

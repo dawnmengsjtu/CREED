@@ -1,0 +1,7 @@
+# Recorded early CPU stack; not the unavailable original CUDA image.
+# Python 3.11.2. This environment has NOT been validated in this release.
+numpy==1.26.4
+scipy==1.16.3
+scikit-learn==1.7.2
+torch==2.2.0
+openpyxl==3.1.5

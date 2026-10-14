@@ -1,0 +1,86 @@
+{
+ "scenario": "tissue",
+ "generator_check": {
+  "fold-0/M->RNA": {
+   "lam": 0.1,
+   "lam_saved": 0.1,
+   "r2": 0.3238449690481202,
+   "r2_saved": 0.3238449690481203,
+   "lam_identical": true,
+   "r2_abs_diff": 1.1102230246251565e-16
+  },
+  "fold-0/M->P": {
+   "lam": 1.0,
+   "lam_saved": 1.0,
+   "r2": 0.17264445976877596,
+   "r2_saved": 0.17264445976877596,
+   "lam_identical": true,
+   "r2_abs_diff": 0.0
+  },
+  "fold-1/M->RNA": {
+   "lam": 0.1,
+   "lam_saved": 0.1,
+   "r2": 0.19677148481636564,
+   "r2_saved": 0.19677148481636567,
+   "lam_identical": true,
+   "r2_abs_diff": 2.7755575615628914e-17
+  },
+  "fold-1/M->P": {
+   "lam": 1.0,
+   "lam_saved": 1.0,
+   "r2": 0.11666931008940457,
+   "r2_saved": 0.11666931008940458,
+   "lam_identical": true,
+   "r2_abs_diff": 1.3877787807814457e-17
+  },
+  "fold-2/M->RNA": {
+   "lam": 0.1,
+   "lam_saved": 0.1,
+   "r2": 0.3246297856504698,
+   "r2_saved": 0.3246297856504696,
+   "lam_identical": true,
+   "r2_abs_diff": 1.6653345369377348e-16
+  },
+  "fold-2/M->P": {
+   "lam": 1.0,
+   "lam_saved": 1.0,
+   "r2": 0.17735381305114972,
+   "r2_saved": 0.17735381305114972,
+   "lam_identical": true,
+   "r2_abs_diff": 0.0
+  },
+  "fold-3/M->RNA": {
+   "lam": 0.1,
+   "lam_saved": 0.1,
+   "r2": 0.31258639408141287,
+   "r2_saved": 0.3125863940814131,
+   "lam_identical": true,
+   "r2_abs_diff": 2.220446049250313e-16
+  },
+  "fold-3/M->P": {
+   "lam": 1.0,
+   "lam_saved": 1.0,
+   "r2": 0.15101212829556393,
+   "r2_saved": 0.15101212829556393,
+   "lam_identical": true,
+   "r2_abs_diff": 0.0
+  },
+  "fold-4/M->RNA": {
+   "lam": 0.1,
+   "lam_saved": 0.1,
+   "r2": 0.32283583406241245,
+   "r2_saved": 0.32283583406241245,
+   "lam_identical": true,
+   "r2_abs_diff": 0.0
+  },
+  "fold-4/M->P": {
+   "lam": 1.0,
+   "lam_saved": 1.0,
+   "r2": 0.17705992100537601,
+   "r2_saved": 0.17705992100537604,
+   "lam_identical": true,
+   "r2_abs_diff": 2.7755575615628914e-17
+  }
+ },
+ "seconds": 5.916697298176587
+}

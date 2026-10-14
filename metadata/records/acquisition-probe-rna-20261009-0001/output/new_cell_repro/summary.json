@@ -1,0 +1,189 @@
+{
+ "scenario": "new_cell",
+ "stage": "repro",
+ "reproduction": {
+  "grid_max_abs_diff": {
+   "original__m_only": 3.297362383136715e-14,
+   "extra__m_only": 2.220446049250313e-14
+  },
+  "pred_max_abs_diff": {
+   "original__m_only": 1.587618925213974e-14,
+   "extra__m_only": 1.709743457922741e-14
+  },
+  "matrix_pred_max_abs_diff": {
+   "M+RNA": 1.965094753586527e-14,
+   "M+vRNA": 1.554312234475219e-14
+  },
+  "matrix_alpha_selection_mismatches": {
+   "M+RNA": 0,
+   "M+vRNA": 0
+  },
+  "inner_loss_max_abs_diff_vs_matrix": {
+   "M+vRNA": 5.684341886080802e-14,
+   "M+RNA": 2.842170943040401e-14
+  },
+  "kernel_block_max_abs_diff": 1.1102230246251565e-16,
+  "fold_score_max_abs_diff_my_pred_vs_saved_csv": 2.220446049250313e-16,
+  "fold_score_max_abs_diff_my_metric_on_saved_pred_vs_saved_csv": 0.0,
+  "matrix_gain_pct": {
+   "headroom_M+RNA_vs_M": 3.0788101203328706,
+   "recovered_M+vRNA_vs_M": 1.0555808085535558,
+   "headroom_abs_diff_vs_registered": 1.2434497875801753e-14,
+   "recovered_abs_diff_vs_registered": 1.9984014443252818e-15
+  },
+  "passed": true
+ },
+ "rows": [
+  {
+   "fold": 0,
+   "arm": "original__m_only",
+   "score": 1.009175382268863,
+   "score_of_saved_pred": 1.009175382268863
+  },
+  {
+   "fold": 0,
+   "arm": "extra__m_only",
+   "score": 1.0090786776788292,
+   "score_of_saved_pred": 1.0090786776788294
+  },
+  {
+   "fold": 0,
+   "arm": "M+RNA",
+   "score": 0.977381903557554,
+   "score_of_saved_pred": 0.977381903557554
+  },
+  {
+   "fold": 0,
+   "arm": "M+vRNA",
+   "score": 1.000473116983728,
+   "score_of_saved_pred": 1.000473116983728
+  },
+  {
+   "fold": 0,
+   "arm": "M",
+   "score": 1.009175382268863,
+   "score_of_saved_pred": 1.009175382268863
+  },
+  {
+   "fold": 1,
+   "arm": "original__m_only",
+   "score": 1.0115043968825455,
+   "score_of_saved_pred": 1.0115043968825452
+  },
+  {
+   "fold": 1,
+   "arm": "extra__m_only",
+   "score": 1.0098531920000184,
+   "score_of_saved_pred": 1.0098531920000184
+  },
+  {
+   "fold": 1,
+   "arm": "M+RNA",
+   "score": 0.9760423761541802,
+   "score_of_saved_pred": 0.9760423761541802
+  },
+  {
+   "fold": 1,
+   "arm": "M+vRNA",
+   "score": 1.0046382339811606,
+   "score_of_saved_pred": 1.0046382339811606
+  },
+  {
+   "fold": 1,
+   "arm": "M",
+   "score": 1.0115043968825455,
+   "score_of_saved_pred": 1.0115043968825452
+  },
+  {
+   "fold": 2,
+   "arm": "original__m_only",
+   "score": 0.9104298716119336,
+   "score_of_saved_pred": 0.9104298716119336
+  },
+  {
+   "fold": 2,
+   "arm": "extra__m_only",
+   "score": 0.9088022658858468,
+   "score_of_saved_pred": 0.9088022658858468
+  },
+  {
+   "fold": 2,
+   "arm": "M+RNA",
+   "score": 0.8777836446021688,
+   "score_of_saved_pred": 0.8777836446021688
+  },
+  {
+   "fold": 2,
+   "arm": "M+vRNA",
+   "score": 0.9000121558459298,
+   "score_of_saved_pred": 0.9000121558459296
+  },
+  {
+   "fold": 2,
+   "arm": "M",
+   "score": 0.9104298716119336,
+   "score_of_saved_pred": 0.9104298716119336
+  },
+  {
+   "fold": 3,
+   "arm": "original__m_only",
+   "score": 1.0747029084455957,
+   "score_of_saved_pred": 1.0747029084455957
+  },
+  {
+   "fold": 3,
+   "arm": "extra__m_only",
+   "score": 1.0746943242836124,
+   "score_of_saved_pred": 1.0746943242836124
+  },
+  {
+   "fold": 3,
+   "arm": "M+RNA",
+   "score": 1.0473946380588386,
+   "score_of_saved_pred": 1.0473946380588386
+  },
+  {
+   "fold": 3,
+   "arm": "M+vRNA",
+   "score": 1.061517604616477,
+   "score_of_saved_pred": 1.061517604616477
+  },
+  {
+   "fold": 3,
+   "arm": "M",
+   "score": 1.0747029084455957,
+   "score_of_saved_pred": 1.0747029084455957
+  },
+  {
+   "fold": 4,
+   "arm": "original__m_only",
+   "score": 1.0544119665321194,
+   "score_of_saved_pred": 1.0544119665321194
+  },
+  {
+   "fold": 4,
+   "arm": "extra__m_only",
+   "score": 1.0508796188865286,
+   "score_of_saved_pred": 1.0508796188865286
+  },
+  {
+   "fold": 4,
+   "arm": "M+RNA",
+   "score": 1.026882007987858,
+   "score_of_saved_pred": 1.0268820079878582
+  },
+  {
+   "fold": 4,
+   "arm": "M+vRNA",
+   "score": 1.0400124928229972,
+   "score_of_saved_pred": 1.040012492822997
+  },
+  {
+   "fold": 4,
+   "arm": "M",
+   "score": 1.0544119665321194,
+   "score_of_saved_pred": 1.0544119665321194
+  }
+ ],
+ "seconds": 45.58908300101757
+}

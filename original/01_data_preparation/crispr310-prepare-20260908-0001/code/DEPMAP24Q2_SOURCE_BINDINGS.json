@@ -1,0 +1,16 @@
+{
+  "retrieved_date": "2026-09-08",
+  "source": "https://api.figshare.com/v2/articles/25880521",
+  "title": "DepMap 24Q2 Public",
+  "doi": "10.25452/figshare.plus.25880521.v1",
+  "version": 1,
+  "license": "CC BY 4.0",
+  "files": {
+    "CRISPRGeneEffect.csv": {"bytes": 419330454, "md5": "d10d73692672380b3792231549e97d5a", "url": "https://ndownloader.figshare.com/files/46489063"},
+    "Model.csv": {"bytes": 559182, "md5": "e5b60d1ce7636542d93f45494019eded", "url": "https://ndownloader.figshare.com/files/46489732"},
+    "README.txt": {"bytes": 37597, "md5": "9e15149395b8828a3dd3e6b0ae359346", "url": "https://ndownloader.figshare.com/files/46500415"},
+    "CRISPRScreenMap.csv": {"bytes": 35507, "md5": "e8c2b3902baf7e6c82fac1cf2aec8bff", "url": "https://ndownloader.figshare.com/files/46489624"},
+    "AchillesScreenQCReport.csv": {"bytes": 319485, "md5": "678c331e87b758a66f41e29de0284e96", "url": "https://ndownloader.figshare.com/files/46486213"}
+  },
+  "scope": "Official metadata retrieved only; source-byte match must be checked on A6000. No expression or response data downloaded."
+}

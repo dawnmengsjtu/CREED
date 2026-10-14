@@ -1,0 +1,48 @@
+{
+ "scenario": "tissue",
+ "stage": "repro",
+ "reproduction": {
+  "grid_max_abs_diff": {
+   "original__m_only": 3.774758283725532e-14
+  },
+  "pred_max_abs_diff": {
+   "original__m_only": 2.3092638912203256e-14
+  },
+  "fold_score_max_abs_diff_my_pred_vs_saved_csv": 2.220446049250313e-16,
+  "fold_score_max_abs_diff_my_metric_on_saved_pred_vs_saved_csv": 0.0,
+  "passed": true
+ },
+ "rows": [
+  {
+   "fold": 0,
+   "arm": "original__m_only",
+   "score": 0.9075838091504397,
+   "score_of_saved_pred": 0.9075838091504395
+  },
+  {
+   "fold": 1,
+   "arm": "original__m_only",
+   "score": 1.975100996061474,
+   "score_of_saved_pred": 1.975100996061474
+  },
+  {
+   "fold": 2,
+   "arm": "original__m_only",
+   "score": 0.9020683394584537,
+   "score_of_saved_pred": 0.9020683394584538
+  },
+  {
+   "fold": 3,
+   "arm": "original__m_only",
+   "score": 0.9487383637168572,
+   "score_of_saved_pred": 0.9487383637168574
+  },
+  {
+   "fold": 4,
+   "arm": "original__m_only",
+   "score": 0.8675377552882293,
+   "score_of_saved_pred": 0.8675377552882293
+  }
+ ],
+ "seconds": 10.806372159160674
+}

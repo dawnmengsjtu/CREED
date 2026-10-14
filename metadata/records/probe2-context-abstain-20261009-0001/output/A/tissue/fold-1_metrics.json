@@ -1,0 +1,372 @@
+[
+ {
+  "scenario": "tissue",
+  "arm": "m_only",
+  "fold": 1,
+  "n_fit": 337,
+  "n_query": 84,
+  "score": 1.975100996061474,
+  "spearman": 0.07971742018364555,
+  "centered_mse": 3.2745912310737584
+ },
+ {
+  "scenario": "tissue",
+  "arm": "repro_extra_m_only",
+  "fold": 1,
+  "n_fit": 337,
+  "n_query": 84,
+  "score": 1.9757174073352723,
+  "spearman": 0.08304974856987359,
+  "centered_mse": 3.2743145632804596
+ },
+ {
+  "scenario": "tissue",
+  "arm": "m_allcand",
+  "fold": 1,
+  "n_fit": 337,
+  "n_query": 84,
+  "score": 1.935340403479451,
+  "spearman": 0.148918533271377,
+  "centered_mse": 3.249775251149995
+ },
+ {
+  "scenario": "tissue",
+  "arm": "global_static_k8",
+  "fold": 1,
+  "n_fit": 337,
+  "n_query": 84,
+  "score": 1.9396497518140041,
+  "spearman": 0.11560034000288932,
+  "centered_mse": 3.260233493867102
+ },
+ {
+  "scenario": "tissue",
+  "arm": "cluster_adaptive_k8",
+  "fold": 1,
+  "n_fit": 337,
+  "n_query": 84,
+  "score": 1.9571642784043424,
+  "spearman": 0.10041871271443274,
+  "centered_mse": 3.260243885472636
+ },
+ {
+  "scenario": "tissue",
+  "arm": "matched_random_cluster_k8_s0",
+  "fold": 1,
+  "n_fit": 337,
+  "n_query": 84,
+  "score": 1.9665209818188982,
+  "spearman": 0.1052509856648665,
+  "centered_mse": 3.265540316363176
+ },
+ {
+  "scenario": "tissue",
+  "arm": "random_global_k8_s0",
+  "fold": 1,
+  "n_fit": 337,
+  "n_query": 84,
+  "score": 1.971611843316668,
+  "spearman": 0.060039929724030064,
+  "centered_mse": 3.2816367334603904
+ },
+ {
+  "scenario": "tissue",
+  "arm": "matched_random_cluster_k8_s1",
+  "fold": 1,
+  "n_fit": 337,
+  "n_query": 84,
+  "score": 1.9613092678698376,
+  "spearman": 0.10245119924669037,
+  "centered_mse": 3.2676881546881407
+ },
+ {
+  "scenario": "tissue",
+  "arm": "random_global_k8_s1",
+  "fold": 1,
+  "n_fit": 337,
+  "n_query": 84,
+  "score": 1.9552198750031988,
+  "spearman": 0.10844563867825495,
+  "centered_mse": 3.2659367939509267
+ },
+ {
+  "scenario": "tissue",
+  "arm": "matched_random_cluster_k8_s2",
+  "fold": 1,
+  "n_fit": 337,
+  "n_query": 84,
+  "score": 1.9634128310515035,
+  "spearman": 0.07971965094579911,
+  "centered_mse": 3.269323071394287
+ },
+ {
+  "scenario": "tissue",
+  "arm": "random_global_k8_s2",
+  "fold": 1,
+  "n_fit": 337,
+  "n_query": 84,
+  "score": 1.9621566702112199,
+  "spearman": 0.09946662528020246,
+  "centered_mse": 3.2641582640539837
+ },
+ {
+  "scenario": "tissue",
+  "arm": "global_static_k16",
+  "fold": 1,
+  "n_fit": 337,
+  "n_query": 84,
+  "score": 1.950239574880278,
+  "spearman": 0.10178515568960445,
+  "centered_mse": 3.2738858021220345
+ },
+ {
+  "scenario": "tissue",
+  "arm": "cluster_adaptive_k16",
+  "fold": 1,
+  "n_fit": 337,
+  "n_query": 84,
+  "score": 1.9582451283566924,
+  "spearman": 0.11494483056897488,
+  "centered_mse": 3.2641846387565328
+ },
+ {
+  "scenario": "tissue",
+  "arm": "matched_random_cluster_k16_s0",
+  "fold": 1,
+  "n_fit": 337,
+  "n_query": 84,
+  "score": 1.9663155267383852,
+  "spearman": 0.09892048267241847,
+  "centered_mse": 3.2709617510597733
+ },
+ {
+  "scenario": "tissue",
+  "arm": "random_global_k16_s0",
+  "fold": 1,
+  "n_fit": 337,
+  "n_query": 84,
+  "score": 1.9734475371038087,
+  "spearman": 0.061247762278827396,
+  "centered_mse": 3.28296845867148
+ },
+ {
+  "scenario": "tissue",
+  "arm": "matched_random_cluster_k16_s1",
+  "fold": 1,
+  "n_fit": 337,
+  "n_query": 84,
+  "score": 1.9530129685731954,
+  "spearman": 0.09985934057964006,
+  "centered_mse": 3.2631808423811037
+ },
+ {
+  "scenario": "tissue",
+  "arm": "random_global_k16_s1",
+  "fold": 1,
+  "n_fit": 337,
+  "n_query": 84,
+  "score": 1.9601983559268683,
+  "spearman": 0.10492928651990881,
+  "centered_mse": 3.27144331782089
+ },
+ {
+  "scenario": "tissue",
+  "arm": "matched_random_cluster_k16_s2",
+  "fold": 1,
+  "n_fit": 337,
+  "n_query": 84,
+  "score": 1.9604294508322158,
+  "spearman": 0.09429797806118681,
+  "centered_mse": 3.270585176108751
+ },
+ {
+  "scenario": "tissue",
+  "arm": "random_global_k16_s2",
+  "fold": 1,
+  "n_fit": 337,
+  "n_query": 84,
+  "score": 1.9592220652176588,
+  "spearman": 0.08672611179283736,
+  "centered_mse": 3.2728675949499353
+ },
+ {
+  "scenario": "tissue",
+  "arm": "global_static_k32",
+  "fold": 1,
+  "n_fit": 337,
+  "n_query": 84,
+  "score": 1.9414063012929772,
+  "spearman": 0.12360737681614484,
+  "centered_mse": 3.262438708812817
+ },
+ {
+  "scenario": "tissue",
+  "arm": "cluster_adaptive_k32",
+  "fold": 1,
+  "n_fit": 337,
+  "n_query": 84,
+  "score": 1.9458302148132383,
+  "spearman": 0.1343582758925806,
+  "centered_mse": 3.252705035062932
+ },
+ {
+  "scenario": "tissue",
+  "arm": "matched_random_cluster_k32_s0",
+  "fold": 1,
+  "n_fit": 337,
+  "n_query": 84,
+  "score": 1.9565385469599301,
+  "spearman": 0.1114889342536716,
+  "centered_mse": 3.2634289723391343
+ },
+ {
+  "scenario": "tissue",
+  "arm": "random_global_k32_s0",
+  "fold": 1,
+  "n_fit": 337,
+  "n_query": 84,
+  "score": 1.9507394812077565,
+  "spearman": 0.11192615873176506,
+  "centered_mse": 3.268213763030235
+ },
+ {
+  "scenario": "tissue",
+  "arm": "matched_random_cluster_k32_s1",
+  "fold": 1,
+  "n_fit": 337,
+  "n_query": 84,
+  "score": 1.9530139151940247,
+  "spearman": 0.09877057016683409,
+  "centered_mse": 3.2670939545985815
+ },
+ {
+  "scenario": "tissue",
+  "arm": "random_global_k32_s1",
+  "fold": 1,
+  "n_fit": 337,
+  "n_query": 84,
+  "score": 1.9415239148327572,
+  "spearman": 0.12865530622659846,
+  "centered_mse": 3.2515743537223325
+ },
+ {
+  "scenario": "tissue",
+  "arm": "matched_random_cluster_k32_s2",
+  "fold": 1,
+  "n_fit": 337,
+  "n_query": 84,
+  "score": 1.9513999425262691,
+  "spearman": 0.10759996424786651,
+  "centered_mse": 3.2632637549777956
+ },
+ {
+  "scenario": "tissue",
+  "arm": "random_global_k32_s2",
+  "fold": 1,
+  "n_fit": 337,
+  "n_query": 84,
+  "score": 1.9547984892470882,
+  "spearman": 0.11480947019057369,
+  "centered_mse": 3.2702426138364435
+ },
+ {
+  "scenario": "tissue",
+  "arm": "global_static_k64",
+  "fold": 1,
+  "n_fit": 337,
+  "n_query": 84,
+  "score": 1.9392323517731325,
+  "spearman": 0.13667588442456274,
+  "centered_mse": 3.257206435932183
+ },
+ {
+  "scenario": "tissue",
+  "arm": "cluster_adaptive_k64",
+  "fold": 1,
+  "n_fit": 337,
+  "n_query": 84,
+  "score": 1.9382806275436908,
+  "spearman": 0.15685711303538535,
+  "centered_mse": 3.2415135830206085
+ },
+ {
+  "scenario": "tissue",
+  "arm": "matched_random_cluster_k64_s0",
+  "fold": 1,
+  "n_fit": 337,
+  "n_query": 84,
+  "score": 1.9484581857825323,
+  "spearman": 0.12196568336580647,
+  "centered_mse": 3.259421774138937
+ },
+ {
+  "scenario": "tissue",
+  "arm": "random_global_k64_s0",
+  "fold": 1,
+  "n_fit": 337,
+  "n_query": 84,
+  "score": 1.9483459835172687,
+  "spearman": 0.1171692291736372,
+  "centered_mse": 3.2651662298182167
+ },
+ {
+  "scenario": "tissue",
+  "arm": "matched_random_cluster_k64_s1",
+  "fold": 1,
+  "n_fit": 337,
+  "n_query": 84,
+  "score": 1.9486829596301534,
+  "spearman": 0.1098174869022334,
+  "centered_mse": 3.2612962851196863
+ },
+ {
+  "scenario": "tissue",
+  "arm": "random_global_k64_s1",
+  "fold": 1,
+  "n_fit": 337,
+  "n_query": 84,
+  "score": 1.944323745009044,
+  "spearman": 0.13131460410232348,
+  "centered_mse": 3.254727285037437
+ },
+ {
+  "scenario": "tissue",
+  "arm": "matched_random_cluster_k64_s2",
+  "fold": 1,
+  "n_fit": 337,
+  "n_query": 84,
+  "score": 1.951562141256035,
+  "spearman": 0.10255029078628605,
+  "centered_mse": 3.267642910820109
+ },
+ {
+  "scenario": "tissue",
+  "arm": "random_global_k64_s2",
+  "fold": 1,
+  "n_fit": 337,
+  "n_query": 84,
+  "score": 1.9474185362568621,
+  "spearman": 0.1330771673029369,
+  "centered_mse": 3.2554455775881066
+ },
+ {
+  "scenario": "tissue",
+  "arm": "teacher_fullP_saved",
+  "fold": 1,
+  "n_fit": 337,
+  "n_query": 84,
+  "score": 1.9398621932382836,
+  "spearman": 0.14552712390619488,
+  "centered_mse": 3.251671486870883
+ },
+ {
+  "scenario": "tissue",
+  "arm": "null_drug",
+  "fold": 1,
+  "n_fit": 337,
+  "n_query": 84,
+  "score": 1.9923604792140894,
+  "spearman": NaN,
+  "centered_mse": 3.2832886452568313
+ }
+]

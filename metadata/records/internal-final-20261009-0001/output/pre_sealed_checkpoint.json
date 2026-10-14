@@ -1,0 +1,52 @@
+{
+ "n_train": 421,
+ "n_eval": 123,
+ "gates": {
+  "frozen_rebuild_max_abs_diff": 0.0,
+  "receipt": {
+   "plan_sha256": "ca3288c18736c6a572bb4a087da503148f694dd3c89d8f6c6afecbaec87bfdc1",
+   "code_sha256": {
+    "creed_core.py": "ae72a12cfe85b63e6b6da01d4b4d867721c8829ba801a81c891395ad43f1cd6d",
+    "oneshot.py": "50192cc4a0cb9d43c00f92630a49cdebf728603d62c74168a19595a5d84ba8c5",
+    "sealed_io.py": "24679bce963299660b619049883645d9e94bf0fd8f959145271be2712cb6ae85"
+   },
+   "frozen_models_sha256": {
+    "FROZEN_MANIFEST.json": "a2d530e9ad59b8d4c43a398bf5eda795e2af35f3c6229a9106d558e2da48777e",
+    "inner_losses.npz": "143f6bd5bcc2445b0ea92be5a8ce90c6010619731ecdb927ee75c56a9e6752d4",
+    "model.npz": "8e89f4a42ef76d1eca1d1416f57fa64d7f58ca12cb9ec8e366b87d056f5322cf"
+   },
+   "environment": {
+    "numpy": "2.0.2",
+    "scipy": "1.13.1"
+   },
+   "internal_final_ids_sha256": "e8f278c49c8159c8d92e88404fed5dbd6da0439e91433262e5403a0218507be9"
+  },
+  "gdsc_parity_421": {
+   "source_sha256": "9d6dc82b9a072bb00b6139dcd6c4c11de1e047f210382fb726e92ab8dd0eae2a",
+   "source_is_24jul22": true,
+   "drugs_equal": true,
+   "max_abs_diff": 0.0,
+   "nan_pattern_equal": true,
+   "passed": true
+  },
+  "crispr_parity_310": {
+   "info": {
+    "effect_md5": "d10d73692672380b3792231549e97d5a",
+    "effect_bytes": 419330454,
+    "effect_is_24q2": true,
+    "model_sha256": "a4cac376131b41aa10b60a075b11c80264bfa860a5509d22cde259c5e85867f8",
+    "source_rows": 1150,
+    "header_genes": 18443,
+    "mapped_models": 420,
+    "lines_with_crispr": 310,
+    "extra_header_genes": 0
+   },
+   "n_dev_lines_expected": 310,
+   "n_dev_lines_found": 310,
+   "lines_with_crispr_in_421": 310,
+   "nan_pattern_equal": true,
+   "max_abs_diff": 0.0,
+   "passed": true
+  }
+ }
+}

@@ -1,0 +1,103 @@
+{
+ "fold-0/inner-0": {
+  "n_fit": 218,
+  "n_query": 110,
+  "n_panel": 281,
+  "candidate_count": 3000,
+  "top_gene": "SPARC",
+  "kernel_block_max_abs_diff": 1.1102230246251565e-16,
+  "matrix_generator": {
+   "lam": 0.1,
+   "oof_r2_mean": 0.21717408096673207,
+   "oof_r2_median": 0.21312143244287568,
+   "virtual_width": 887.6702779777288
+  },
+  "head_meas_width": 5966.634389152607,
+  "generator_loss": [
+   1.3574239608873488,
+   1.3000190285729385,
+   1.3148921687910966,
+   1.3334632562348472
+  ],
+  "virtual_oof_r2": 0.13956240118530405,
+  "virtual_query_mse": 1.3000190285729385,
+  "head_virt_width": 5189.6279529092335
+ },
+ "fold-0/inner-1": {
+  "n_fit": 219,
+  "n_query": 109,
+  "n_panel": 281,
+  "candidate_count": 3000,
+  "top_gene": "TGFBI",
+  "kernel_block_max_abs_diff": 1.1102230246251565e-16,
+  "matrix_generator": {
+   "lam": 0.1,
+   "oof_r2_mean": 0.357527318630004,
+   "oof_r2_median": 0.3835442731068569,
+   "virtual_width": 808.2168642988039
+  },
+  "head_meas_width": 6082.30965804092,
+  "generator_loss": [
+   0.7640433007264253,
+   0.7560931226638036,
+   0.8060560440242628,
+   0.8501561918529588
+  ],
+  "virtual_oof_r2": 0.22811857383492384,
+  "virtual_query_mse": 0.7560931226638036,
+  "head_virt_width": 4591.880057953823
+ },
+ "fold-0/inner-2": {
+  "n_fit": 219,
+  "n_query": 109,
+  "n_panel": 281,
+  "candidate_count": 3000,
+  "top_gene": "KRT19",
+  "kernel_block_max_abs_diff": 1.1102230246251565e-16,
+  "matrix_generator": {
+   "lam": 0.1,
+   "oof_r2_mean": 0.3644620826061161,
+   "oof_r2_median": 0.38753240576136505,
+   "virtual_width": 769.9086105175687
+  },
+  "head_meas_width": 5943.334514469281,
+  "generator_loss": [
+   0.8048064789474593,
+   0.8079003857390422,
+   0.8567827923334362,
+   0.9071906370590731
+  ],
+  "virtual_oof_r2": 0.21329311105340099,
+  "virtual_query_mse": 0.8079003857390422,
+  "head_virt_width": 4369.563600554151
+ },
+ "fold-0": {
+  "generator_alpha": 1.0,
+  "generator_loss_sum": [
+   2.926274,
+   2.864013,
+   2.977731,
+   3.09081
+  ],
+  "alpha_counts": {
+   "H_meas": [
+    92,
+    116,
+    42,
+    31
+   ],
+   "H_virt": [
+    29,
+    120,
+    62,
+    70
+   ],
+   "matrix_vRNA": [
+    36,
+    118,
+    69,
+    58
+   ]
+  }
+ }
+}

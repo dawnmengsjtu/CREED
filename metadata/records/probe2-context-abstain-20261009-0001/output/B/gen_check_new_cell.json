@@ -1,0 +1,86 @@
+{
+ "scenario": "new_cell",
+ "generator_check": {
+  "fold-0/M->RNA": {
+   "lam": 0.1,
+   "lam_saved": 0.1,
+   "r2": 0.27740219874195765,
+   "r2_saved": 0.2774021987419575,
+   "lam_identical": true,
+   "r2_abs_diff": 1.6653345369377348e-16
+  },
+  "fold-0/M->P": {
+   "lam": 1.0,
+   "lam_saved": 1.0,
+   "r2": 0.15998522181351593,
+   "r2_saved": 0.15998522181351588,
+   "lam_identical": true,
+   "r2_abs_diff": 5.551115123125783e-17
+  },
+  "fold-1/M->RNA": {
+   "lam": 0.1,
+   "lam_saved": 0.1,
+   "r2": 0.28444505125361674,
+   "r2_saved": 0.2844450512536168,
+   "lam_identical": true,
+   "r2_abs_diff": 5.551115123125783e-17
+  },
+  "fold-1/M->P": {
+   "lam": 1.0,
+   "lam_saved": 1.0,
+   "r2": 0.16282711295317837,
+   "r2_saved": 0.16282711295317825,
+   "lam_identical": true,
+   "r2_abs_diff": 1.1102230246251565e-16
+  },
+  "fold-2/M->RNA": {
+   "lam": 0.1,
+   "lam_saved": 0.1,
+   "r2": 0.2730726165346652,
+   "r2_saved": 0.2730726165346653,
+   "lam_identical": true,
+   "r2_abs_diff": 1.1102230246251565e-16
+  },
+  "fold-2/M->P": {
+   "lam": 1.0,
+   "lam_saved": 1.0,
+   "r2": 0.16014679768397216,
+   "r2_saved": 0.16014679768397222,
+   "lam_identical": true,
+   "r2_abs_diff": 5.551115123125783e-17
+  },
+  "fold-3/M->RNA": {
+   "lam": 0.1,
+   "lam_saved": 0.1,
+   "r2": 0.2788818145576338,
+   "r2_saved": 0.2788818145576337,
+   "lam_identical": true,
+   "r2_abs_diff": 5.551115123125783e-17
+  },
+  "fold-3/M->P": {
+   "lam": 1.0,
+   "lam_saved": 1.0,
+   "r2": 0.15556329194711804,
+   "r2_saved": 0.15556329194711804,
+   "lam_identical": true,
+   "r2_abs_diff": 0.0
+  },
+  "fold-4/M->RNA": {
+   "lam": 0.1,
+   "lam_saved": 0.1,
+   "r2": 0.26698004820859395,
+   "r2_saved": 0.266980048208594,
+   "lam_identical": true,
+   "r2_abs_diff": 5.551115123125783e-17
+  },
+  "fold-4/M->P": {
+   "lam": 1.0,
+   "lam_saved": 1.0,
+   "r2": 0.1607072607929316,
+   "r2_saved": 0.16070726079293152,
+   "lam_identical": true,
+   "r2_abs_diff": 8.326672684688674e-17
+  }
+ },
+ "seconds": 6.154008495621383
+}
