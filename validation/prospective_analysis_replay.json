@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "kind": "original analyze.py of prospective-lowdim-20261022-0001 rerun on the deposit; outputs compared byte for byte with the bundled analysis records",
+  "python": "3.9.23",
+  "seconds": 1.02,
+  "files": {
+    "RESULT_AUTO.md": {
+      "record_sha256": "17b77c79c0d5beee02eeb7943fdbd4bdc5b6e8de5894613a85491d50223b60d4",
+      "replayed_sha256": "17b77c79c0d5beee02eeb7943fdbd4bdc5b6e8de5894613a85491d50223b60d4",
+      "identical": true
+    },
+    "analysis.json": {
+      "record_sha256": "224a99eaec825d4e3e0ad63b3f15243fe619c0c0d33de6dde009e3f727b075de",
+      "replayed_sha256": "224a99eaec825d4e3e0ad63b3f15243fe619c0c0d33de6dde009e3f727b075de",
+      "identical": true
+    },
+    "cells_A.csv": {
+      "record_sha256": "c0606bc5d88a015122987255eec8a79c80b2351de5f8262cc3c86a2c7cf8d172",
+      "replayed_sha256": "c0606bc5d88a015122987255eec8a79c80b2351de5f8262cc3c86a2c7cf8d172",
+      "identical": true
+    },
+    "figure_2H_prospective.csv": {
+      "record_sha256": "c208dc71d33f732905e12d75ea9e3a8187e68c33534d3637a45e64f5d51e8f29",
+      "replayed_sha256": "c208dc71d33f732905e12d75ea9e3a8187e68c33534d3637a45e64f5d51e8f29",
+      "identical": true
+    },
+    "panel_comparisons.csv": {
+      "record_sha256": "69a0c398e3b8aa335c9be01ea3506d293051330f5c4e8869abc01bd2335b1b33",
+      "replayed_sha256": "69a0c398e3b8aa335c9be01ea3506d293051330f5c4e8869abc01bd2335b1b33",
+      "identical": true
+    }
+  }
+}

@@ -1,4 +1,4 @@
-"""Download, safely unpack, and verify the 27 registered data archives."""
+"""Download, safely unpack, and verify the registered data archives (metadata/TARS_SHA256SUMS)."""
 import argparse
 import json
 from pathlib import Path, PurePosixPath
@@ -75,7 +75,8 @@ def unpack(archives, destination):
     destination.mkdir(parents=True, exist_ok=False)
     expected_files = {r["path"]: r for r in manifest()}
     seen = set()
-    for name, digest in checksum_list(ROOT / "metadata/TARS_SHA256SUMS").items():
+    archives_expected = checksum_list(ROOT / "metadata/TARS_SHA256SUMS")
+    for name, digest in archives_expected.items():
         archive = archives / name
         if not archive.is_file() or sha256(archive) != digest:
             raise RuntimeError("Missing archive or hash mismatch: " + str(archive))
@@ -102,7 +103,7 @@ def unpack(archives, destination):
     if seen != set(expected_files):
         raise RuntimeError("Missing data files: " + repr(set(expected_files) - seen))
     records = install_records(destination)
-    return {"archives_checked": 27, "files_checked": len(seen), "release_records_checked": records, "passed": True,
+    return {"archives_checked": len(archives_expected), "files_checked": len(seen), "release_records_checked": records, "passed": True,
             "bytes": sum(int(r["bytes"]) for r in expected_files.values())}
 
 

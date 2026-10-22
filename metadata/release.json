@@ -1,16 +1,16 @@
 {
-  "date": "2026-10-14",
+  "date": "2026-10-23",
   "source_archive": "08_Methods_S1_code.zip",
-  "source_archive_sha256": "338d3e4959e5d2b379685f62ce800ae6adc9067a47daf389433d6bdc857b38db",
-  "source_files": 327,
+  "source_archive_sha256": "207d2640229f120bba98585d4c29c7d51e20ca213481939ff041f6dafe7b4d21",
+  "source_files": 337,
   "data_record_id": "23299706",
   "data_doi": "10.5281/zenodo.23299706",
-  "data_public_access": "Not available in the unauthenticated check on 2026-10-14 (HTTP 404); reserved DOI, publication pending.",
+  "data_public_access": "Not available in the unauthenticated check on 2026-10-23 (HTTP 404); reserved DOI, publication pending.",
   "changes_to_original_code": false,
-  "portable_validation": "cross-layer matrix, both scenarios, all 5 folds",
-  "license_status": "owner explicitly deferred software licensing on 2026-10-14; package preparation only; no added license grant",
+  "portable_validation": "cross-layer matrix, both scenarios, all 5 folds (2026-10-14); prospective-test analysis rerun on the deposit, byte-identical (2026-10-23)",
+  "license_status": "owner explicitly deferred software licensing on 2026-10-14; still deferred; no added license grant",
   "citation_status": "actual author list pending; template only",
-  "run_records": 174,
+  "run_records": 219,
   "figure_data_stages_verified": 8,
   "final_figure_rendering_verified": false
 }

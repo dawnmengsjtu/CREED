@@ -1,8 +1,8 @@
 {
   "passed": true,
   "kind": "synthetic engineering check; not scientific replication",
-  "python": "3.9.6",
-  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "python": "3.9.23",
+  "platform": "Linux-3.10.0-1160.119.1.el7.x86_64-x86_64-with-glibc2.17",
   "numpy": "2.0.2",
   "scipy": "1.13.1",
   "results": {
@@ -30,7 +30,7 @@
       "arms": 24,
       "folds": 5
     },
-    "shared_crossdrug": "consistency (z-space base vs raw base): 1.887379141862766e-14\nkrr_multi vs predict_grid: 0.0\nbase best alpha score: 0.9295422614892862\nmean best shared config score: 0.905706768262793 n_configs 32\nsvd1 best shared config score: 0.9054868813831607 n_configs 32\nsvd2 best shared config score: 0.906694024800063 n_configs 32\nsvd3 best shared config score: 0.9079230286811467 n_configs 32\nperm best shared config score: 0.9295295978037013 n_configs 32\nnoise: base 0.9999625811594595 shared 0.999951748579071\ncorr(svd1, mean factor): 0.9977576120928526 iters {'svd1': 15, 'svd2': 194, 'svd3': 105}\nnew_cell base_m 4\nnew_cell base_mP 24\nnew_cell base_mt 12\nnew_cell base_mtP 72\nnew_cell shared_m 36\nnew_cell sharedLR_m 100\nnew_cell shared_mt 108\nnew_cell sharedLR_mt 300\nnew_cell shared_mP 216\nnew_cell shared_mtP 648\nnew_cell sharedPerm_m 36\nnew_cell sharedPerm_mt 108\ntissue base_m 4\ntissue base_fm 4\ntissue base_fmP 24\ntissue base_fm_orig 4\ntissue base_fmP_orig 24\ntissue shared_m 36\ntissue shared_fm 36\ntissue sharedLR_fm 100\ntissue shared_fmP 216\ntissue shared_fm_orig 36\ntissue shared_fmP_orig 216\ntissue sharedPerm_fm 36\nnew_cell analyze ok 14 shared_m vs base_m {'mean_rel_pct': 2.5182626891497266, 't': 1.0733566740925764, 'p': 0.3435501226922125, 'ci95': [-3.995711915613354, 9.032237293912807], 'variance_factor': 0.43529411764705883} [-4.249331262863833, 9.013991583210162]\ntissue analyze ok 11 shared_fm vs base_fm {'mean_rel_pct': 0.503785392407971, 't': 0.2592580323788515, 'p': 0.808232090478432, 'ci95': [-4.891351159339472, 5.898921944155413], 'variance_factor': 0.43529411764705883} [-4.108975207639455, 5.028705004479884]\nALL TESTS PASSED"
+    "shared_crossdrug": "consistency (z-space base vs raw base): 1.6764367671839864e-14\nkrr_multi vs predict_grid: 0.0\nbase best alpha score: 0.9295422614892862\nmean best shared config score: 0.9057067682627932 n_configs 32\nsvd1 best shared config score: 0.9054868813831608 n_configs 32\nsvd2 best shared config score: 0.906694024800063 n_configs 32\nsvd3 best shared config score: 0.9079230286811466 n_configs 32\nperm best shared config score: 0.9295295978037015 n_configs 32\nnoise: base 0.9999625811594595 shared 0.999951748579071\ncorr(svd1, mean factor): 0.9977576120928526 iters {'svd1': 15, 'svd2': 194, 'svd3': 105}\nnew_cell base_m 4\nnew_cell base_mP 24\nnew_cell base_mt 12\nnew_cell base_mtP 72\nnew_cell shared_m 36\nnew_cell sharedLR_m 100\nnew_cell shared_mt 108\nnew_cell sharedLR_mt 300\nnew_cell shared_mP 216\nnew_cell shared_mtP 648\nnew_cell sharedPerm_m 36\nnew_cell sharedPerm_mt 108\ntissue base_m 4\ntissue base_fm 4\ntissue base_fmP 24\ntissue base_fm_orig 4\ntissue base_fmP_orig 24\ntissue shared_m 36\ntissue shared_fm 36\ntissue sharedLR_fm 100\ntissue shared_fmP 216\ntissue shared_fm_orig 36\ntissue shared_fmP_orig 216\ntissue sharedPerm_fm 36\nnew_cell analyze ok 14 shared_m vs base_m {'mean_rel_pct': 0.5537957162682972, 't': 0.15866627644811607, 'p': 0.8816203241376794, 'ci95': [-9.136879833273657, 10.244471265810251], 'variance_factor': 0.43529411764705883} [-6.256419507340263, 6.996629976079122]\ntissue analyze ok 11 shared_fm vs base_fm {'mean_rel_pct': -1.4235667310585085, 't': -1.1332758974270813, 'p': 0.32041877789859274, 'ci95': [-4.911203670433318, 2.0640702083163016], 'variance_factor': 0.43529411764705883} [-7.187121930076147, 4.0560709117505205]\nALL TESTS PASSED"
   },
-  "seconds": 13.37
+  "seconds": 27.38
 }

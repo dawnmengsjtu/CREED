@@ -1,10 +1,10 @@
 # CREED
 
-Research code for **Measured once, used as many: quantifying how much multi-layer value a single omics layer can recover in functional prediction**.
+Research code for **A few dozen molecules recover most of the functional value of a second omics layer**.
 
-CREED evaluates how much of the gain from a second measured omics layer can be recovered by a cross-fitted virtual layer or a small measured panel. The study uses a fixed development cohort of 421 cancer cell lines, six directed layer pairs, two deployment scenarios, drug-response and CRISPR endpoints, and a separate sealed-set evaluation.
+CREED evaluates how much of the gain from a second measured omics layer can be recovered by a cross-fitted virtual layer or a small measured panel. The study uses a fixed development cohort of 421 cancer cell lines, six directed layer pairs, two deployment scenarios, drug-response and CRISPR endpoints, and a separate sealed-set evaluation. A pre-registered prospective test on a third endpoint, GDSC1 drug response, checks the low-dimensional structure first seen in follow-up N6: most of the recoverable value lies along four function-weighted directions of the measured layer.
 
-This is a publication-preparation export dated **2026-10-14**. It preserves the 327 original Methods S1 payload files and adds portable launchers, pinned development dependencies, data checks, and runnable validation. **It does not yet establish end-to-end reproducibility of every historical experiment or of the final figure PDFs.** See [validation and limitations](docs/VALIDATION.md).
+This is a publication-preparation export, first prepared on 2026-10-14 and updated on **2026-10-23** to match the 2026-10-22 submission package. It preserves the 337 original Methods S1 payload files and adds portable launchers, pinned development dependencies, data checks, and runnable validation. **It does not yet establish end-to-end reproducibility of every historical experiment or of the final figure PDFs.** See [validation and limitations](docs/VALIDATION.md).
 
 [中文说明](README.zh-CN.md) · [reproduction guide](docs/REPRODUCING.md) · [figure data](docs/FIGURES.md) · [release checklist](docs/RELEASE_CHECKLIST.md)
 
@@ -26,7 +26,7 @@ Alternatively, use `conda env create -f env/development.yml`. A new CPU [Dockerf
 
 ## Study data and a real-data check
 
-The reserved data DOI is [10.5281/zenodo.23299706](https://doi.org/10.5281/zenodo.23299706). Its unauthenticated public endpoint returned HTTP 404 on 2026-10-14. Until the authors publish the record, use the locally supplied directory containing the 27 registered `.tar` files. This GitHub export does not contain the 7.21 GB data payload.
+The reserved data DOI is [10.5281/zenodo.23299706](https://doi.org/10.5281/zenodo.23299706). Its unauthenticated public endpoint returned HTTP 404 on 2026-10-23. Until the authors publish the record, use the locally supplied directory containing the 28 registered `.tar` files. This GitHub export does not contain the 10.6 GB data payload.
 
 ```bash
 # Once the record is public:
@@ -36,11 +36,12 @@ python scripts/data.py download --dest downloads
 python scripts/data.py unpack --archives /path/to/archive-directory --dest data
 python scripts/data.py verify --data-dir data
 python scripts/replay_metrics.py --data-root data/runs
+python scripts/replay_prospective.py --data-root data/runs --out work/prospective-replay
 ```
 
-`unpack` checks every archive and all 788 deposited files, then installs the 174 small run records bundled here into their original run-relative paths. Existing different records are never replaced. The records complement the array deposit and overlap it where the same metadata was already deposited.
+`unpack` checks every archive and all 918 deposited files, then installs the 219 small run records bundled here into their original run-relative paths. Existing different records are never replaced. The records complement the array deposit and overlap it where the same metadata was already deposited.
 
-The independent metric replay checks **265 fold/arm sRMSE values** against the stored prediction arrays. A separate real-data validation retrained every cross-layer arm in both scenarios and compared **590 arrays**, with a maximum absolute numeric difference of **5.43 × 10⁻¹⁴**. Instructions to repeat that validation are in [REPRODUCING.md](docs/REPRODUCING.md).
+The independent metric replay checks **265 fold/arm sRMSE values** against the stored prediction arrays. A separate real-data validation retrained every cross-layer arm in both scenarios and compared **590 arrays**, with a maximum absolute numeric difference of **5.43 × 10⁻¹⁴**. Instructions to repeat that validation are in [REPRODUCING.md](docs/REPRODUCING.md). `replay_prospective.py` reruns the prospective test's original analysis script on the deposit; on 2026-10-23 it reproduced all five analysis files byte for byte.
 
 ## Repository contents
 
@@ -49,8 +50,8 @@ The independent metric replay checks **265 fold/arm sRMSE values** against the s
 | `original/` | Unmodified Methods S1 source snapshot, original README, and per-file `SOURCES.tsv` |
 | `scripts/` | New portable launchers, data staging, integrity checks, and validation |
 | `requirements.txt`, `env/` | Pinned development dependencies and recorded optional environments |
-| `metadata/` | Data manifests, checksums, raw-source locations, and 174 traceable run records |
-| `supplement/` | Data S1–S10, byte-identical to the 2026-10-14 submission package |
+| `metadata/` | Data manifests, checksums, raw-source locations, and 219 traceable run records |
+| `supplement/` | Data S1–S10, byte-identical to the 2026-10-22 submission package |
 | `validation/` | Machine-readable results of checks actually performed |
 | `docs/` | Reproduction commands, figure dependencies, limitations, and release steps |
 
@@ -58,6 +59,6 @@ Do not edit `original/` to change paths. `scripts/run.py` creates a separate scr
 
 ## Scope, citation, and license
 
-The sealed evaluation's code, freeze records, and summaries are preserved, but the 64 validation and 123 sealed cell-line assay values are not distributed. Sealed-set scoring cannot be rerun from this public deposit. The N6 CRISPR step saved fold results, not outer predictions. Some earlier experiments summarized only in Table S8 parts A and C are not fully archived.
+The sealed evaluation's code, freeze records, and summaries are preserved, but the 64 validation and 123 sealed cell-line assay values are not distributed. Sealed-set scoring cannot be rerun from this public deposit. The N6 CRISPR step saved fold results, not outer predictions. Some earlier experiments summarized only in Table S8 parts A and C are not fully archived. The GDSC1 source file read by the prospective test is not redistributed; its location and SHA-256 are in the deposit README.
 
 The project owner explicitly chose to defer software licensing on 2026-10-14 and prepare the release package only. This export adds no software license grant. A final author list is also pending. [CITATION.cff.template](CITATION.cff.template) is a template to complete before renaming it `CITATION.cff`; it is not a valid final citation. Data and third-party components retain their own terms; see [upstream sources](metadata/RAW_SOURCES.tsv) and the original data-deposit documentation.

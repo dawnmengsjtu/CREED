@@ -17,7 +17,7 @@ Every file is listed explicitly below (manuscript_cellsystems/data_files_plan.md
 import collections, csv, hashlib, io, json, os, re, sys, textwrap, zipfile
 
 ROOT = '/Users/xlzhexue/Desktop/proj/creed'
-PKG = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+PKG = os.environ.get('CREED_SUBMISSION_DIR', os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 OUT = os.path.join(PKG, '04_Data_S')
 SI_MD = os.path.join(ROOT, 'manuscript_cellsystems', 'supplemental_information.md')
 MAIN_MD = os.path.join(ROOT, 'manuscript_cellsystems', 'main_text.md')
@@ -34,6 +34,7 @@ RUNS = {
     'probe2_context_abstain': 'probe2-context-abstain-20261009-0001', 'crispr_endpoint': 'crispr-endpoint-20261009-0001',
     'generator_curve': 'generator-curve-20261009-0001', 'generator_fullpool': 'generator-fullpool-20261009-0001',
     'null_baseline': None, 'pushline_checks': 'pushline-checks-20261009-0001',
+    'prospective_lowdim': 'prospective-lowdim-20261022-0001',
     'tissue_kernel': 'tissue-kernel-20261009-0001', 'shared_crossdrug': 'shared-crossdrug-20261009-0001',
     'rna_learning_curve': 'rna-learning-curve-20261009-0001', 'settle_stageA': 'settle-stageA-20261011-0001',
     'internal_final': 'internal-final-20261009-0001',
@@ -62,6 +63,7 @@ CE, GC, GF = 'crispr_endpoint_20261009/', 'generator_curve_20261009/', 'generato
 NB, PC, TK = 'null_baseline_20261009/', 'pushline_checks_20261009/', 'tissue_kernel_20261009/'
 SC, RL, N6 = 'shared_crossdrug_20261009/', 'rna_learning_curve_20261009/', 'settle_stageA_20261011/'
 IF, EV = 'internal_final_20261009/', 'handoff_20261009/evidence/'
+PR = 'prospective_lowdim_20261022/server_output/'
 
 S1 = ([('identity_split/original_identity_split.json', EV + 'original_identity_split.json',
         ('local', 'identity protocol record, frozen 2026-08-30'))]
@@ -156,7 +158,19 @@ S2 = (srv('crosslayer_matrix', [('PLAN.md', CL + 'PLAN.md'),
                                                                    ('EXTENSION.md', X + 'privileged-geometry-20261008-0001/EXTENSION.md'),
                                                                    ('handoff/README.md', EV + 'experiments/execution_20261008_privileged_geometry/README.md')])
       + srv('development_protocols_20261008/extra_supervision', [('PROTOCOL.md', EV + 'experiments/execution_20261008_extra_supervision/PROTOCOL.md'),
-                                                                 ('README.md', EV + 'experiments/execution_20261008_extra_supervision/README.md')]))
+                                                                 ('README.md', EV + 'experiments/execution_20261008_extra_supervision/README.md')])
+      # prospective test of the low-dimensional structure (2026-10-22): registration, addendum, checksum lists, data gate,
+      # dry runs, per-fold gates and results, analysis outputs and logs (including the failed first scoring attempt)
+      + srv('prospective_lowdim', [(r, PR + r) for r in (
+          ['PLAN.md', 'PLAN_REGISTERED_AT.txt', 'INPUTS.env', 'SHA256SUMS', 'ADDENDUM1_SHA256SUMS', 'ADDENDUM1_REGISTERED_AT.txt',
+           'OUTPUT_SHA256SUMS', 'run.log', 'run_resume.log', 'data_gdsc1/data_gate.json',
+           'logs/env.txt', 'logs/data_gate.log', 'logs/analyze.log']
+          + ['analysis/' + f for f in ('RESULT_AUTO.md', 'analysis.json', 'cells_A.csv', 'figure_2H_prospective.csv', 'panel_comparisons.csv')]
+          + ['dryrun/%s-%s/summary.json' % (e, s) for e in ('drug', 'crispr', 'gdsc1') for s in SCEN]
+          + ['output/%s/%s/fold-%d/%s' % (e, s, k, f) for e in ('drug', 'crispr', 'gdsc1') for s in SCEN for k in range(5)
+             for f in ('gate.json', 'fold_result.json')]
+          # the 30 logs of the failed first scoring attempt are byte-identical (the error precedes any fold-specific step); one is kept
+          + ['logs/failed_score_attempt1/score-drug-new_cell-fold-0.log'])]))
 
 S3 = (srv('internal_final', [(f, IF + f) for f in ('PLAN.md', 'PLAN_REGISTERED_AT.txt', 'SHA256SUMS.v1', 'SHA256SUMS.v2',
                                                   'FREEZE_REPORT.md', 'output/pre_sealed_checkpoint.json', 'output/progress.jsonl',
@@ -211,6 +225,8 @@ PLAN_VERSIONS = [
     ('settle_stageA', 'server_record/PLAN.md', 7812, '1a498cac', 'the same registered plan'),
     ('settle_stageA', 'server_record/PLAN.md', 8574, 'b2a06e7b', 'server_record/SHA256SUMS_CRISPR (after the CRISPR-step addendum)'),
     ('settle_stageA', 'server_record/PLAN.md', None, 'cffc1590', 'server_record/PLAN_SHA_AFTER_ADDENDUM2.txt (after both addenda)'),
+    ('prospective_lowdim', 'PLAN.md', 32248, '7a448be6', 'registered plan (SHA256SUMS); ADDENDUM 1 was appended after it'),
+    ('prospective_lowdim', 'PLAN.md', None, '9f535f71', 'with ADDENDUM 1 (ADDENDUM1_SHA256SUMS)'),
 ]
 
 GLOSSARY_S4 = [('有空间', 'headroom'), ('小幅空间', 'small headroom'), ('无空间', 'no headroom'), ('有恢复', 'recovered'),
@@ -241,9 +257,11 @@ def bullets(items):
 
 def server_index():
     idx = {}
-    with open(os.path.join(ROOT, EXP, 'server_run_index.tsv'), newline='') as f:
-        for r in csv.DictReader(f, delimiter='\t'):
-            idx[(r['server_run'], r['path'])] = r['sha256']
+    # 2026-10-11 listing of the run directories, plus the 2026-10-22 listing of the prospective-test run directory
+    for rel in (EXP + 'server_run_index.tsv', 'data_exports_20261022/server_run_index_prospective.tsv'):
+        with open(os.path.join(ROOT, rel), newline='') as f:
+            for r in csv.DictReader(f, delimiter='\t'):
+                idx[(r['server_run'], r['path'])] = r['sha256']
     return idx
 
 
@@ -279,7 +297,7 @@ def parse_list(data):
 
 def is_list(arc):
     b = arc.rsplit('/', 1)[-1]
-    return b.startswith(('SHA256SUMS', 'OUTPUT_SHA256SUMS', 'PLAN_SHA_')) and '_WRITTEN_AT' not in b or b == 'SHA256_and_mtime_server.txt'
+    return b.startswith(('SHA256SUMS', 'OUTPUT_SHA256SUMS', 'PLAN_SHA_', 'ADDENDUM1_SHA256SUMS')) and '_WRITTEN_AT' not in b or b == 'SHA256_and_mtime_server.txt'
 
 
 # lists whose paths are relative to a sub-folder of the run directory
@@ -329,6 +347,9 @@ def check_facts(files):
     lists = {a: {p: h for _, h, p, _ in parse_list(b)} for a, b in s2.items() if is_list(a)}
     assert lists['settle_stageA/server_record/SHA256SUMS']['code/crosslayer.py'] == lists['crosslayer_matrix/SHA256SUMS']['code/crosslayer.py']
     assert lists['settle_stageA/server_record/SHA256SUMS_CRISPR']['code/crispr_endpoint.py'] == lists['crispr_endpoint/SHA256SUMS']['code/crispr_endpoint.py']
+    # the prospective test imported the same frozen files
+    assert lists['prospective_lowdim/SHA256SUMS']['code/frozen/crosslayer.py'] == lists['crosslayer_matrix/SHA256SUMS']['code/crosslayer.py']
+    assert lists['prospective_lowdim/SHA256SUMS']['code/frozen/crispr_endpoint.py'] == lists['crispr_endpoint/SHA256SUMS']['code/crispr_endpoint.py']
     # Data S2 has every registration and checksum file of the server run directories it covers
     idx = server_index()
     pat = re.compile(r'(^|/)(PLAN_REGISTERED_AT|SHA256SUMS|OUTPUT_SHA256SUMS|PLAN_SHA_|CODE_FIXES)')

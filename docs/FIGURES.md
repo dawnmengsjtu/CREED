@@ -14,7 +14,7 @@ The destination must not exist. This copies the original data-stage scripts, ada
 | Stage | Original script | Historical output folder / final use |
 |---|---|---|
 | `map` | `prepare_fig2_v2.py` | `figure2/plot_data`: cross-layer map, final Figure 2 |
-| `generator` | `prepare_figS1_v2.py` | `figure8/plot_data`: learning curves and universe; final Figure 2G/H and Figure S1 |
+| `generator` | `prepare_figS1_v2.py` | `figure8/plot_data`: learning curves and universe; final Figure 2G and Figure S1 (the universe panel is Figure S1D) |
 | `drug-detail` | `prepare_fig3_v2.py` | `figure3/plot_data`: per-drug, sample and ranking tables; final Figure 3 and Figure S2 |
 | `graph-controls` | `prepare_fig4_v2.py` | `figure4/plot_data`: graph/tissue controls; final Figure 3 and Figure S2 |
 | `panels` | `prepare_fig5_v2.py` | `figure5/plot_data`: panel and acquisition/abstention tables; final Figure 4 and Figure S3 |
@@ -23,6 +23,10 @@ The destination must not exist. This copies the original data-stage scripts, ada
 | `sealed-summary` | `prepare_fig8_v2.py` | `figure9/plot_data`: final Figure 6, using the saved Data S3 summary |
 
 Paths above are relative to `work/figure-data/staging/delivery_R_20261009/figures2_6/`. Check actual directory names in the generated report/tree if using a different historical script. `--stages` can select a subset, but dependencies remain: for example, `crispr` reads tables produced by `map` and `panels`.
+
+## Figure 2H (2026-10-22)
+
+Figure 2H shows the measured-layer controls of the prospective test. Its plot table `lowdim_controls.csv` is built by `original/09_prospective_test_20261022/prospective_lowdim_20261022/figure_2H/build_fig2h_controls.py`, which copies values verbatim from the run's `analysis/analysis.json` (a bundled run record; `scripts/replay_prospective.py` regenerates it). The script reads that file at `../server_output/analysis/analysis.json` relative to itself, the layout of the authors' working copy; point `SRC` at `data/runs/prospective-lowdim-20261022-0001/analysis/analysis.json` instead. The panel script is `r/Figure2/H.R`. It was not rendered in this release check.
 
 ## Final V4 layout is a separate stage
 

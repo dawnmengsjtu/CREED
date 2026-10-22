@@ -6,6 +6,10 @@ This archive holds the original code of the CREED study: the data-preparation sc
 
 All files are verbatim copies of the files that were executed (or, for the package builders, of the current builders). Nothing was edited, so absolute paths of the compute server (`/public/home/mengxl/...`), of the containers (`/code`, `/oldcode`, `/parent`, `/home/node/...`) and of the authors' workstation remain in the code, and some comments, logs and plan references are in Chinese. Files listed in a SHA256SUMS file of Data S2 or Data S3 can be checked against it.
 
+## Repository and portable reproduction
+
+The repository at https://github.com/dawnmengsjtu/CREED contains the code snapshot, portable launchers, pinned dependencies and validation instructions. It is publicly accessible without login. The repository snapshot uploaded on 2026-10-14 predates the submission-material link update: analysis and figure code are identical, while package builders and this README may differ. The GitHub integrity and synthetic smoke tests passed for commit d4b2f56497aaaf684a46beaf1ef920ab5452e55f. Full historical and sealed-set reproducibility remains subject to the limitations recorded in the repository. No software license has been added.
+
 ## Layout
 
 Folders by component. Inside each, the folder names are the run directories of the compute server (`/public/home/mengxl/creed-research-runs/<run>/`) or the figure working directories (`/public/home/mengxl/workspaces/creed-research/figure_work/<dir>/`), and the paths below them are unchanged, so a path written in the code maps onto this layout. Files kept only in the authors' project repository (`null_baseline_20261009/`, `settle_stageA_20261011/`, `submission_CellSystems_20261011/_tools/`) keep their repository folder, and the independent recomputations are grouped under `independent_recomputation/<run>/`.
@@ -20,6 +24,7 @@ Folders by component. Inside each, the folder names are the run directories of t
 | `06_cptac_supplemental/` | CPTAC cross-cohort layer-transfer analysis (Figure S5) and the full-source direct comparator | 38 |
 | `07_figures/` | Figure data preparation, per-panel R scripts, renderer and assembler of Figures 1-6, Figures S1-S5 and the graphical abstract | 122 |
 | `08_package_builders/` | Scripts that build the submission package (manuscript and Document S1 .docx, Document S1 PDF, Excel tables, Data S1-S10, this archive, upload zip) | 10 |
+| `09_prospective_test_20261022/` | Pre-registered prospective test of the low-dimensional structure on GDSC1 (run prospective-lowdim-20261022-0001), its addendum, and the builder of the Figure 2H plot table | 10 |
 | `SOURCES.tsv` | Origin, SHA-256 and size of every file | 1 |
 
 `SOURCES.tsv` gives the origin, SHA-256 and size of every file at the time it was copied. For runs that executed from a code snapshot (01 and 06), only the files reachable by import from the entry scripts are included (static import closure, with `PYTHONPATH=/code/src:/code/scripts` as in the launchers); the rest of each snapshot is unrelated to this paper. Where a run kept a second byte-identical copy of a file (the `dev/` folders of three 2026-10-09 runs), it is not repeated.
@@ -156,6 +161,16 @@ Read-only recomputations written separately from the run code and executed throu
 
 `make_table_s15.py`: builds Table S15 from the per-fold N6 results (averaging only); also in Data S2.
 
+### `09_prospective_test_20261022/`
+
+**`09_prospective_test_20261022/prospective-lowdim-20261022-0001/`** (9 files)
+
+`code/lowdim.py` (fold worker: inner-bank dry run, outer predictions with the reproduction gates, scoring), `code/prepare_gdsc1.py` (GDSC1 extraction and data gate), `code/analyze.py` (pre-registered analysis), `code/run.sh` (the single invocation), `code/register.sh`, `code/preflight.sh` and `code/FROZEN_SHA256SUMS`. The run imports six frozen files from `code/frozen/`; they are byte-identical to `crosslayer.py`, `crispr_endpoint.py`, `stageA.py` and `stageA_crispr.py` in `05_followup_N6_20261011/settle-stageA-20261011-0001/code/` and to `protein_panel.py` and `rna_panel.py` of the protein- and gene-panel runs in `03_development_runs_20261009/` (checksums in `code/FROZEN_SHA256SUMS`), and are not repeated here. `code_addendum1/resume_after_addendum1.sh` and `code_addendum1/synthetic_test.py` belong to ADDENDUM 1 (score-stage software error fixed before any score). Executed with the CellFM Python, four threads per process. STAR Methods: Prospective test of the low-dimensional structure; Note S4.
+
+**`09_prospective_test_20261022/prospective_lowdim_20261022/figure_2H/`** (1 file)
+
+`build_fig2h_controls.py`: builds the Figure 2H plot table (`lowdim_controls.csv`) from the run's `analysis/analysis.json` (values copied, no recomputation).
+
 ### `06_cptac_supplemental/`
 
 **`06_cptac_supplemental/cptac-blocks-20260906-0001/`** (2 files)
@@ -190,7 +205,7 @@ Read-only recomputations written separately from the run code and executed throu
 
 **`07_figures/data_preparation/`** (12 files)
 
-Figure data stage: Python scripts that turn saved run outputs into the plot tables (`out/<figure>/plot_data/*.csv`) read by the R panels; each writes a `*_DATA_SOURCES.md` with the SHA-256 of its inputs. Copies from `20261009_figures_v3_cell/r/figures2_6/`, byte-identical to the copies in `20261009_figures2_6_v2/r/figures2_6/` where they were executed (`run.sh data` of that folder runs `prepare_gdsc.py`, `prepare_cptac.py` and `prepare_protocol.py`; the `prepare_*_v2.py` scripts were run one by one). Final figure numbers: `prepare_fig2_v2.py` -> Figure 2 and Figure S2B-C; `prepare_fig3_v2.py` -> Figure 3 (B, C, D, F, G) and Figure S2A; `prepare_fig4_v2.py` -> Figure 3 (A, E, H) and Figure S2D-F; `prepare_fig5_v2.py` -> Figure 4 and Figure S3; `prepare_fig6_v2.py` -> Figure S4; `prepare_fig7_v2.py` -> Figure 5; `prepare_fig8_v2.py` -> Figure 6 (it asserts the plot tables against the published sealed-set values); `prepare_figS1_v2.py` -> Figure 2H and Figure S1; `prepare_cptac.py` -> Figure S5; `prepare_gdsc.py`, `prepare_protocol.py` -> GDSC and schematic count tables of the earlier figure set reused by the above.
+Figure data stage: Python scripts that turn saved run outputs into the plot tables (`out/<figure>/plot_data/*.csv`) read by the R panels; each writes a `*_DATA_SOURCES.md` with the SHA-256 of its inputs. Copies from `20261009_figures_v3_cell/r/figures2_6/`, byte-identical to the copies in `20261009_figures2_6_v2/r/figures2_6/` where they were executed (`run.sh data` of that folder runs `prepare_gdsc.py`, `prepare_cptac.py` and `prepare_protocol.py`; the `prepare_*_v2.py` scripts were run one by one). Final figure numbers: `prepare_fig2_v2.py` -> Figure 2 and Figure S2B-C; `prepare_fig3_v2.py` -> Figure 3 (B, C, D, F, G) and Figure S2A; `prepare_fig4_v2.py` -> Figure 3 (A, E, H) and Figure S2D-F; `prepare_fig5_v2.py` -> Figure 4 and Figure S3; `prepare_fig6_v2.py` -> Figure S4; `prepare_fig7_v2.py` -> Figure 5; `prepare_fig8_v2.py` -> Figure 6 (it asserts the plot tables against the published sealed-set values); `prepare_figS1_v2.py` -> Figure S1 (it also built the pairing-universe panel that was Figure 2H until 2026-10-22; Figure 2H is now built from folder 09); `prepare_cptac.py` -> Figure S5; `prepare_gdsc.py`, `prepare_protocol.py` -> GDSC and schematic count tables of the earlier figure set reused by the above.
 
 **`07_figures/figure1/`** (17 files)
 
@@ -465,7 +480,7 @@ All files of this archive except this README.
 | 7ce550b5d5c0724a4a0d377b5343fc726cd9dcf36e4af3f4223e446f67e2ee54 | 3583 | `07_figures/figures_v4/20261010_figures_v4_six/r/Figure2/E.R` |
 | 437833de89d7f287f4edd8ca275c864d587eb19d256841c69fecb99557b9bbe8 | 2622 | `07_figures/figures_v4/20261010_figures_v4_six/r/Figure2/F.R` |
 | 9347f3958ef9a5c47fe440717792335adedf1ca7502d44ac94352c6be7ec18f8 | 2695 | `07_figures/figures_v4/20261010_figures_v4_six/r/Figure2/G.R` |
-| 5a9573927cdbfcbef2967e8cb62e4e0bdff5498ba9b08ebba1e6dd835f9ccde9 | 4624 | `07_figures/figures_v4/20261010_figures_v4_six/r/Figure2/H.R` |
+| 74c39ac2cf60fe5e86dffb240e962f34639fbf71b3a896df2fbe3243b2accc0d | 3606 | `07_figures/figures_v4/20261010_figures_v4_six/r/Figure2/H.R` |
 | c99fa39f62fc45517395b0a2069bf7bee6b9a5f1e50338cde01434553b668470 | 2021 | `07_figures/figures_v4/20261010_figures_v4_six/r/Figure2/common.R` |
 | 8f594502183032f46bff4bf076f6f50944248548f9350e7ba89e8d8eb5f73de1 | 248 | `07_figures/figures_v4/20261010_figures_v4_six/r/Figure2/layout.csv` |
 | 5b879c05baf3febb61d3d2f34b5cc2e43a9066ffc2369b3d144697046f953708 | 6429 | `07_figures/figures_v4/20261010_figures_v4_six/r/Figure3/A.R` |
@@ -551,14 +566,24 @@ All files of this archive except this README.
 | 328b4413319f681fd787c4884331f356822fcd44157c1622dfc5cb43d0b51bfa | 3306 | `07_figures/figures_v4/20261010_figures_v4_six/r/render_v4.R` |
 | 33087e79d9dfcf7ade6667a37ed27774fe7f3e620d0ac94934e587defb61dadc | 10290 | `07_figures/figures_v4/20261010_figures_v4_six/r/v4_common.R` |
 | a1ce47b2b33a514d517e2466d9605690e4c8c96e70d7354ef7e51c5aefa93030 | 9987 | `07_figures/graphical_abstract/20261010_figures_v4_six/graphical_abstract/graphical_abstract.R` |
-| 7b01161a9f7b6b288b02e2dd6edcbe4b1bade33d65f0a417931f5f8594655082 | 38183 | `08_package_builders/submission_CellSystems_20261011/_tools/build_cell_docx.py` |
-| 7f4f8d322514e58eefb164b0204934d02e91f6b85cf35845dad75b3251ca829b | 54922 | `08_package_builders/submission_CellSystems_20261011/_tools/build_data_zips.py` |
+| ee5f339e1a42b974b512066b8fe161295518c19100afe829143d838cd62f19c5 | 38276 | `08_package_builders/submission_CellSystems_20261011/_tools/build_cell_docx.py` |
+| 91bbefffcf63826c02f8ddefb8a22dfcffc7bae40bb072157b6378c04045a8d8 | 57106 | `08_package_builders/submission_CellSystems_20261011/_tools/build_data_zips.py` |
 | 2a85d2f510bb8827dfc6c2d42e0a8d86c0e6cc307546af4132eb3ee1b6c829eb | 33535 | `08_package_builders/submission_CellSystems_20261011/_tools/build_docx_v18_original.py` |
-| ee8eb54d9b9a2b44b28130274ec94c1cdc7f33bd8a0a07ef1c5523194ca9f02d | 43726 | `08_package_builders/submission_CellSystems_20261011/_tools/build_methods_s1.py` |
+| 3222ba0fc09d941eaa6e07875487d13097773e23f8b5bc4912591f522bc119d9 | 46043 | `08_package_builders/submission_CellSystems_20261011/_tools/build_methods_s1.py` |
 | 5ec4d3e93a05e0b8a1651b0e5aa919c0140581071f7100d25d5d7427a79d7ae6 | 8780 | `08_package_builders/submission_CellSystems_20261011/_tools/build_si_pdf.py` |
 | c1ce14546a8b0a7bd6dcc1801e93b282dd28a5db9fe050c149bebd0cf04a2db5 | 3085 | `08_package_builders/submission_CellSystems_20261011/_tools/build_submission_zip.py` |
 | cadcb2effe6935013a24ad297a2b6c9e7f19b4ff6d0520c8b28e09db3ad040db | 19273 | `08_package_builders/submission_CellSystems_20261011/_tools/build_xlsx.py` |
 | 05088d3d80c4cd9a9057ed6c4993b67a570e9f3b08c008d16e0e5f6574606fff | 1886 | `08_package_builders/submission_CellSystems_20261011/_tools/html2pdf.swift` |
 | dfd6017c9726065298da02ca7f1fd14a5da8838970a59e071295baa29d375e40 | 264 | `08_package_builders/submission_CellSystems_20261011/_tools/pages_export.applescript` |
 | 13718cec45bafa907ba193d0e0c1233219a34a8c79a2fbb69b8c3c5e58682004 | 1262 | `08_package_builders/submission_CellSystems_20261011/_tools/render_check.sh` |
-| 9910c69c4c8a5e00620dfb86f62b361f57b9d4e441c4853ef0788b961f153b98 | 85346 | `SOURCES.tsv` |
+| 7ddb3358f7320118f39256c0b4aed210bd840cac82300a3306be9a020a1ec763 | 558 | `09_prospective_test_20261022/prospective-lowdim-20261022-0001/code/FROZEN_SHA256SUMS` |
+| c4a78e643785d55973c462efed5cc8b7f7028b13bb6c0c7546adb64862231493 | 20769 | `09_prospective_test_20261022/prospective-lowdim-20261022-0001/code/analyze.py` |
+| ff5a5d3381bd34dcbba71b86e7db1dfef2503afc3c08b3ce4372972f1ca01958 | 29279 | `09_prospective_test_20261022/prospective-lowdim-20261022-0001/code/lowdim.py` |
+| fa3f9113896bbd26cf47c35d78f9981ee5bb76081b9cce1a33c53318c143f223 | 2970 | `09_prospective_test_20261022/prospective-lowdim-20261022-0001/code/preflight.sh` |
+| c30dd39855affd9dfe2ccb9d6abbe2fb6fcd8cfb41de31a7e886ee7d06794161 | 17065 | `09_prospective_test_20261022/prospective-lowdim-20261022-0001/code/prepare_gdsc1.py` |
+| f92010d3da6fcb98c58298f0aa0b21ca4eb4118835a490c5cf842d2ccfe893b8 | 1776 | `09_prospective_test_20261022/prospective-lowdim-20261022-0001/code/register.sh` |
+| 626755aa768e63b20914b651d3f0377dcff4a93d03ed1708119df7851471c14b | 4093 | `09_prospective_test_20261022/prospective-lowdim-20261022-0001/code/run.sh` |
+| ef014e460475a7b47baf6445d1c993b30aa056ffc6295943447ee675595de893 | 2548 | `09_prospective_test_20261022/prospective-lowdim-20261022-0001/code_addendum1/resume_after_addendum1.sh` |
+| 3de4f8f1ba3f1277426fad78788d1823a2541ee2ac4fb788a85c83759b12214d | 4127 | `09_prospective_test_20261022/prospective-lowdim-20261022-0001/code_addendum1/synthetic_test.py` |
+| de422103aabdddbdb9e0430b96f8ab2b3104862dbce74415992eefc5f923d627 | 2106 | `09_prospective_test_20261022/prospective_lowdim_20261022/figure_2H/build_fig2h_controls.py` |
+| 897e37d00d258f2e112ca01f6d507a900d92498d8586bbdab5990ae8cdc4c89a | 87961 | `SOURCES.tsv` |

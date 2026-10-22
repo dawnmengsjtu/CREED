@@ -592,24 +592,27 @@ COVER = [
     'Dear Editors,',
     'We submit our manuscript "{title}" for consideration as an Article in *Cell Systems*.',
     'Multi-omic models are trained on paired molecular layers, yet a laboratory or clinic usually measures one layer at deployment. '
-    'We asked how much multi-layer value a single measured layer retains for functional prediction. We compare measurement and '
-    'deployment settings using one deliberately simple kernel ridge family throughout; the paper proposes no new algorithm.',
-    'Using 421 cancer cell lines with paired metabolome, transcriptome, proteome and drug response, we evaluated the value of additional layers and measurements. '
-    'Across six directed layer pairs in two deployment scenarios, substantial room exists only when metabolites are the deployed layer '
-    '(measured RNA or proteome reduces error by 2.2–3.1%), and a free cross-fitted virtual layer recovers about one third of it on '
-    'development folds, irrespective of reconstruction accuracy. In a pre-registered follow-up, none of three re-representations of the virtual layer met the registered criterion for raising this share (−0.20% to +0.21% against the standard virtual layer). Measuring 8–64 selected proteins or genes '
-    'recovers 37–78% of the room. We release the ranked panels and retrained heads as a resource. The map and '
-    'panel law replicated on CRISPR gene effects, but the advantage of supervised over random panels did not. Pre-registered tests of '
-    'per-sample adaptive acquisition, context-specific panels and abstention showed no detectable effect.',
-    'Every claim the design could test was then evaluated once, under a protocol registered beforehand, on 123 cell lines that had remained '
-    'sealed throughout development; one later pre-registered follow-up, on how the virtual layer is represented, used development folds only. Six of eight pre-registered items were confirmed; two were not (the recovered proteome share of 0.137 fell '
-    'below the pre-registered band, and protein-panel recovery was 0.490 and 0.489, just below 0.5), and both are reported in Table 1. '
-    'The effects are small (0.4–3% relative reduction in error), development estimates come from five reused folds of '
-    'one cohort without multiple-comparison correction, and the sealed lines belong to the same CCLE resource, so the evaluation is a one-shot '
-    'confirmation, not an external validation.',
-    'The work addresses how functional information is shared across molecular layers and how many measurements recover it, questions '
-    'relevant to the systems-level scope of *Cell Systems*. Registered plans, checksums and run outputs accompany the results. '
-    'It should interest readers who design multi-omic studies or measurement panels, or who build and evaluate virtual-omics methods.',
+    'Anyone designing such a study has to decide whether a second layer is worth measuring, how much of it a model trained on paired '
+    'data can supply without a new assay, and how many additional molecules close the rest of the gap. We answer these questions '
+    'on paired data with a functional endpoint, using one kernel ridge family throughout so that arms differ only in the information they receive.',
+    'Using 421 cancer cell lines with paired metabolome, transcriptome, proteome and drug response, we find that the functional value '
+    'of a second layer is concentrated in a few directions. Measured RNA nearly doubles the predictive skill of a metabolite-only model, '
+    'and four function-weighted directions of the measured layer carry most of that gain; a pre-registered test on a third endpoint, GDSC1, '
+    'confirmed this, with random and label-permuted directions carrying little of it. This structure explains what a single layer '
+    'can recover. A free cross-fitted virtual layer recovers about one third on development folds, whatever its reconstruction accuracy, '
+    'and neither re-representing it nor building it on a single-cell foundation model raised that share. Measuring 8–64 selected '
+    'proteins or genes recovers 37–78% of the room, random panels of the same size capture most of this, and tailoring panels per '
+    'sample or per context added nothing. We release the ranked panels and retrained heads as a resource. The share and the panel law '
+    'replicate on CRISPR gene effects.',
+    'Every claim the design could test was then evaluated once, under a protocol registered beforehand, on 123 cell lines that had '
+    'remained sealed throughout development. Six of eight pre-registered predictions held, and every gain kept its direction. The two '
+    'misses were ratio criteria that fell just short: the sealed lines had more room for a second layer, so the recovered proteome share '
+    'was 0.137 against a band starting at 0.15, and protein-panel recovery was 0.490 and 0.489 against 0.5. Both are reported in Table 1.',
+    'The work shows how functional information is distributed across molecular layers and how many measurements recover it, a '
+    'systems-level question within the scope of *Cell Systems*. It gives design rules to groups that plan multi-omic studies, and it '
+    'argues that virtual-omics models, now judged mostly by reconstruction accuracy, should be judged by the functional value they '
+    'deliver. Registered plans, checksums and run outputs accompany the results. Code is supplied as Methods S1; the repository at '
+    'https://github.com/dawnmengsjtu/CREED is publicly accessible.',
     'This manuscript has not been published and is not under consideration elsewhere, and all authors approved its submission. '
     'Preprint: [[PENDING: preprint server and DOI, or "none"]]. Suggested reviewers: [[PENDING: names, affiliations, e-mails]]. '
     'Reviewers to exclude: [[PENDING: names and reasons, or "none"]]. Competing interests: [[PENDING: as in the Declaration of interests]].',
