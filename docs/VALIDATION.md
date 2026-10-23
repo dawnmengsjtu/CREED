@@ -28,7 +28,7 @@ The 2026-10-14 numerical checks used an isolated venv on macOS arm64 with Python
 - The 64 validation and 123 sealed cell-line assay values and sealed predictions are not distributed. Public readers can audit the protocol, frozen development models, release receipt and summary, not independently rescore those inaccessible values.
 - N6 CRISPR retained fold results, not its outer predictions.
 - The historical plot-data stages are runnable, but final V4 data assembly, Figure 1's historical raw snapshots, and R figure rendering (including the new Figure 2H) are not fully verified. See `FIGURES.md`.
-- The GitHub Actions workflow passed for commit d4b2f56 (2026-10-14). It has not yet run for this update.
+- The GitHub Actions workflow passed for the 2026-10-14 release (commit 2c54e8f) and for this update (commit 7e4a8b0, run 39959292511).
 
 The workflow follows the documented v7 usage of [actions/checkout](https://github.com/actions/checkout) and [actions/setup-python](https://github.com/actions/setup-python), checked during the 2026-10-14 preparation. Package versions from the tested venv are recorded in `env/validation-lock.txt`.
 

@@ -10,4 +10,4 @@ This folder is the intended GitHub repository root. Do not upload the enclosing 
 6. Create the GitHub repository and upload this folder's contents, including `.github`, `.gitignore` and the original source tree. The local ZIP is a convenience copy; GitHub should expose the unzipped source files.
 7. Let the GitHub Actions workflow run. Only after it succeeds should its result be described as a passing GitHub CI run.
 
-Pushing to GitHub and publishing Zenodo are separate steps that the owner approves; the preparation and update steps do neither. The 2026-10-14 export was pushed as commit d4b2f56. The submission folders and manuscript files are outside this export.
+Pushing to GitHub and publishing Zenodo are separate steps that the owner approves; the preparation and update steps do neither. The 2026-10-14 export is commit 2c54e8f. The submission folders and manuscript files are outside this export.
